@@ -53,6 +53,8 @@ CQC: https://docs.google.com/spreadsheets/d/1FEB-TLPxuc_buzlWEIJzNzch9QWkWWil/ed
         * modify to have a table like cqc-media.html
     * 2. python script to read csv and populate template
     * 3. git commit
+* Court Monitor page
+    * received blurb for landing page via [email](https://mail.google.com/mail/u/0/#inbox/FMfcgzQbgJGVVhZqVtDxnswKfmnNmPML) and copied it to ./data/court-monitor.md
 * CQC update (for later)
     * NB Reports page doesn't exist yet
 
