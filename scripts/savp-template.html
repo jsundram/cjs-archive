@@ -8,10 +8,15 @@
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
 
-    <title>Commission on Quality of Care</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <title>Special Advisor</title>
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.8/dist/index.global.min.js"></script>
+    <!-- this gives a warning about not using the browser version, but ... -->
   </head>
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
@@ -51,43 +56,50 @@
           </div>
         </header>
 
-        <!-- Content -->
         <div class="bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
           <h1 id="page-title" class="text-[#101419] text-xl font-bold leading-tight tracking-[-0.015em]"></h1>
         </div>
 
-<div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex p-4 @container">
-              <div class="flex w-full flex-col gap-4 items-center">
-                <div class="flex gap-4 flex-col items-center">
-                  <div
-                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
-                    style='background-image: url("./assets/nys-logo.svg");'
-                  ></div>
-                  <div class="flex flex-col items-center justify-center justify-center">
-                    <p class="text-[#101419] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center"> Commission on Quality of Care for the Mentally Disabled</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- Content -->
         <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div>
-                <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
-The New York Commission on Quality of Care for the Mentally Disabled was established in 1978 as an independent agency responsible for monitoring and overseeing the quality of care in the New York State mental health and developmental disabilities service systems in institutions and community programs. In addition, the Commission was responsible for administering the federally funded legal advocacy programs that protect the civil rights of persons with disabilities through a network of local agencies across New York State.  The Commission provides independent policy advice to the Governor and Legislature based on policy analysis and cost-effectiveness studies, investigations into allegations of patient abuse and neglect, unnatural deaths, and Medicaid fraud and abuse. Clarence Sundram was the founding Chairman of the Commission and served until 1998 under three governors.
-                </p>
+            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+
+                <div>
+                    <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
+                        {blurb}
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#101419] tracking-light text-[32px] font-bold leading-tight min-w-72">Media Coverage</p></div>
+                <div class="px-4 py-3 @container">
+                  <div class="flex overflow-hidden rounded-xl border border-[#d3dbe4] bg-gray-50">
+                    <table class="flex-1">
+                        <thead>
+                            <tr class="bg-gray-50">
+                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-120 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Date</th>
+                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-240 px-4 py-3 text-left text-[#101419] w-60 text-sm font-medium leading-normal">Type</th>
+                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-360 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Title</th>
+                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-480 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {rows}
+                        </tbody>
+                    </table>
+                  </div>
+                  <style>
+                    @container(max-width:120px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-120{display: none;}}
+                    @container(max-width:240px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-240{display: none;}}
+                    @container(max-width:360px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-360{display: none;}}
+                    @container(max-width:480px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-480{display: none;}}
+                  </style>
+                </div>
             </div>
-            <h2 class="text-[#101419] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Materials</h2>
-            <ul class="list-disc list-inside">
-                <li class="indent-8"><a href="./cqc-reports.html">Reports</a></li>
-                <li class="indent-8"><a href="./cqc-media.html">In the News</a></li>
-                <li class="indent-8"><a href="./cqc-publications.html">Publications</a></li>
-            </ul>
-          </div>
         </div>
+        <!-- End Content -->
       </div>
     </div>
+
     <script>
       // Hamburger menu functionality
       const hamburgerBtn = document.getElementById('hamburger-btn');
@@ -123,4 +135,3 @@ The New York Commission on Quality of Care for the Mentally Disabled was establi
     </script>
   </body>
 </html>
-
