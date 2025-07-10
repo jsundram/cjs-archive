@@ -20,6 +20,10 @@ def format_date(date_str):
 
 
 def main(data_file, template_file, output_file):
+    assets_origin = "/Users/jsundram/Dropbox/Archive of CJS/Court Monitor/O'Toole v. Cuomo/"
+    pdf_files = {f: os.path.join(assets_origin, f) for f in os.listdir(assets_origin)}
+    assets_destination = '../docs/assets/otoole/'
+    os.makedirs(assets_destination, exist_ok=True)
 
     rows = []
     with open(data_file, newline='', encoding='utf-8') as csvfile:
@@ -32,17 +36,21 @@ def main(data_file, template_file, output_file):
             date = format_date(row['Date'])
             title = row['Document']
             description = row['Description']
-            url = row['URL']
+            # url = row['URL']  # can ignore these, because we have pdfs
+            filename = title + ".pdf"
+            source = pdf_files[filename]
+            shutil.copyfile(source, os.path.join(assets_destination, filename))
+            url = './assets/otoole/' + filename
 
             rows.append(f"""
             <tr class="border-t border-t-[#d3dbe4]">
-              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+              <td class="h-[72px] px-4 py-2 w-[200px] text-[#58728d] text-sm font-normal leading-normal">
                 {date}
               </td>
-              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+              <td class="h-[72px] px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
                 <a href="{url}" target="_blank" class="underline hover:text-blue-600">{title.upper()}</a>
               </td>
-              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+              <td class="h-[72px] px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 {description}
               </td>
             </tr>
