@@ -12,6 +12,7 @@
 - [ ] copy header from index.html for other files
 - [ ] nicer previews for social (fb/x/iMessage)
 - [ ] Match CQC revision of CQC citations with CQC reports sheet 1.
+- [ ] Make sure mobile styling looks good
 
 
 ## Description
@@ -55,6 +56,9 @@ CQC: https://docs.google.com/spreadsheets/d/1FEB-TLPxuc_buzlWEIJzNzch9QWkWWil/ed
     * 3. git commit
 * Court Monitor page
     * received blurb for landing page via [email](https://mail.google.com/mail/u/0/#inbox/FMfcgzQbgJGVVhZqVtDxnswKfmnNmPML) and copied it to ./data/court-monitor.md
+    * create otoole page
+        * create template
+        * parse csv
 * CQC update (for later)
     * NB Reports page doesn't exist yet
 

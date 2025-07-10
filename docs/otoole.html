@@ -1,0 +1,346 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>O'Toole v. Cuomo</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.8/dist/index.global.min.js"></script>
+    <!-- this gives a warning about not using the browser version, but ... -->
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="relative flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e9edf1] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#101419]">
+            <!-- Hamburger Button (moved to left side) -->
+            <button
+              id="hamburger-btn"
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e9edf1] text-[#101419] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+            >
+              <div class="text-[#101419]" data-icon="List" data-size="20px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <h2 id="site-title" class="text-[#101419] text-lg font-bold leading-tight tracking-[-0.015em]">Archive</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <!-- Navigation Menu (always mobile-style dropdown) -->
+            <nav id="main-nav" class="hidden flex flex-col gap-4
+                                      absolute top-full left-0 right-0
+                                      bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
+              <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./index.html">About</a>
+              <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./cqc.html">Commission on Quality of Care</a>
+              <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="#">Special Master</a>
+              <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./court-monitor.html">Court Monitor</a>
+              <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./special-advisor.html">Special Advisor</a>
+            </nav>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("./assets/headshot.jpg");'
+            ></div>
+          </div>
+        </header>
+
+        <div class="bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
+          <h1 id="page-title" class="text-[#101419] text-xl font-bold leading-tight tracking-[-0.015em]"></h1>
+        </div>
+
+        <!-- Content -->
+        <div class="px-40 flex flex-1 justify-center py-5">
+            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+
+                <div>
+                    <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
+                    <b>United States v. New York, O'Toole v. Cuomo, United States District Court for the Eastern District of New York.</b>
+                    </p>
+                    <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
+                    Mr. Sundram serves as the Independent Reviewer for the federal court overseeing the implementation of a Settlement Agreement in a class action which offers approximately 4000 persons with mental illness residing in 22 adult homes in NYC the opportunity to move to supported housing with support services.  https://www.bazelon.org/otoole-v-cuomo/. The Independent Reviewer team members are: <a href="https://www.linkedin.com/in/tom-harmon-b7a81414/">Thomas Harmon</a>, <a href="https://www.linkedin.com/in/steve-hirschhorn-96273353/">Stephen Hirschhorn</a>, <a href="">Mindy Becker</a> and <a href="https://www.linkedin.com/in/kathleen-o-hara-086237131/">Dr. Kathleeen O'Hara</a>.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#101419] tracking-light text-[32px] font-bold leading-tight min-w-72">Media Coverage</p></div>
+                <div class="px-4 py-3 @container">
+                  <div class="flex overflow-hidden rounded-xl border border-[#d3dbe4] bg-gray-50">
+                    <table class="flex-1">
+                        <thead>
+                            <tr class="bg-gray-50">
+                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-120 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Date</th>
+                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-360 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Title</th>
+                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-480 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+            <tr class="border-t border-t-[#d3dbe4]">
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                2015-10-01
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+                <a href="https://www.researchgate.net/publication/283121339_O'Toole_v_Cuomo_Independent_Reviewer's_First_Annual_Report_filed_with_the_United_States_District_Court" target="_blank" class="underline hover:text-blue-600">O'TOOLE V. CUOMO, INDEPENDENT REVIEWER'S FIRST ANNUAL REPORT FILED WITH THE UNITED STATES DISTRICT COURT</a>
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                Progress report on implementation of Settlement Agreement requiring that a class of approximately 4000 mentally ill residents of adult homes in New York City be provided with a choice to move to supported housing in the community. This report describes the initial actions by the State Defendants to implement the settlement agreement and the rate of progress in the first year.  It identifies numerous actions that would be required to increase the pace of implementation to achieve compliance with the targets established in that agreement.
+              </td>
+            </tr>
+            
+
+            <tr class="border-t border-t-[#d3dbe4]">
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                2016-04-01
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+                <a href="https://www.researchgate.net/publication/300006038_O'Toole_v_Cuomo_Independent_Reviewer's_Second_Annual_Report" target="_blank" class="underline hover:text-blue-600">O'TOOLE V. CUOMO, INDEPENDENT REVIEWER'S SECOND ANNUAL REPORT</a>
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                This report describes the experiences of a sample of class members who transitioned to the community, as well as exploring various obstacles class members encounter after expressing an interest in moving to community housing.
+              </td>
+            </tr>
+            
+
+            <tr class="border-t border-t-[#d3dbe4]">
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                2017-04-01
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+                <a href="https://www.researchgate.net/publication/315756414_O'Toole_v_Cuomo_--Independent_Reviewer's_Third_Annual_Report" target="_blank" class="underline hover:text-blue-600">O'TOOLE V. CUOMO, INDEPENDENT REVIEWER'S THIRD ANNUAL REPORT</a>
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                Report on progress in Implementing a Settlement Agreement between the US Department of Justice and a class of Private Plaintiffs vs. the State of New York, which requires that approximately 4000 residents of adult homes with serious mental illness be offered the opportunity to move to supported housing in the community, with wrap around services as needed. 
+              </td>
+            </tr>
+            
+
+            <tr class="border-t border-t-[#d3dbe4]">
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                2018-04-01
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+                <a href="https://www.researchgate.net/publication/392509982_145-Independent_Reviewer's_Fourth_Annual_Report_40218" target="_blank" class="underline hover:text-blue-600">INDEPENDENT REVIEWER'S FOURTH ANNUAL REPORT</a>
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                This report again describes the experiences of a sample of class members who had moved to the community, including some of the difficulties they experienced.  It also reports on class members in Assisted Living Programs within adult homes, which are intended to provide an enriched level of care.  It identifies the need for formal quality assurance mechanisms to be implemented by the State.
+              </td>
+            </tr>
+            
+
+            <tr class="border-t border-t-[#d3dbe4]">
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                2019-04-01
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+                <a href="https://www.researchgate.net/publication/392509555_163-Independent_Reviewer's_Fifth_Annual_Report_40319" target="_blank" class="underline hover:text-blue-600">INDEPENDENT REVIEWER'S FIFTH ANNUAL REPORT</a>
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                During this report year, the parties agreed to a Supplemental Agreement which made significant changes to the Settlement Agreement including streamlining the assessment process, expanding the incident reporting and review process and creating a peer bridger program at each of the impacted adult homes.   This report describes the effect of the changes during the approximately six months they had been in effect.  Appendices to the report address Class Members Who Did Not Transition, after going through the process for approval; Quality Assurance, and Level II Housing (24 hour supervised housing).
+              </td>
+            </tr>
+            
+
+            <tr class="border-t border-t-[#d3dbe4]">
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                2021-07-09
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+                <a href="Independent Review's  Report on review of preadmission screening.pdf" target="_blank" class="underline hover:text-blue-600">INDEPENDENT REVIEW'S  REPORT ON REVIEW OF PREADMISSION SCREENING</a>
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                This report describes the process used to screen potential admissions to impacted adult homes for Serious Mental Illness and the weaknesses in the screening process that permits such admissions despite a State policy to prohibit them. 
+              </td>
+            </tr>
+            
+
+            <tr class="border-t border-t-[#d3dbe4]">
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                2019-07-19
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+                <a href="in  folder" target="_blank" class="underline hover:text-blue-600">INDEPENDENT REVIEWER'S REPORT OF  DEFENDANT'S INCIDENT REVIEWS</a>
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                This report assesses the State's compliance with the requirements for implementing an incident reporting and investigation process for class members who have moved from adult homes to supported housing in the community. 
+              </td>
+            </tr>
+            
+
+            <tr class="border-t border-t-[#d3dbe4]">
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                2020-04-01
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+                <a href="https://www.researchgate.net/publication/340418147_Independent_Reviewer's_Sixth_Annual_Report" target="_blank" class="underline hover:text-blue-600">INDEPENDENT REVIEWER'S SIXTH ANNUAL REPORT</a>
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                This report describes the continuing structural and process problems in implementation of the Settlement Agreement and the slowing pace of transitions to the community against the backdrop of the developing COVID-19 pandemic. It includes the Third Transition Metric Report, as well as the state of compliance with other metrics incorporated into the Supplemental Agreement in 2018.  This report also includes a description of the Housing Procurement process used by housing contractors to locate apartments for class members, as well as a report on the implementation of the Peer Bridger program.
+              </td>
+            </tr>
+            
+
+            <tr class="border-t border-t-[#d3dbe4]">
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                2020-09-01
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+                <a href="https://www.researchgate.net/publication/344847235_Impact_of_COVID-19_on_class_members" target="_blank" class="underline hover:text-blue-600"> INDEPENDENT REVIEWER'S REPORT ON IMPACTOF COVID-19 ON CLASS MEMBERS</a>
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                This report submitted to the United States District Court describes the impact of restrictions on visitation upon a class of mentally ill residents of 22 adult homes (congregate care board and care facilities) in New York City. These restrictions on access to the facilities were imposed in the wake of the COVID-19 pandemic and limited the ability of families and support professionals to meet the residents in person since Mid-March 2020.
+              </td>
+            </tr>
+            
+
+            <tr class="border-t border-t-[#d3dbe4]">
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                2021-04-01
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+                <a href="https://www.researchgate.net/publication/392509406_Independent_Reviewer's_Seventh_Annual_Report" target="_blank" class="underline hover:text-blue-600">INDEPENDENT REVIEWER'S SEVENTH ANNUAL REPORT</a>
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                This report describes the continuing decline in the number of class members transitioning each year since 2017, exacerbated by the COVID-19 pandemic. The extraordinary conditions led the parties and the court to agree to suspend the Transition Metric Reports until February 2022.  This report also discusses the closure of the Brooklyn Terrace Home for Adults and the transfer of its residents to supported housing and other congregate care facilities.  It also discusses an investigation by the Independent Reviewer into complaints of Discouragement and Interference which culminated in a Settlement Agreement with the Wavecrest Home for Adults on March 17, 2021.
+              </td>
+            </tr>
+            
+
+            <tr class="border-t border-t-[#d3dbe4]">
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                2022-04-01
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+                <a href="https://www.researchgate.net/publication/392510165_243_Indepndent_Reviewer's_Eighth_Annual_Report" target="_blank" class="underline hover:text-blue-600">INDEPENDENT REVIEWER'S EIGHTH ANNUAL REPORT</a>
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                This is the Eighth Annual report of the Independent Reviewer's monitoring of the implementation of a federal court Settlement Agreement in a class action lawsuit under the Americans with Disabilities Act which provided a class of approximately 4,000 persons with Serious Mental Illness, residing in 22 adult homes (board and care) in New York City, the opportunity to move to supported housing and other community residential options, with support services.
+              </td>
+            </tr>
+            
+
+            <tr class="border-t border-t-[#d3dbe4]">
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                2023-04-01
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+                <a href="https://www.researchgate.net/publication/372441772_Independent_Reviewer's_Ninth_Annual_Report" target="_blank" class="underline hover:text-blue-600">INDEPENDENT REVIEWER'S NINTH ANNUAL REPORT</a>
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                This report follows the State’s Full Court Press at additional adult homes and reports on emerging issues affecting performance. It also reports on incidents of discouragement and interference by adult home providers, the implementation of space plans to enable settlement provider staff to work in adult homes and the distribution of notices about the Decision Date by which class members had to make known their interest in being assessed for transition to community housing.
+              </td>
+            </tr>
+            
+
+            <tr class="border-t border-t-[#d3dbe4]">
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                2024-04-01
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+                <a href="https://www.researchgate.net/publication/379535368_Independent_Reviewer's_Tenth_Annual_Report-Stamped" target="_blank" class="underline hover:text-blue-600">INDEPENDENT REVIEWER'S TENTH ANNUAL REPORT</a>
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                The tenth annual report on the implementation of an Olmstead class action settlement that gave a class of approximately 4,000 persons with serious mental illness residing in 23 adult homes in NYC the choice to move to supported housing or other suitable community housing alternatives, with appropriate support services. This report provides a retrospective view of the State’s implementation efforts over the past decade, the progress made to date and the work left to be accomplished.
+              </td>
+            </tr>
+            
+
+            <tr class="border-t border-t-[#d3dbe4]">
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                2024-11-01
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+                <a href="https://www.researchgate.net/publication/390342244_Independent_Reviewer's_First_Semi-Annual_Report_112024" target="_blank" class="underline hover:text-blue-600">INDEPENDENT REVIEWER'S FIRST SEMI-ANNUAL REPORT </a>
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                This text presents the First Semi-Annual Report by an Independent Reviewer overseeing a civil action concerning the State of New York's compliance with a Settlement Agreement. The lawsuit addresses the rights of a class of individuals with Serious Mental Illness (SMI) residing in Impacted Adult Homes, focusing on their opportunity to transition to and receive support in community-based housing. The report details the status of the case, including the number of active class members and the review process for those choosing not to transition. It provides an update on the admissions and screening process at these facilities, ultimately offering conclusions and recommendations for the State based on monitoring activities and interviews with class members.
+              </td>
+            </tr>
+            
+
+            <tr class="border-t border-t-[#d3dbe4]">
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                2025-05-15
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+                <a href="https://www.researchgate.net/publication/391939165_Stamped_Second_Semi-Annual_Report" target="_blank" class="underline hover:text-blue-600">INDEPENDENT REVIEWER'S SECOND SEMI-ANNUAL REPORT</a>
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                This text presents the Second Semi-Annual Report by an Independent Reviewer overseeing a civil action in the Eastern District of New York concerning the State of New York's compliance with a Settlement Agreement. The lawsuit addresses the rights of a class of individuals with Serious Mental Illness (SMI) residing in Impacted Adult Homes, focusing on their opportunity to transition to and receive support in community-based housing. The report details the status of the case, including the number of active class members and the review process for those choosing not to transition. It further discusses the implementation of a Person-Centered Transition Planning (PCTP) initiative and provides an update on the admissions and screening process at these facilities, ultimately offering conclusions and recommendations for the State based on monitoring activities and interviews with class members.
+              </td>
+            </tr>
+            
+
+            <tr class="border-t border-t-[#d3dbe4]">
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                2025-05-15
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+                <a href="https://www.researchgate.net/publication/391939577_A_Review_of_A_Sample_of_Class_Members_Living_in_Supported_Housing_SUBMITTED_BY_The_members_of_the_Independent_Review_team" target="_blank" class="underline hover:text-blue-600">APPENDIX A TO SECOND SEMI ANNUAL REPORT</a>
+              </td>
+              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+                This is Appendix A of a Semi-Annual Report, providing a review of a sample of class members living in supported housing. It details the methods used to select and study 30 individuals, highlighting that the sample primarily consists of those who have remained stably housed for over two years. The report then presents detailed findings across various domains, including housing and neighborhood experiences, financial and food security, medication management, community integration, and evolving physical and mental health needs, with a particular emphasis on the challenges faced by members and the roles of settlement service providers in addressing them.
+              </td>
+            </tr>
+            
+                        </tbody>
+                    </table>
+                  </div>
+                  <style>
+                    @container(max-width:120px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-120{display: none;}}
+                    @container(max-width:240px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-240{display: none;}}
+                    @container(max-width:360px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-360{display: none;}}
+                    @container(max-width:480px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-480{display: none;}}
+                  </style>
+                </div>
+            </div>
+        </div>
+        <!-- End Content -->
+      </div>
+    </div>
+
+    <script>
+      // Hamburger menu functionality
+      const hamburgerBtn = document.getElementById('hamburger-btn');
+      const mobileMenu = document.getElementById('main-nav');
+
+      // Toggle menu on hamburger button click
+      hamburgerBtn.addEventListener('click', function(e) {
+        e.stopPropagation(); // Prevent event from bubbling up
+        if (mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.remove('hidden');
+        } else {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(e) {
+        // Check if the menu is visible and the click is outside the menu and hamburger button
+        if (!mobileMenu.classList.contains('hidden') &&
+            !mobileMenu.contains(e.target) &&
+            !hamburgerBtn.contains(e.target)) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+
+      // Prevent menu from closing when clicking inside the menu
+      mobileMenu.addEventListener('click', function(e) {
+        e.stopPropagation();
+      });
+
+      // Set page title from document title
+      document.getElementById('page-title').textContent = document.title;
+    </script>
+  </body>
+</html>
