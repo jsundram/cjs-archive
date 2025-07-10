@@ -59,6 +59,10 @@ CQC: https://docs.google.com/spreadsheets/d/1FEB-TLPxuc_buzlWEIJzNzch9QWkWWil/ed
     * create otoole page
         * create template
         * parse csv
+        * git commit
+    * create blackman page
+        * create template
+        * parse csv
 * CQC update (for later)
     * NB Reports page doesn't exist yet
 
