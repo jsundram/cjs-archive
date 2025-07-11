@@ -30,7 +30,7 @@ def main(data_file, template_file, output_file):
     pdf_files = {f.lower(): os.path.join(assets_origin, f) for f in os.listdir(assets_origin)}
     assets_destination = '../docs/assets/savp/'
 
-    rows_html = []
+    rows = []
     with open(data_file, newline='', encoding='utf-8') as csvfile:
         next(csvfile) # page title
         blurb = next(csvfile).strip().strip(',').strip('"')
@@ -48,7 +48,7 @@ def main(data_file, template_file, output_file):
                 shutil.copyfile(source, os.path.join(assets_destination, key))
                 url = './assets/savp/' + key
 
-            rows_html.append(f"""
+            rows.append(f"""
             <tr class="border-t border-t-[#d3dbe4]">
               <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 {date}
@@ -68,17 +68,14 @@ def main(data_file, template_file, output_file):
             """)
 
     # Output the combined HTML
-    rows = "\n".join(rows_html)
+    rows_html = "\n".join(rows)
 
     # Load template
     with open(template_file) as f:
         template = f.read()
 
     # Populate template
-    # .format would be great but if there are braces in the html it will barf
-    # html_output = template.format(blurb=blurb, rows=rows)
-    for txt, data in [('{blurb}', blurb), ('{rows}', rows)]:
-        template = template.replace(txt, data)
+    template = template.replace('{rows}', rows_html)
 
     # Save result
     with open(output_file, 'w') as f:
