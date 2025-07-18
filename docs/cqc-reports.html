@@ -1,0 +1,2292 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Commission on Quality of Care</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.8/dist/index.global.min.js"></script>
+    <!-- this gives a warning about not using the browser version, but ... -->
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="relative flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e9edf1] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#101419]">
+            <!-- Hamburger Button (moved to left side) -->
+            <button
+              id="hamburger-btn"
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e9edf1] text-[#101419] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+            >
+              <div class="text-[#101419]" data-icon="List" data-size="20px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <h2 id="site-title" class="text-[#101419] text-lg font-bold leading-tight tracking-[-0.015em]">Archive</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <!-- Navigation Menu (always mobile-style dropdown) -->
+            <nav id="main-nav" class="hidden flex flex-col gap-4
+                                      absolute top-full left-0 right-0
+                                      bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
+              <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./index.html">About</a>
+              <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./cqc.html">Commission on Quality of Care</a>
+              <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="#">Special Master</a>
+              <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./court-monitor.html">Court Monitor</a>
+              <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./special-advisor.html">Special Advisor</a>
+            </nav>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("./assets/headshot.jpg");'
+            ></div>
+          </div>
+        </header>
+
+        <div class="bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
+          <h1 id="page-title" class="text-[#101419] text-xl font-bold leading-tight tracking-[-0.015em]"></h1>
+        </div>
+
+        <!-- Content -->
+        <div class="px-40 flex flex-1 justify-center py-5">
+            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+
+                <div class="flex flex-wrap justify-between gap-3 p-4">
+                    <p class="text-[#101419] tracking-light text-[32px] font-bold leading-tight min-w-72">Reports</p>
+                </div>
+                <div class="px-4 py-3 @container">
+                  <div class="flex overflow-hidden rounded-xl border border-[#d3dbe4] bg-gray-50">
+                    <table class="flex-1">
+                        <thead>
+                            <tr class="bg-gray-50">
+                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-120 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Date</th>
+                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-240 px-4 py-3 text-left text-[#101419] w-60 text-sm font-medium leading-normal">Category</th>
+                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-360 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Title</th>
+                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-480 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            March 1979
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/allegations without substantiation- an investigation into charges by the rockland county medical examiner.pdf" target="_blank" class="underline hover:text-blue-600">ALLEGATIONS WITHOUT SUBSTANTIATION: AN INVESTIGATION INTO CHARGES BY THE ROCKLAND COUNTY MEDICAL EXAMINER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This investigation by the Commission determined that charges of numerous drug-related deaths at Rockland Psychiatric Center and Letchworth Village Developmental Center are "totally without substantiation and made with no basis in medical examination or fact."
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            April 1979
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/a review of broome developmental services.pdf" target="_blank" class="underline hover:text-blue-600">A REVIEW OF BROOME DEVELOPMENTAL SERVICES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This report is the result of visits to Broome Developmental Center (BDC) in response to concerns and allegations raised by the Board of Visitors, the Parents Group, a local Assemblyman, facility staff members, members of the community and newspaper reports. The major issues that emerged were associated with staffing.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            October 1979
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/family care for the mentally ill- the unfulfilled promise.pdf" target="_blank" class="underline hover:text-blue-600">FAMILY CARE FOR THE MENTALLY ILL: THE UNFULFILLED PROMISE</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Criticizing the Buffalo family care program for psychiatric patients as unrealistic and poorly administered, this Commission report asserted that for most psychiatric patients at that facility family care is a dead end where the quality of patient care can best be characterized as neglectful.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            March 1980
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/a review of syracuse developmental services.pdf" target="_blank" class="underline hover:text-blue-600">A REVIEW OF SYRACUSE DEVELOPMENTAL SERVICES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This Commission undertook the review of Syracuse Development Center in response to complaints by a nurse at the facility, and investigated what was alleged to be the deteriorating quality of resident care and programming. The major issues which emerged were associated with staffing and philosophies of resident care.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            June 1980
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/a review of the barbara downes family care home.pdf" target="_blank" class="underline hover:text-blue-600">A REVIEW OF THE BARBARA DOWNES FAMILY CARE HOME</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The Commission undertook the review of the Barbara Downes family care home, supervised by Binghamton Psychiatric Center, following the death of Cleo B., a resident of the home who was struck by a truck while crossing the road on the morning of October 8, 1979. Allegations of inadequate supervision and inappropriate medication practices in the home prompted the Commission to initiate a separate review of the home itself. These allegations were brought to the Commission's attention by Binghamton Psychiatric Center's Board of Visitors, which raised concerns over the supervision and medication practices in the home.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            July 1980
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/a study of the delays in the receipt of medicaid cards by patients discharged from mental hygiene facilities.pdf" target="_blank" class="underline hover:text-blue-600">A STUDY OF THE DELAYS IN THE RECEIPT OF MEDICAID CARDS BY PATIENTS DISCHARGED FROM MENTAL HYGIENE FACILITIES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Medicaid-eligible individuals released from State psychiatric and developmental centers have experienced lengthy delays in the receipt of Medicaid cards, which adversely affect their access to needed services in the community and, at the same time, inappropriately reduce federal financial participation in the cost of these services. This Commission study is of the Medicaid card issuance process to determine the causes and effects of such delays. The report reflects conditions found to exist from 1976 through early 1979 -- the period in which the sample population experienced delays in the receipt of Medicaid cards.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            August 1980
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D7533634&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF JOSEPH C. - A RESIDENT OF CRAIG DEVELOPMENTAL CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The report recommends that the developmental center take steps to ensure coordination and communication among medical staff charged with care of clients who are seriously ill. Specifically, the report recommends: that clients deemed ill enough to be sent to an emergency room should be promptly evaluated by a facility physician upon return; and,  that facility nurses document decisions to deviate from established client treatment regimens. In addition, the report recommends that a transfer form be developed to include information, regarding the special needs of handicapped clients, for use whenever such clients are sent to other facilities or to outside practitioners, to increase communication between facility and community physicians. The report further recommends that the developmental center administration proceed, through education and direct intervention, to ensure that local general hospital physicians provide the same emergency care to developmental center clients as is afforded to the general public, and not misconstrue the developmental center's medical unit as comparable to a hospital's acute care surgical unit. Finally, the Commission report recommends that, following the unanticipated death of a client, there should be a forum for staff of all levels to exchange information, identify problem areas and plan for future intervention to prevent the recurrence of such deaths                                                       
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            February 1981
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D8302795&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF PETER BREEN - A PATIENT AT ST. LAWRENCE PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+             In the process of staff restraining this patient and placing him in a tray chair, the patient apparently suffered fractures of the ribs and sternum. The report determined that the facility staff lacked a team approach and consistency in their interactions with the patients, and improper methods were used in restraining this violent patient with the tray chair, an unauthorized restraint, in violation of the Mental Hygiene Law. No responsibility was clearly assigned to one treating physician as the focal point for all patient-related communications and continuity of care responsibility for this patient who was undergoing an acute medical episode.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            March 1981
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D7843094&b=0" target="_blank" class="underline hover:text-blue-600">FAMILY CARE REVISITED: BUFFALO PSYCHIATRIC CENTER FAMILY CARE FOLLOW-UP STUDY</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This Commission report is on its follow-up of the family care program at Buffalo Psychiatric Center (BPC). For nine months during 1979, the Commission conducted a comprehensive review of BPC's family care program in response to both expressions of community concern at Commission hearings and the Office of Mental Health request for independent scrutiny of the program following published reports of various problems affecting the quality of care.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            March 1981
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D8313907&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF ALPHONSE RIO - A PATIENT AT SOUTH BEACH PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The Commission and its Mental Hygiene Medical Review Board investigation into this case found that, while there may have been a necessity to place this patient in a camisole for prolonged periods during his stay on the intensive care unit, there was no documentation by a physician justifying its use. More disturbing was the evident failure of the psychiatric resident to examine the patient prior to authorizing the use of a camisole. This physician had attended to the patient earlier in the day when he was found to be perspiring, hyperventilating and agitated. He knew, or should have known, of the temperature control problems being experienced by the unit. In this case the medical rationale for medication doses exceeding Department of Mental Hygiene Drug Manual guidelines also was not subject to appropriate consultation, consent and documentation; medication orders were not clearly written and conditions for administration were not coordinated with nursing staff.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            March 1981
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Fiscal Invesigation</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D8269052&b=0" target="_blank" class="underline hover:text-blue-600">PROFIT VS. CARE: A REVIEW OF GREENWOOD REHABILITATION CENTER, INC., A PRIVATE SCHOOL FOR THE MENTALLY RETARDED AND RELATED REGULATORY PROCESSES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+             This Commission report is on a 21-month-long investigation into the financial and program practices of the Greenwood Rehabilitation Center, Inc., a private school for the mentally retarded located near Ellenville, New York (with administrative offices in Hicksville, Long Island), and into the regulation of this school by the Office of Mental Retardation and Developmental Disabilities and the former Department of Mental Hygiene. It is the conclusion of this report, with respect to the Greenwood Rehabilitation Center, public fund in the form of Supplemental Security Income (SSI) payments, intended primarily for the care of the residents, have been diverted, through a variety of means, to the personal and corporate enrichment of the owners, their families and associates--to the detriment of the mentally retarded residents the corporation was ostensibly created to serve.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            June 1981
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D8302851&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF FRED ZIMMER - A PATIENT AT KINGSBORO PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Although the patient died as a direct result of being restrained following an assault upon staff of the facility, the Commission report concludes that "there was no evidence of intent to abuse or to inflict harm upon the deceased patient."
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            August 1981
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D8276427&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF FRANK DARBY - A RESIDENT AT CRAIG DEVELOPMENTAL CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The report recommends: that the State Office of Mental Retardation and Developmental Disabilities retain independent consultation to review the quality of medical care at Craig Developmental Center; that developmental center physicians seek hospital consultation promptly on behalf of seriously ill developmental center clients; that the developmental center create a mechanism to assure the transfer of patient information in a more thorough manner, to include client medical care; that mortality reviews include all staff, especially physicians, involved in a client's care and treatment; and, that the conduct of physicians who failed to provide adequate medical attention to the deceased in this case be referred to the Board of Professional Medical Conduct of the Department of Health for review.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            August 1981
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D7939254&b=0" target="_blank" class="underline hover:text-blue-600">THE ENDLESS QUEST: THE AUTISTIC AND THEIR FAMILIES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            September 1981
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D8302622&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF EILEEN ALENZA - A RESIDENT OF BRONX DEVELOPMENTAL CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The Commission concluded the death could have been avoided. Responsibility was shared by the direct care staff on duty the day she died. Staff's failure to monitor her closely, even after her third disappearance within a relatively brief period of time, was one factor responsible for Miss Alenza being able to leave the unit undetected and for her eventual fall from the fifth floor terrace to her death.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            September 1981
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D8302763&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF MARK MONROE - A PATIENT OF ST. LAWRENCE PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This is a report on the Commission and its Mental Hygiene Medical Review Board's investigation into the death of Mark Monroe [a pseudonym], a patient on convalescent care status at St. Lawrence Psychiatric Center, while living at an ARC community residence. The major breakdown in communication, in the absence of proper medication protocol, directly led to the death of this client.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            October 1981
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D8276409&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF JEFFREY ROLAND - A PATIENT AT ROCHESTER PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            In their review, the Mental Hygiene Medical Review Board stated this unfortunate case was representative of "a series of errors back and forth...a problem of communication." The physicians on the Board noted that this case also raises questions about patients who decompensate frequently and postulated that, "treating them from a base in a hospital rather than returning them to the community" might prove to be more beneficial. This case depicts clinical chaos which culminated in a patient's falling through the cracks despite an overabundance of therapists and a variety of services.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            October 1981
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D8276441&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF RICHARD SANDERS - A RESIDENT OF NEWARK DEVELOPMENTAL CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Richard Sanders was a likable resident with a cadre of friends on the staff; his nemesis was a unilateral surgical decision and the swift processing of this decision which found him in surgery before interventions could be initiated. The changing of the preoperative diagnosis by the surgeon less than 24 hours before surgery, without notification to NDC officials, and the surgeon's previous intent to include permission for possible orchiectomy without rationale lends credence to the Commission and Mental Hygiene Medical Review Board's belief that the surgeon's actions in this case were questionable. Further, the intervention and deficient workup by the medical specialist and anesthetist exemplify the poor medical care delivered to this patient. There appeared to be a casual attitude towards unnecessary surgery among some medical practitioners at the facility.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            January 1982
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Abuse & Neglect</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/an investigation of selected incidents at the otsego school.pdf" target="_blank" class="underline hover:text-blue-600">AN INVESTIGATION OF SELECTED INCIDENTS AT THE OTSEGO SCHOOL</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This is a report of the Commission on its investigation into allegations and incidents at the Otsego School (now known as Pathfinder Village), a private school certified by the Office of Mental Retardation and Developmental Disabilities. The investigation by the Commission was undertaken following allegations of abuse and other irregularities in the school's operations by a former employee of the school.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            February 1982
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D8449290&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF JANICE SHERMAN - A PATIENT AT SOUTH BEACH PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This is a report on the Commission and its Mental Hygiene Medical Review Board's investigation into the death of Janice Sherman [a pseudonym], a 19 year old patient at South Beach Psychiatric Center who died in restraint for agitation. She had a history of multiple psychiatric hospitalizations since the age of 15 following a suicide attempt, and unquestionably posed a severe treatment challenge to the staff of the psychiatric center. But, in attempting to cope with the patient's agitated behavior, on numerous occasions both the State Mental Hygiene Laws and the Office of Mental Health regulations governing the use of restraints and seclusion were disregarded.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            March 1982
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D8878886&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF FAYE TRINA - A RESIDENT OF BROOKLYN COMMUNITY RESIDENCE OPERATED BY BROOKLYN SCHOOL FOR SPECIAL CHILDREN</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+             The Commission report illustrates the consequences of permitting untrained and unqualified persons to operate and staff a residential program for the developmentally disabled. Investigation findings disclosed that 9 developmentally disabled residents were left in the sole custody of an untrained 18-year-old relief staff person who was working a 16-hour shift and whose only previous work experience had been with the physically handicapped. All other staff of this residence had received little or no training after being hired. This was compounded by a lack of supervision of such staff and the lack of a formal supervisory on-call system for emergencies.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            March 1982
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D8449271&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF MOLLY REED - A CLIENT OF TWO OLIVER STREET RESIDENCE OPERATED BY MANHATTAN DEVELOPMENTAL CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This is a report on the Commission and its Mental Hygiene Medical Review Board's investigation into the death of a 31 year old client who died after she was admitted to a hospital for treatment of severe burns sustained while at the community residence.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            May 1982
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/a review of selected aspects of patient care- manhattan psychiatric center 1979-81.pdf" target="_blank" class="underline hover:text-blue-600">A REVIEW OF SELECTED ASPECTS OF PATIENT CARE: MANHATTAN PSYCHIATRIC CENTER 1979-81</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This is a report on the Commission's review of conditions at Manhattan Psychiatric Center (MPC). This review began as an outgrowth of the Commission's Mental Hygiene Medical Review Board reviews of patient deaths at MPC in 1979, which raised questions regarding management and treatment practices at the facility. In April of 1980 our findings were shared with the Office of Mental Health and MPC and a plan of correction was developed. During 1981, Commission staff conducted a follow-up on the implementation through a second in-depth review at Manhattan Psychiatric Center.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            May 1982
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D8562759&b=0" target="_blank" class="underline hover:text-blue-600">FINANCING THE DEFICITS OF COMMUNITY MENTAL HEALTH   CENTERS: A CASE OF MISPLACED INCENTIVES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Criticizing the State laws requiring the allocation of State aid to community mental health programs based on their operating deficits as inherently inefficient and replete with incentives for diversion of public funds away from their intended purpose, this Commission report urged the State to abandon its present method of annually distributing almost $100 million in mental health local assistance funds to municipalities.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            May 1982
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D8598363&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF ALEX ZOLLA - A PATIENT AT SOUTH BEACH PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This patient died in restraint. The patient was a 17-year-old obese male with previous psychiatric admissions and a history of resistance to treatment including violent outbursts. However, the patient died within two days of his admission without any prior indication that he was suffering from a life threatening condition. The cause of death was determined to be myocarditis, acute heart failure.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            July 1982
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/a follow-up of implementation of commission recommendations to improve medical care- craig developmental center.pdf" target="_blank" class="underline hover:text-blue-600">A FOLLOW-UP OF IMPLEMENTATION OF COMMISSION RECOMMENDATIONS TO IMPROVE MEDICAL CARE: CRAIG DEVELOPMENTAL CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This review of medical care at Craig Developmental Center was undertaken by the Commission as an outgrowth of our long-standing concern over the quality of medical services available to residents of that facility. Our concern stems from investigations into deaths of residents of Craig Developmental Center conducted by the Commission and the Mental Hygiene Medical Review Board, as required by law.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            July 1982
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D8720514&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF RITA FINN - A CLIENT OF RENSSELAER COUNTY DEPARTMENT OF MENTAL HEALTH UNIFIED SERVICES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Inept police investigation of the unusual circumstances surrounding the 1980 death of a Rensselaer County Department of Mental Health Unified Services patient, and the "casual attitude" of a former Rensselaer County Medical Examiner in reviewing the death, were castigated in this Commission report.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            October 1982
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D8972709&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF JASON PRICE - A PATIENT OF BROOKDALE HOSPITAL MEDICAL CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The Medical Review Board noted that this death was one of more than a dozen undetermined deaths across the state of young agitated persons receiving psychotropic medication.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            November 1982
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D10617271&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF LEONARD GRAY - A PATIENT AT ROCHESTER PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Leonard Gray did not require psychiatric hospitalization on an acute ward of a State hospital, and he was not given proper care and attention. His treatment plan" did not state his needs
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            December 1982
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D10029804&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF JOHN MEGINN - A RESIDENT AT CRAIG DEVELOPMENTAL CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The Board criticized not only the surgeon for his recalcitrant attitude in accepting this case, but also the Craig Developmental Center physician, and stated that as a licensed practicing physician, he had a responsibility to assure that his patient was receiving the appropriate level of care. The Board observed that it is not accepted medical practice that permission be sought from attending physicians in order to utilize a hospital's emergency service, and he abrogated his responsibility as an advocate for the mentally disabled by knowingly allowing a lesser level of care to be afforded this client than he would have tolerated with private patients.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            December 1982
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D10029858&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF MIA MARTINE - A PATIENT AT MID-HUDSON PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The case presented perplexing medical questions, as well as questions about the performance of physicians in managing and documenting the medical care of this patient. The Board also was concerned over the lack of a Mortality Review Committee assessment of the death.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            December 1982
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D9146444&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF PEDRO MONTEZ - A PATIENT AT MANHATTAN PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The report illustrates the inevitable and unfortunate outcome of having inadequately trained staff and trainees assigned to cope with violent patients presenting the most severe treatment problems.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            February 1983
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D12120620&b=0" target="_blank" class="underline hover:text-blue-600">MANAGING RESOURCES IN THE MENTAL HYGIENE SYSTEM: A STUDY OF DEPLOYMENT OF STAFF TO COMMUNITY HOSPITALS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The practices of sending staff to accompany mental disabled patients needing medical treatment at community hospitals are costing the state at least $1.2 million annually, while exacerbating chronic staff shortages and disrupting care and treatment at state mental hygiene facilities, according to this Commission report.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            February 1983
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/a review of private residential facilities for the mentally retarded- their position in the continuum of care for developmentally disabled and mentally retarded individuals.pdf" target="_blank" class="underline hover:text-blue-600">A REVIEW OF PRIVATE RESIDENTIAL FACILITIES FOR THE MENTALLY RETARDED: THEIR POSITION IN THE CONTINUUM OF CARE FOR DEVELOPMENTALLY DISABLED AND MENTALLY RETARDED INDIVIDUALS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Tremendous variations in the environmental quality, caliber of services provided and in specific areas of management at 10 private residential facilities serving significantly-varying mentally retarded populations point to basic internal weaknesses in the regulatory process, according to this Commission report. The Commission's report on a review of 10 of New York State's 18 "private schools" for the mentally retarded, cites some programs as exceptional while highlighting others with significant deficiencies, in the areas of environment, medication administration practices and the assessment and programming of clients. All private schools are certified and regulated by the State's Office of Mental Retardation and Developmental Disabilities (OMRDD).
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            February 1983
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D9359457&b=0" target="_blank" class="underline hover:text-blue-600">MANAGING RESOURCES IN THE MENTAL HYGIENE SYSTEM: THE EVOLUTION OF DISCRETE MENTAL RETARDATION UNITS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            A report on the Discrete Mental Retardation Units (DMRUs), located on the grounds of State psychiatric centers and staffed by developmental centers. Though initially failures at providing appropriate care to persons inappropriately retained at psychiatric centers, over a three-year period DMRUs overcame many of the problems associated with their inauspicious beginnings. While significant progress has been noted at the six downstate locations, the Commission report chronicles three years of monitoring and recommended specific continued action to ensure a uniformly high caliber of care.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            March 1983
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D14400622&b=0" target="_blank" class="underline hover:text-blue-600">MANAGING RESOURCES IN THE MENTAL HYGIENE SYSTEM - THE INCIDENT REPORTING AND REVIEW SYSTEM: MORE PROCESS THAN IS DUE</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Calling for a major overhaul of the Incident Reporting and review System at State psychiatric and developmental centers, this Commission report indicated there are "fundamental flaws" in the system. The study concluded that the Incident Reporting and review System produces approximately 100,000 reports annually, with multiple layers of internal review at the facility level, and of external review by Regional Offices, Central Offices, boards of visitors, Mental Health Information Service and, occasionally, by the Commission.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            April 1983
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D10029727&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF AGNES MORO - A PATIENT AT MANHATTAN PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The investigation by the Commission was undertaken as part of the Commission and Board's ongoing responsibility to review all deaths of mentally disabled persons, and also  a follow up to the Commission's report on medical care practices at Manhattan Psychiatric Center [A Review of Selected Aspects of Patient Care, Manhattan Psychiatric Center 1979-81, May 1982].                                                      
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            August 1983
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D10670413&b=0" target="_blank" class="underline hover:text-blue-600">PSYCHOTROPIC DRUG USAGE: AN R X FOR IMPROVEMENT - A STUDY OF SELECTED NEW YORK STATE PSYCHIATRIC CENTERS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Citing significant deficiencies in controls on psychotropic drugs at six state mental hospitals, this Commission report called for legislative and administrative changes to improve patient care in this report. The Commission characterized the use of psychotherapeutic drugs as "the primary and predominant mode of treatment and management of the symptoms of mental illness in many, if not most, such facilities."
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            October 1983
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D10617125&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF HENRY MCGEE - A RESIDENT OF J. N. ADAMS DEVELOPMENTAL CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This patient had several serious medical problems, was subjected to unnecessary major abdominal surgery at the age of 63 without benefit of a careful pre-operative diagnostic workup and a second surgical consultation. The major deficiency in this case, however, was the failure to effect a more timely transfer of the patient to a hospital when projectile vomiting, indicate of intestinal obstruction, was noted.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            October 1983
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D10617298&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF SIMON PAZ - A PATIENT AT SOUTH BEACH PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The Commission's investigation determined Mr. Paz was a difficult patient; but the Board noted such patients are not unique and manipulation, noncompliance, and lack of insight and judgment regarding their condition are not uncommon features of chronic "revolving door" patients. An increasing number of mentally persons, particularly younger patients, are also alcohol and drug abusers. It is clear that a better effort needs to be made to confront the admittedly difficult challenge such patients present to State psychiatric facilities.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            November 1983
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D12665745&b=0" target="_blank" class="underline hover:text-blue-600">RIGHT AT HOME: A REVIEW OF UPSTATE COMMUNITY RESIDENCES OF THE MENTALLY DISABLED</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This is a report on the Commission's programmatic and fiscal review of 38 community residential programs serving developmentally disabled persons in upstate New York
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            March 1984
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D23144853&b=0" target="_blank" class="underline hover:text-blue-600">MANAGING RESOURCES IN THE MENTAL HYGIENE SYSTEM: PROMOTING EQUITY IN THE FAMILY OF NEW YORK - A REVIEW OF OUTPATIENT SERVICES FOR DEVELOPMENTALLY DISABLED PEOPLE</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            That New York State can substantially increase support services to families of developmentally  disabled children, including those who have "aged out" from the educational system, by better management and more effective targeting of the $126 million currently spent on outpatient services in the mental retardation system, was the overall conclusion of a ten-month long study conducted by the Commission at the direction of the State's Legislature.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            May 1984
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/a review of living conditions in nine new york state psychiatric centers.pdf" target="_blank" class="underline hover:text-blue-600">A REVIEW OF LIVING CONDITIONS IN NINE NEW YORK STATE PSYCHIATRIC CENTERS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This Commission report reviews basic living conditions at nine State psychiatric centers, (Kingsboro, Bronx, South Beach, Manhattan, Buffalo, Rochester, Middletown, Pilgrim, and Binghamton).
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            June 1984
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Fiscal Invesigation</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D12931003&b=0" target="_blank" class="underline hover:text-blue-600">FACILITIES AS FIDUCIARIES: A REVIEW OF THE MANAGEMENT OF RESIDENTS' FUNDS BY NEW YORK STATE MENTAL HYGIENE RESIDENTIAL FACILITIES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Criticizing certain inappropriate investment, management and expenditure practices of State mental hygiene residential facilities in managing over $35 million in personal funds of their residents, this Commission report called for legislative change and administrative action by the State's Office of Mental Health and Office of Mental Retardation and Developmental Disabilities
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            August 1984
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/a follow-up of implementation of commission recommendations to improve patient care- south beach psychiatric center.pdf" target="_blank" class="underline hover:text-blue-600">A FOLLOW-UP OF IMPLEMENTATION OF COMMISSION RECOMMENDATIONS TO IMPROVE PATIENT CARE: SOUTH BEACH PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            South Beach Psychiatric Center made substantial and significant progress in upgrading the caliber of care afforded to patients, according to this follow-up report issued by the Commission. Four previous Commission reports on investigations of circumstances surrounding the unusual deaths of four patients at the psychiatric center had cited deficiencies in such vital areas of patient care as: medication administration practices; restraint and seclusion practices; the availability and working order of emergency medical equipment; and treatment and discharge planning practices.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            September 1984
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D26834612&b=0" target="_blank" class="underline hover:text-blue-600">PITFALLS IN THE COMMUNITY-BASED CARE SYSTEM: A REVIEW OF THE NIAGARA COUNTY CHAPTER NEW YORK STATE ASSOCIATION FOR RETARDED CHILDREN, INC., AND AGENCIES RESPONSIBLE FOR ITS OVERSIGHT</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Widespread mismanagement affecting the health and safety of clients of Niagara County Association for Retarded Children's (NCARC) residences and programs, together with questionable real estate transactions involving several hundred thousands of dollars and a lack of proper monitoring by State agencies were uncovered by the Commission and detailed in this report.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            January 1985
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D13351796&b=0" target="_blank" class="underline hover:text-blue-600">CHRISTOPHER DUGAN - A PATIENT AT SOUTH BEACH PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            There is an urgent need for the State Office of Mental Health to conduct clinical research on the phenomenon of sudden deaths among young and agitated, but otherwise healthy,  psychiatric center patients, according to this Commission report on the death of a patient at South Beach Psychiatric Center (SBPC) during the process of being restrained. The Commission noted concern that eight able-bodied SBPC male staff trained in management of aggressive patients could not manage an out-of-control delusional patient.                                                             
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            March 1985
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Advocacy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D22536238&b=0" target="_blank" class="underline hover:text-blue-600">ENHANCING FAMILY SUPPORT SERVICES FOR THE DEVELOPMENTALLY DISABLED: COMMISSION COMMENTS ON OMRDD ACTIONS PURSUANT TO CHAPTER  50 OF THE LAWS OF 1984</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This is a report of the Commission's review, pursuant to Chapter 50 of the Laws of 1984, of action taken to implement the Legislature's mandate to New York State Office of Mental  Retardation and Developmental Disabilities (OMRDD) to expand provision of State outpatient service delivery to clients living at home through the reallocation of existing outpatient resources. The Commission's review indicates that OMRDD has taken limited action to implement the Legislature's directives.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            August 1985
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/a review of living conditions at harlem valley psychiatric center.pdf" target="_blank" class="underline hover:text-blue-600">A REVIEW OF LIVING CONDITIONS AT HARLEM VALLEY PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This report summarizes the findings of an unannounced review of living conditions for patients at Harlem Valley Psychiatric Center conducted by the NYS Commission on Quality of Care in August, 1985
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            August 1985
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/a review of living conditions at mid hudson psychiatric center.pdf" target="_blank" class="underline hover:text-blue-600">A REVIEW OF LIVING CONDITIONS AT MID HUDSON PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This report summarizes the findings of an unannounced review of living conditions for patients at Mid Hudson Psychiatric Center conducted by the NYS Commission on Quality of Care in August, 1985
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            September 1985
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D13351724&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF FLORENCE AUSTIN - AN OUTPATIENT AT ELMIRA PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This investigation into the death of a mentally ill patient at a community hospital resulted in a recommendation that hospital should have internal processes to ensure careful decision-making when considering whether to forego aggressive efforts to sustain life. Such decisions should include informed consent by the patient, a guardian or the patient's surrogate.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            November 1985
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D13392952&b=0" target="_blank" class="underline hover:text-blue-600">LIVING CONDITIONS IN NEW YORK STATE PSYCHIATRIC CENTERS REVISITED: A REPORT OF FOLLOW-UP VISITS TO NINE PSYCHIATRIC CENTERS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            A follow-up review of living conditions at nine State psychiatric centers, (Kingsboro, Bronx, South Beach, Manhattan, Buffalo, Rochester, Middletown, Pilgrim and Binghamton) conducted in February 1985.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            December 1985
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D13392993&b=0" target="_blank" class="underline hover:text-blue-600">PATIENT ABUSE AND MISTREATMENT IN PSYCHIATRIC CENTERS: A POLICY FOR REPORTING APPARENT CRIMES TO AND RESPONSE BY LAW ENFORCEMENT AGENCIES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            There is significant noncompliance by State psychiatric centers with a requirement of the Mental Hygiene Law that acts of patient abuse or mistreatment, which may constitute crimes, be reported to appropriate law enforcement agencies, according to this Commission report. The Commission undertook a study of the problems associated with reporting possible crimes in psychiatric centers to law enforcement agencies at the request of the Governor's office following a controversy over the lack of timely reporting of an act of sodomy between two male patients at a psychiatric center.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            June 1986
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D15147710&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF HILDA NORTON - A PATIENT AT CENTRAL ISLIP PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            In this case, a 70-year-old patient died in October 1983 of complications six months following surgery to correct a hip fracture. The report chronicles a six-month period of unexplained delays, inadequate pre- and post-operative medical care, and poor follow-up medical and nursing care at both Central Islip and Pilgrim Psychiatric Centers, during which the patient developed many severe and infected bedsores, and suffered a serious weight loss which was untreated. Fragmented care, with no single physician having responsibility for medically monitoring and coordinating the care of the patient, was found to have resulted in both the inattention to her medical needs which led to her progressive deterioration, and in the delay in transferring her back to Central Islip Psychiatric Center until it was too late to save her life.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            July 1986
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D15561565&b=0" target="_blank" class="underline hover:text-blue-600">INVESTIGATION OF THE CARE AND TREATMENT PROVIDED TO JUAN GONZALEZ BY PRESBYTERIAN MEDICAL CENTER EMERGENCY ROOM JULY 3-5, 1986</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            A report of the Commission's investigation into the care and treatment provided by Presbyterian Hospital to Juan Gonzalez between July 3-5, 1986. Mr. Gonzalez was arrested on July 7, 1986 after he allegedly killed two people and wounded several others with a sword, aboard the Staten Island ferry.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            September 1986
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D15147604&b=0" target="_blank" class="underline hover:text-blue-600">THE MULTIPLE DILEMMAS OF THE MULTIPLY DISABLED: AN APPROACH TO IMPROVING SERVICES FOR THE MENTALLY ILL CHEMICAL ABUSER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This Commission policy paper reports that a high percentage of severely mentally ill individuals in New York State also abuse alcohol and/or drugs, but do not receive treatment for these additional problems. The critical lack of inpatient and community-based services for mentally ill persons with these multiple disabilities creates an enormous and costly gap, which results in increased psychiatric hospitalization rates and longer lengths of stay for such patients, substantially contributing to overcrowding of psychiatric admission units involuntary, municipal and State hospitals.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            November 1986
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D15236049&b=0" target="_blank" class="underline hover:text-blue-600">MEDICATION PRACTICES IN NEW YORK STATE DEVELOPMENTAL CENTERS: A POST-WILLOWBROOK REPORT OF PRACTICES AT FIVE DEVELOPMENTAL CENTERS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            After conducting one of the largest studies of the use of psychotropic and anticonvulsant medications in State centers serving the mentally retarded and other developmentally disabled persons, the Commission published this report which cited many improvements  at the centers, while also finding significant deficiencies in monitoring of the use and side effects of such medications.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            November 1986
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Fiscal Invesigation</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/profit making in not-for-profit care- a review of the operations and financial practices of brooklyn psychosocial rehabilitation institute, inc..pdf" target="_blank" class="underline hover:text-blue-600">PROFIT MAKING IN NOT-FOR-PROFIT CARE: A REVIEW OF THE OPERATIONS AND FINANCIAL PRACTICES OF BROOKLYN PSYCHOSOCIAL REHABILITATION INSTITUTE, INC.</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            A Commission investigation found that, despite its not-for-profit status, a Brooklyn mental health program was instrumental in generating hundreds of thousands of dollars in profits for its founder and his family through the diversion of public funds intended for patient care. As a result, the quality of patient care was deficient.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            February 1987
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D16106403&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF JOSEPH KIRSH - A RESIDENT OF CRAIG DEVELOPMENTAL CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Joseph Kirsh - A Resident of Craig Developmental Center
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            February 1987
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D15897829&b=0" target="_blank" class="underline hover:text-blue-600">PATIENT LIVING CONDITIONS 1985-86, NEW YORK STATE PSYCHIATRIC CENTERS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This report found that State psychiatric centers are capable of providing quality living conditions for patients, and many do; but many wards in a number of State institutions fail to provide appropriate custodial care. The most significant finding of the Commission was the wide variability in the quality of day-to-day living conditions observed among the State's 25 adult inpatient centers.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            March 1987
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D17234790&b=0" target="_blank" class="underline hover:text-blue-600">INVESTIGATION INTO CONDITIONS AT CREEDMOOR PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The report concludes that the incidents of escapes and LWOCs, complaints about patient care and patient deaths studied collectively suggest "systemic breakdowns in the provision of appropriate care and treatment to patients, in training and supervision of staff, and in management's monitoring and oversight of the facility's performance despite repeated notification of deficiencies."
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            April 1987
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/lisa cohen - the need for a policy in the developmental disabilities service system for reporting apparent crimes to law enforcement agencies.pdf" target="_blank" class="underline hover:text-blue-600">LISA COHEN - THE NEED FOR A POLICY IN THE DEVELOPMENTAL DISABILITIES SERVICE SYSTEM FOR REPORTING APPARENT CRIMES TO LAW ENFORCEMENT AGENCIES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The Commission's review of an incident of sexual abuse of a young mentally retarded woman which went unreported to police after she told staff at the State-operated facility where she lived in Broome County, despite state law requiring reporting of possible crimes.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            July 1987
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Abuse & Neglect</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/abusing the unprotected- a study of the misuse of aversive behavior modification techniques and weaknesses in the regulatory structure.pdf" target="_blank" class="underline hover:text-blue-600">ABUSING THE UNPROTECTED: A STUDY OF THE MISUSE OF AVERSIVE BEHAVIOR MODIFICATION TECHNIQUES AND WEAKNESSES IN THE REGULATORY STRUCTURE</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This report is on the Commission's investigation of the misuse of aversive behavior modification techniques, resulting in mistreatment of residents at Opengate, Inc., an Intermediate Care Facility for the Mentally Retarded (ICF-MR) in Somers, New York
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            April 1988
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/admission and discharge practices of psychiatric hospitals- a report to the new york state legislature pursuant to chapter 50 of the laws of 1987.pdf" target="_blank" class="underline hover:text-blue-600">ADMISSION AND DISCHARGE PRACTICES OF PSYCHIATRIC HOSPITALS: A REPORT TO THE NEW YORK STATE LEGISLATURE PURSUANT TO CHAPTER 50 OF THE LAWS OF 1987</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This study, mandated by the Legislature, of the admission and discharge practices of inpatient psychiatric facilities demonstrates how New York State spends more money on mental health services than any other state, yet it does not have a system that responds well to the needs of patients and their families.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            May 1988
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D19212661&b=0" target="_blank" class="underline hover:text-blue-600">REVIEW OF LIVING CONDITIONS IN NYS DEVELOPMENTAL CENTERS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Two decades after the deplorable conditions at now-closed Willowbrook Developmental Center were exposed, the Commission found basic living conditions for mentally retarded and developmentally disabled residents of developmental centers across the state greatly improved. Yet, this Commission report on a study of living conditions in State developmental centers states that expectations for the overall quality of life inside such institutions have also risen since Willowbrook and that some of these expectations remain unmet.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            July 1988
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D20435264&b=0" target="_blank" class="underline hover:text-blue-600">OUTPATIENT SUICIDE: A DESCRIPTIVE STUDY OF 172 OUTPATIENT SUICIDES REPORTED BY NEW YORK STATE MENTAL HEALTH PROGRAMS IN 1982</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The Commission report on its study of all 172 outpatient suicides reported for the year 1982 concludes that an increasing rate of reported suicides among psychiatric outpatients in the past several years suggests a need for more extensive, appropriate and effective community services. 
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            July 1988
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D19050594&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF RAMON LUZ - A PATIENT AT ROCKLAND PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This case revealed a failure of psychiatric treatment and of supervision in the clinical care of a voluntary patient at a state psychiatric center who was subjected to polypharmacy despite his objections. The death was due to drug intoxication from multiple drug interactions, and facility supervision of his psychiatrist was faulted for failure to detect and address the physician's lack of attempts to determine the cause of his symptoms or to review and modify his treatment plan.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            May 1989
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D19905319&b=0" target="_blank" class="underline hover:text-blue-600">PREVENTING INPATIENT SUICIDES: AN ANALYSIS OF 84 SUICIDES BY HANGING IN NEW YORK STATE PSYCHIATRIC FACILITIES (1980-1985)</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This study of all suicides by hanging in psychiatric facilities over a 6-year period from 1980-1985 concludes that such suicides are more than three times as likely to occur among psychiatric inpatients than in the general population. In releasing the findings of the study, the Commission urged greater attention to environmental safeguards and special suicide precautions at these facilities.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            May 1989
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D20136460&b=0" target="_blank" class="underline hover:text-blue-600">PSYCHIATRIC EMERGENCY ROOM OVERCROWDING: A CASE STUDY</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This report concludes that the staggering demands placed on New York City's chronically overcrowded and understaffed hospital psychiatric emergency rooms (PERs) and "gridlocked" inpatient units may have been major factors affecting emergency evaluations, and admission and discharge decisions on a patient who later allegedly killed his parents.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            July 1989
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/outpatient mental health services.pdf" target="_blank" class="underline hover:text-blue-600">OUTPATIENT MENTAL HEALTH SERVICES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+             Citing total expenditures of over $800 million annually supporting 950 mental health outpatient programs, this Commission report maintains that existing problems in meeting the community service needs of the State's citizens with serious mental illness have less to do with the need for more money than the need to hold existing programs more accountable for providing them with necessary outpatient mental health services. The Commission report identified numerous weaknesses in accountability for mental health outpatient program performance and their cost-effective expenditure of public funds.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            October 1989
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D20840939&b=0" target="_blank" class="underline hover:text-blue-600">PATIENT LEAVES WITHOUT CONSENT FROM NEW YORK STATE PSYCHIATRIC CENTERS: MYTHS VS. FACTS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Over the period 1981-87 there were an average of 7,242 incidents of patient leaves without consent annually from the State's 25 adult psychiatric centers. Together, these 25 centers served approximately 43,000 patients annually, with approximately 26,000 new admissions each year.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            December 1989
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Fiscal Invesigation</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/profit-making in not-for-profit corporations- a challenge to regulators.pdf" target="_blank" class="underline hover:text-blue-600">PROFIT-MAKING IN NOT-FOR-PROFIT CORPORATIONS: A CHALLENGE TO REGULATORS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+             An investigation of the operators of one of the State's largest psychiatric clinic programs, which improperly billed the Medicaid program for over a million dollars, paid them grossly inflated salaries and perks, engaged in self-dealing with family-owned realty enterprises through which they received hundreds of thousands of dollars, and made large unauthorized donations of funds to other charities.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            February 1990
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D21885105&b=0" target="_blank" class="underline hover:text-blue-600">SUPERVISION AND CARE OF SERIOUSLY MENTALLY ILL CHILDREN: A CASE STUDY</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Citing long-standing problems with the safety, treatment and supervision of residents, this Commission report is of an investigation into a July 4, 1989 homicide of a 15-year-old girl at a residential program serving mentally ill children and youth. The report, regarding the Hawthorne Cedar Knolls (HCK) facility in Westchester County also questioned the effectiveness of existing models of care and treatment for seriously mentally ill children, who require a greater degree of structure and intensive treatment than such programs are designed to provide.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            April 1990
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Abuse & Neglect</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/investigation into allegations of child abuse and neglect at western new york children's psychiatric center- final report.pdf" target="_blank" class="underline hover:text-blue-600">INVESTIGATION INTO ALLEGATIONS OF CHILD ABUSE AND NEGLECT AT WESTERN NEW YORK CHILDREN'S PSYCHIATRIC CENTER: FINAL REPORT</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This follow-up report by the Commission found that the safety, supervision and treatment of children at Western New York Children's Psychiatric Center (WNYCPC) improved significantly. The report closed out investigation of 32 allegations of child abuse and neglect at the Western New York facility but noted, however, that many statewide corrective actions planned by the Office of Mental Health were still in the early stages of implementation.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            April 1990
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Advocacy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D22269999&b=0" target="_blank" class="underline hover:text-blue-600">SPECIAL EDUCATION IN NEW YORK STATE: PARENTS' PERSPECTIVE</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The survey is the largest statewide study of the problems encountered by parents in securing the "free and appropriate" education guaranteed under law and was conducted under a grant from the State Developmental Disabilities Planning Council. Despite the satisfaction reported by parents, the Commission report states that there is much that needs to be done.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            October 1990
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/serving medically frail individuals- five case studies of deaths of residents of the terence cardinal cooke health care center.pdf" target="_blank" class="underline hover:text-blue-600">SERVING MEDICALLY FRAIL INDIVIDUALS: FIVE CASE STUDIES OF DEATHS OF RESIDENTS OF THE TERENCE CARDINAL COOKE HEALTH CARE CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            A Commission review of five deaths revealed serious deficiencies in the care afforded residents of a large New York City facility specializing in care of developmentally disabled, medically-frail individuals. The Commission also noted the uniquely- challenging needs of this population and made recommendations to ensure provision of quality health services.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            December 1990
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D27164738&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF JOSEPH CONWAY - A RESIDENT OF PARKVIEW HOME FOR ADULTS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            A report on the investigation of an apparent suicide by an adult home resident with mental illness following arrest and incarceration for violating a court order to prevent him from harassing home residents. The bright and articulate resident, who exposed deficiencies and advocated for residents' rights but also harassed residents and provoked staff, had become a target of staff mistreatment. Social services and mental health agencies were criticized for failure to intervene to manage his behavior.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            December 1990
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D22974918&b=0" target="_blank" class="underline hover:text-blue-600">OVERSIGHT OF TRANSPORTATION SERVICES FOR PERSONS WITH MENTAL DISABILITIES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The Commission's reviews of several deaths of mentally disabled clients in motor vehicle accidents during 1989 and 1990 revealed flaws in the oversight of transportation services among State agencies responsible for ensuring client safety. This Commission report indicates oversight is compromised by confusion over regulatory standards and omissions in monitoring and sharing of information among transportation carriers, resulting in unnecessary risks for people with mental disabilities who regularly rely upon such transportation to community residential and day programs.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            March 1991
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/inmates with developmental disabilities in nys correctional facilities.pdf" target="_blank" class="underline hover:text-blue-600">INMATES WITH DEVELOPMENTAL DISABILITIES IN NYS CORRECTIONAL FACILITIES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            At the time this report was published, there were over 1,000 inmates in New York State's prison system who are developmentally disabled representing, however, only about 2 percent of the approximately 53,400 inmates in custody. The Commission's study, the largest of its kind, was conducted in response to a request from the State Legislature which had heard widely varying estimates of the incidence of developmental disabilities in the prison population.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            June 1991
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D24042796&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF MICHAEL GOLDSTEIN: AN EMERGENCY ROOM PATIENT DISCHARGED BY GENESEE HOSPITAL</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Thirty-four-year-old Michael Goldstein (pseudonym) allegedly stabbed to death two persons in the residential hotel a few hours after discharge from Genesee Hospital's Emergency Room. During the emergency room assessment, Goldstein reported feeling suicidal and hearing voices telling him to kill people. Psychiatric social workers and an emergency room physician who interviewed Goldstein discussed their observations by telephone with the on call psychiatrist. The report calls for new policies for hospital emergency rooms requiring that an experienced psychiatrist conduct a personal examination of patients likely to cause serious harm to themselves or others. The lack of such personal evaluations by experienced psychiatrists was a common factor in tragic incidents cited by the Commission.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            August 1991
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="https://nysl.ptfs.com/#!/s?a=c&q=*&type=16&criteria=field11%3D25044347&b=0" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF THE JACOB HOME: AN UNCERTIFIED ADULT HOME SERVING RESIDENTS WITH MENTAL ILLNESS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+             This report is on the investigation of an unlicensed adult home where two residents with mental illness died and residents lived under filthy and unsafe conditions, while the Department of Social Services failed repeatedly over several years to take effective enforcement action to protect residents and close the home. One resident died of hypothermia after the home lacked adequate heat and neglect by the home's operator of another resident's medical needs resulted in his death from tuberculosis. Mental health clinic case mangers responsible for residents' needs and services also did not maintain regular contact or respond to resident complaints about their treatment and obvious problems at the home.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            November 1991
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Abuse & Neglect</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/sexuality and developmental disabilities- an investigation of sexual incidents at bernard fineson developmental center.pdf" target="_blank" class="underline hover:text-blue-600">SEXUALITY AND DEVELOPMENTAL DISABILITIES: AN INVESTIGATION OF SEXUAL INCIDENTS AT BERNARD FINESON DEVELOPMENTAL CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This report is on a review of unreported sexual assaults and sexual abuse among mentally retarded adult residents at Bernard Fineson Developmental Center (BFDC) in Queens which prompted the State Office of Mental Retardation and Developmental Disabilities (OMRDD) to issue new guidelines regarding sexual activity among such residents. The investigation by the Commission revealed a breakdown in the facility's supervision of residents and in the handling of serious incidents of sexual assaults and sexual abuse which jeopardized residents' safety.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            February 1992
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Abuse & Neglect</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/child abuse and neglect in nys office of mental health and office of mental retardation and developmental disabilities residential programs.pdf" target="_blank" class="underline hover:text-blue-600">CHILD ABUSE AND NEGLECT IN NYS OFFICE OF MENTAL HEALTH AND OFFICE OF MENTAL RETARDATION AND DEVELOPMENTAL DISABILITIES RESIDENTIAL PROGRAMS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This report of a three-year study called for greater efforts to be made to ensure the protection of children in residential mental hygiene facilities who surface as "repeat" alleged victims in child abuse and neglect reports to the State Central Register. At the same time, the Commission noted that, contrary to the common images of battered children, sadistic abuse or gross neglect of basic needs that the terms "child abuse and neglect" conjure up, in over two-thirds of the reports filed there was no reported physical injury to the child, and in another 25 percent of the cases the injury was treated with first aid. Six percent of the cases involved more serious injury and two cases involved cases involved the death of a child.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            June 1992
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Fiscal Invesigation</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/exploiting the vulnerable- the case of hi-li manor home for the aged and regulation by the nys department of social services.pdf" target="_blank" class="underline hover:text-blue-600">EXPLOITING THE VULNERABLE: THE CASE OF HI-LI MANOR HOME FOR THE AGED AND REGULATION BY THE NYS DEPARTMENT OF SOCIAL SERVICES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            A two-year-long investigation by the Commission uncovered the diversion of millions of dollars in public funds intended for the care of mentally ill residents of a 125-bed adult home in Queens operated by the Hebrew Academy of the Five Towns and Rockaway (HAFTR) and licensed by the New York State Department of Social Services.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            July 1992
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Abuse & Neglect</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/a review of familial abuse allegations of adults with developmental disabilities.pdf" target="_blank" class="underline hover:text-blue-600">A REVIEW OF FAMILIAL ABUSE ALLEGATIONS OF ADULTS WITH DEVELOPMENTAL DISABILITIES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            In this report the Commission called upon local Adult Protective Services offices to play a leadership role in coordinating investigation and protective intervention in response to allegations of abuse or neglect of developmentally disabled adults by family members.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            November 1992
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/the role of psychotropic medication in the treatment of children in nys mental health inpatient settings.pdf" target="_blank" class="underline hover:text-blue-600">THE ROLE OF PSYCHOTROPIC MEDICATION IN THE TREATMENT OF CHILDREN IN NYS MENTAL HEALTH INPATIENT SETTINGS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The Commission found that the majority of parents/guardians neither are adequately informed, nor is their permission sought before their children are administered psychiatric drugs in state-operated children's psychiatric facilities. To protect patient rights and involve families in treatment planning, the Commission report strongly recommends to the State Office of Mental Health (OMH) that parents and guardians be given comprehensive information about psychoactive medication, and their written informed consent be obtained by psychiatric facilities before such medication is given to minor children.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            December 1992
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Newsletter</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/sex abuse cqc newsletter.pdf" target="_blank" class="underline hover:text-blue-600">SEX ABUSE CQC NEWSLETTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Newsletter issue devoted to the prevention and investigation of incidents of sexual abuse of persons with mental disabilities in residential faciltites.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            April 1993
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Annual Report</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/annual report 1992-93.pdf" target="_blank" class="underline hover:text-blue-600">ANNUAL REPORT 1992-93</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Annual Report of the NYS Commission on Quality of Care for the Mentally Disabled
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            April 1993
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/discharge planning practices of general hospitals- did incentive payments improve performance?.pdf" target="_blank" class="underline hover:text-blue-600">DISCHARGE PLANNING PRACTICES OF GENERAL HOSPITALS: DID INCENTIVE PAYMENTS IMPROVE PERFORMANCE?</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This report follows a yearlong study of the discharge practices of 10 hospitals across the State during which it retraced the experiences of a random sample of 100 patients admitted to and discharged from these facilities. The study was requested by the Office of Mental Health and the State Hospital review and Planning Council to evaluate the effectiveness of new inpatient and outpatient reimbursement methodologies that provided incentive payments of approximately $20 million to hospitals and community mental health programs to improve the care of seriously mentally ill patients.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            June 1993
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/life and death at new queen esther home for adults.pdf" target="_blank" class="underline hover:text-blue-600">LIFE AND DEATH AT NEW QUEEN ESTHER HOME FOR ADULTS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The report illustrates the consequences of inappropriately discharging a psychiatric center inpatient to an adult home ill-equipped to provide the appropriate level of supervision and services. At an adult home with inadequate mental health services, a long history of assaults and acting out behavior by residents, pleas by staff for assistance with problem residents and calls to 911, and 12 years of citations for filthy and unsafe living conditions by the Department of Social Services, a known problem resident assaulted and critically injured another woman resident.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            August 1993
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/falling through the safety net- "community living" in adult homes for patients discharged from psychiatric hospitals.pdf" target="_blank" class="underline hover:text-blue-600">FALLING THROUGH THE SAFETY NET: "COMMUNITY LIVING" IN ADULT HOMES FOR PATIENTS DISCHARGED FROM PSYCHIATRIC HOSPITALS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            A report on two deaths involving long-term psychiatric center residents discharged to chronically deficient adult homes prompted a call for psychiatric center staff to comply with laws on discharge planning and follow-up, and for a coordinated "safety net" of residential and support services in the community for patients leaving state psychiatric centers.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            December 1993
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Death Investigations</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/in the matter of joan stalker- a study of the need for vigilant monitoring of family care homes.pdf" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF JOAN STALKER: A STUDY OF THE NEED FOR VIGILANT MONITORING OF FAMILY CARE HOMES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This report chronicles the effects of the absence of proper monitoring by agencies which sponsor and certify individuals who undertake to serve mentally disabled persons. The agencies failed to detect an illegal and overcrowded family care home, as well as inappropriate discharges from state psychiatric centers to a home certified only for individuals with mental retardation, and failed to ensure the safety and well-being of residents at the home, where the deceased died under possibly abusive conditions, following earlier allegations of abuse.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            April 1994
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Annual Report</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/annual report 1993-94.pdf" target="_blank" class="underline hover:text-blue-600">ANNUAL REPORT 1993-94</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Annual Report of the NYS Commission on Quality of Care for the Mentally Disabled
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            June 1994
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Advocacy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/survey of access to new york state courts for individuals with disabilities.pdf" target="_blank" class="underline hover:text-blue-600">SURVEY OF ACCESS TO NEW YORK STATE COURTS FOR INDIVIDUALS WITH DISABILITIES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Four years after passage of the national Americans with Disabilities Act (ADA) prohibiting discrimination in access to public accommodations, only 8 percent of the courtrooms in New York State are fully accessible to people with disabilities. A survey of 275 courts in 40 counties throughout the state by the Commission in conjunction with the State Bar Association Committee on Mental and Physical Disabilities found limited accessibility for persons with visual and hearing impairments, and few accommodations for persons with mental disabilities. The survey report makes recommendations for the court system to fully comply with the requirements of the ADA, which prohibits discrimination on the basis of disability in access to the services, programs and activities of state and local governments.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            June 1994
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Fiscal Invesigation</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/missing accountability- the case of community living alternative, inc.,.pdf" target="_blank" class="underline hover:text-blue-600">MISSING ACCOUNTABILITY: THE CASE OF COMMUNITY LIVING ALTERNATIVE, INC.,</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The Commission's investigation uncovered diversion of approximately one-quarter of the public funds intended for the care of mentally disabled residents at a 10-bed facility in Queens, New York operated by Community Living Alternative (CLA), a not-for-profit corporation licensed by the New York State Office of Mental Retardation and Developmental Disabilities (OMRDD) to operate community residences. As a result of diversion of over one-half million dollars of the revenues during a five-year period by CLA's executive director and his wife who served as president of a phantom board of directors, residents of the only group home it operated lived in poor conditions without active treatment and recreation, and the home was chronically out-of-compliance with OMRDD regulations.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            July 1994
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Fiscal Invesitgation</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/crossing the line from empowerment to neglect- the case of project l.i.f.e.pdf" target="_blank" class="underline hover:text-blue-600">CROSSING THE LINE FROM EMPOWERMENT TO NEGLECT: THE CASE OF PROJECT L.I.F.E</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The Commission's investigation identified serious problems affecting the health and safety of the residents of a supportive community residence program administered by Project L.I.F.E., which operates sixty apartments in Manhattan and the Bronx for seventy- two persons with developmental disabilities.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            September 1994
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/voices from the frontline- patients' perspectives of restraint and seclusion use.pdf" target="_blank" class="underline hover:text-blue-600">VOICES FROM THE FRONTLINE: PATIENTS' PERSPECTIVES OF RESTRAINT AND SECLUSION USE</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            A second report containing the results of the largest survey of former psychiatric patients reported in the literature found that patients who were restrained or secluded during their inpatient stays overwhelmingly report these interventions were used illegally and that they were often poorly treated, abused or injured when restrained or secluded.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            September 1994
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/restraint and seclusion practices in new york state psychiatric facilities,.pdf" target="_blank" class="underline hover:text-blue-600">RESTRAINT AND SECLUSION PRACTICES IN NEW YORK STATE PSYCHIATRIC FACILITIES,</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The use of restraint and seclusion in state psychiatric centers has almost doubled over the past decade (1984-1993) and has been associated with over 100 patients' deaths over that period. The Commission found wide variations in the frequency with which these interventions were used by psychiatric facilities in New York State.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            October 1994
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/adult homes serving residents with mental illness- a study of conditions, services and regulations.pdf" target="_blank" class="underline hover:text-blue-600">ADULT HOMES SERVING RESIDENTS WITH MENTAL ILLNESS: A STUDY OF CONDITIONS, SERVICES AND REGULATIONS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            January 1995
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Fiscal Invesigation</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/safeguarding public funds- a review of spending practices in omrdd rate appeals.pdf" target="_blank" class="underline hover:text-blue-600">SAFEGUARDING PUBLIC FUNDS: A REVIEW OF SPENDING PRACTICES IN OMRDD RATE APPEALS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This report is on the State Office of Mental Retardation and Developmental Disabilities' (OMRDD) system for processing appeals of Medicaid rates for community-based programs, which does not adequately safeguard the expenditure of public funds or control costs. The system, which is intended to ensure that Medicaid rates are sufficient to cover the costs of efficiently-run facilities, granted appeal funding of $22 million in 1991, even though in many cases the money was not spent on the purpose for which it was claimed, or not spent at all. The Commission found that OMRDD failed to prevent the funding of excessive agency administrative costs, restrict spending to the purposes of the appeals, or recoup appeal monies that were not spent
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            April 1995
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Annual Report</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/annual report 1994-95.pdf" target="_blank" class="underline hover:text-blue-600">ANNUAL REPORT 1994-95</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Annual Report of the NYS Commission on Quality of Care for the Mentally Disabled
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            April 1995
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/in the matter of r.h.- a patient at manhattan psychiatric center.pdf" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF R.H.: A PATIENT AT MANHATTAN PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            A report of the Commission's investigation into the care and treatment of R.H., a patient at Manhattan Psychiatric Center who eloped from the facility several days before the homicide of a 63 year old woman he allegedly pushed in front of a subway train.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            July 1995
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/patient safety and services at kingsboro psychiatric center.pdf" target="_blank" class="underline hover:text-blue-600">PATIENT SAFETY AND SERVICES AT KINGSBORO PSYCHIATRIC CENTER</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Investigation of conditions at Kingsboro Psychiatric Center prompted by the homicide of a patient in November 1994, allegedly at the hands of another patient who had escaped and returned, armed with a knife. The Commission's investigation found that the escape and homicide reflected lapses in security, search practices, communications and clinical judgement.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            September 1995
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/governance of restraint and seclusion practices by nys law, regulation, and policy.pdf" target="_blank" class="underline hover:text-blue-600">GOVERNANCE OF RESTRAINT AND SECLUSION PRACTICES BY NYS LAW, REGULATION, AND POLICY</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            The Commission's study of the use of restraint and seclusion in New York State psychiatric facilities, requested by the Legislature, outlines the confusion and gaps resulting from the four sets of inconsistent, contradictory, and duplicative directives on restraint and seclusion contained in state law, state regulations, the policies of the State Office of Mental Health (OMH), and in standards issued by the Joint Commission on Accreditation of Health Care Organizations (JCAHO). It concludes with recommendations to the Legislature and OMH to both streamline and improve the administration of restraint and seclusion in psychiatric facilities.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            December 1995
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/shifting costs to medicaid- the case of financing the omrdd comprehensive case management program.pdf" target="_blank" class="underline hover:text-blue-600">SHIFTING COSTS TO MEDICAID: THE CASE OF FINANCING THE OMRDD COMPREHENSIVE CASE MANAGEMENT PROGRAM</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This report addresses the State Office of Mental Retardation and Developmental Disabilities' (OMRDD) implementation of a program for clients residing in the community which was intended to save the state money by shifting costs to Medicaid, which has resulted instead in millions of dollars of unnecessary costs through improper billings to Medicaid and duplicate payments to service providers.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            April 1996
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Annual Report</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/annual report 1995-96.pdf" target="_blank" class="underline hover:text-blue-600">ANNUAL REPORT 1995-96</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Annual Report of the NYS Commission on Quality of Care for the Mentally Disabled
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            April 1996
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/breaking with the past- how new york's private psychiatric hospitals have managed since managed care.pdf" target="_blank" class="underline hover:text-blue-600">BREAKING WITH THE PAST: HOW NEW YORK'S PRIVATE PSYCHIATRIC HOSPITALS HAVE MANAGED SINCE MANAGED CARE</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This study of private psychiatric hospitals in New York State suggests that implementing successful managed care initiatives at private psychiatric hospitals may offer a cost-effective alternative for children and elderly patients housed in state institutions, while providing potential annual savings of some $14 million in reduced Medicaid payments through reduced lengths of stay, without adverse effect on patient care.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            May 1996
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Fiscal Invesigation</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/why do psychiatric clinics costs vary by 1030%- a review of the efficiency of freestanding clinics.pdf" target="_blank" class="underline hover:text-blue-600">WHY DO PSYCHIATRIC CLINICS COSTS VARY BY 1030%: A REVIEW OF THE EFFICIENCY OF FREESTANDING CLINICS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            A study of outpatient mental health clinics operated by voluntary agencies and counties which found wide variations in the costs of clinic services, and identified the factors contributing to the high cost of the state's outpatient services.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            October 1996
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Fiscal Invesigation</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/profit making in not-for-profit care- part iii the case of queens county neuropsychiatric institute, inc.pdf" target="_blank" class="underline hover:text-blue-600">PROFIT MAKING IN NOT-FOR-PROFIT CARE: PART III THE CASE OF QUEENS COUNTY NEUROPSYCHIATRIC INSTITUTE, INC</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            While conducting a review of freestanding mental health clinics, Commission fiscal staff visited clinics throughout the state to look behind reported cost and productivity figures to gain an understanding of high and low-cost clinic operating practices. With the hope of replicating sound operating practices statewide, the Commission visited QCNI because it appeared to be one of the more efficient clinics licensed by OMH, with 1992 costs per 30-minute individual psychotherapy session at less than one-half of the statewide average, and clinician visits per day almost three times the statewide clinic average. But the Commission's review determined that this seeming efficiency concealed a clinic program rife with serious problems in the quality of its high-volume services, improper billings to Medicaid accounting for almost one-fifth of its Medicaid income, diversion of agency assets to senior executives, failure of the board of directors to exercise its fiduciary responsibilities, and unprofessional conduct by the agency's CPA who helped conceal financial irregularities from the board of directors and OMH.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            April 1997
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate"></span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/could this happen in your program? a collection of case studies provoking reflection, discussion, and action.pdf" target="_blank" class="underline hover:text-blue-600">COULD THIS HAPPEN IN YOUR PROGRAM? A COLLECTION OF CASE STUDIES PROVOKING REFLECTION, DISCUSSION, AND ACTION</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            May 1997
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/incident reporting and management practices at five nys psychiatric centers.pdf" target="_blank" class="underline hover:text-blue-600">INCIDENT REPORTING AND MANAGEMENT PRACTICES AT FIVE NYS PSYCHIATRIC CENTERS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This Commission review of incident management practices at five state psychiatric centers surfaced several decidedly positive findings: episodes of patient elopements were reduced by more than 80% from 1994 to 1996. When incidents jeopardizing patient safety are identified, patients are provided prompt protective measures and/or treatment services; and incident investigations usually were timely and thorough, though some facilities need to improve in these areas and in the use and composition of Incident Review Committees (IRCs).
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            April 1998
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Annual Report</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/annual report 1997-98.pdf" target="_blank" class="underline hover:text-blue-600">ANNUAL REPORT 1997-98</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            Annual Report of the NYS Commission on Quality of Care for the Mentally Disabled
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            August 1998
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Fiscal Investigation</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/diverting public funds- the misguided mission of the indepndent living center of amsterdam, inc..pdf" target="_blank" class="underline hover:text-blue-600">DIVERTING PUBLIC FUNDS: THE MISGUIDED MISSION OF THE INDEPNDENT LIVING CENTER OF AMSTERDAM, INC.</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This investigation uncovered an improperly established and operated retirement community for middle and upper income senior citizens through a closely held not-for-profit corporation, and involved the inappropriate and inefficient use of Medicaid funds which also jeopardize the investments of the elderly residents.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            November 1998
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Quality of Care</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/a review of 32 office of mental health supervised community residences.pdf" target="_blank" class="underline hover:text-blue-600">A REVIEW OF 32 OFFICE OF MENTAL HEALTH SUPERVISED COMMUNITY RESIDENCES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This Commission report concludes that many community residences operated directly or certified by the State Office of Mental Health (OMH) provide safe, nurturing and rehabilitative places to live. Yet, other such residences have significant deficiencies, as in this report of unannounced review of 32 randomly chosen residences statewide.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            January 1999
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Fiscal Investigation</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/exploiting medicaid through a shell not-for-profit corporation- the case of special needs program, inc..pdf" target="_blank" class="underline hover:text-blue-600">EXPLOITING MEDICAID THROUGH A SHELL NOT-FOR-PROFIT CORPORATION: THE CASE OF SPECIAL NEEDS PROGRAM, INC.</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This investigation describes the scheme perpetrated by a married couple to exploit a not-for-profit mental hygiene agency by usurping control of its Board of Directors and improperly using its money for personal gain.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            June 1999
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Fiscal Investigation</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/abandoning its not-for-profit purpose- the case of project independence of queens ny, inc..pdf" target="_blank" class="underline hover:text-blue-600">ABANDONING ITS NOT-FOR-PROFIT PURPOSE: THE CASE OF PROJECT INDEPENDENCE OF QUEENS NY, INC.</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This report documents evidence uncovered by a Commission investigation of wrongful diversion of large amounts of public funds at Project Independence of Queens NY, Inc., and OMRDD-licensed not-for-profit corporation in Jamaica New York, for purposes unrelated to the care and treatment of residents of this program.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            August 1999
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/a report on individuals with developmental disabilities who are possibly homeless.pdf" target="_blank" class="underline hover:text-blue-600">A REPORT ON INDIVIDUALS WITH DEVELOPMENTAL DISABILITIES WHO ARE POSSIBLY HOMELESS</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            November 1999
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/in the matter of david dix.pdf" target="_blank" class="underline hover:text-blue-600">IN THE MATTER OF DAVID DIX</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This is a commission report of its investigation into the quality of mental health services provided to a patient discharged from a psychiatric hospital, following which he allegedly pushed the young woman to her death in front of an oncoming subway train in New York City. The report makes recommendations for improving the care provided to individuals who are seriously and persistently mentally ill and whose histories include behaviors that are dangerous to themselves and others.
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            June 2007
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Policy</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/a review of assisted living programs in "impacted" adult homes.pdf" target="_blank" class="underline hover:text-blue-600">A REVIEW OF ASSISTED LIVING PROGRAMS IN "IMPACTED" ADULT HOMES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This report describes the Commission's review of the programmatic and financial practices of Assisted Living Programs (ALP) operated in 13 adult homes which serve individuals who had received mental hygiene services ("impacted" homes).
+          </td>
+        </tr>
+        
+
+        <tr class="border-t border-t-[#d3dbe4]">
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            August 2025
+          </td>
+          <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+            <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Fiscal Invesigation</span>
+            </button>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+            <a href="./assets/cqc/adult homes serving residents with mental illness- a study of layering of services.pdf" target="_blank" class="underline hover:text-blue-600">ADULT HOMES SERVING RESIDENTS WITH MENTAL ILLNESS: A STUDY OF LAYERING OF SERVICES</a>
+          </td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+            This report described a common condition of multiple practitioners and providers – primary care and specialty physicians, medical and mental health clinics, private psychiatrists, nursing services and home health care aides – located on-site in adult homes and acting independently of each other. The open-ended expansion of services, rendered to a captive adult home population, invites in intensity of care which is expensive, uncoordinated and, in some cases unnecessary
+          </td>
+        </tr>
+        
+                        </tbody>
+                    </table>
+                  </div>
+                  <style>
+                    @container(max-width:120px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-120{display: none;}}
+                    @container(max-width:240px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-240{display: none;}}
+                    @container(max-width:360px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-360{display: none;}}
+                    @container(max-width:480px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-480{display: none;}}
+                  </style>
+                </div>
+            </div>
+        </div>
+        <!-- End Content -->
+      </div>
+    </div>
+
+    <script>
+      // Hamburger menu functionality
+      const hamburgerBtn = document.getElementById('hamburger-btn');
+      const mobileMenu = document.getElementById('main-nav');
+
+      // Toggle menu on hamburger button click
+      hamburgerBtn.addEventListener('click', function(e) {
+        e.stopPropagation(); // Prevent event from bubbling up
+        if (mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.remove('hidden');
+        } else {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(e) {
+        // Check if the menu is visible and the click is outside the menu and hamburger button
+        if (!mobileMenu.classList.contains('hidden') &&
+            !mobileMenu.contains(e.target) &&
+            !hamburgerBtn.contains(e.target)) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+
+      // Prevent menu from closing when clicking inside the menu
+      mobileMenu.addEventListener('click', function(e) {
+        e.stopPropagation();
+      });
+
+      // Set page title from document title
+      document.getElementById('page-title').textContent = document.title;
+    </script>
+  </body>
+</html>
