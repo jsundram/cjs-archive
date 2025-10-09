@@ -43,13 +43,13 @@ def main(data_file, template_file, output_file):
 
             rows.append(f"""
             <tr class="border-t border-t-[#d3dbe4]">
-              <td class="h-[72px] px-4 py-2 w-[200px] text-[#58728d] text-sm font-normal leading-normal">
+              <td class="align-top px-4 py-2 w-[150px] text-[#58728d] text-sm font-normal leading-normal">
                 {date}
               </td>
-              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+              <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
                 <a href="{url}" target="_blank" class="underline hover:text-blue-600">{title.upper()}</a>
               </td>
-              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+              <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 {description}
               </td>
             </tr>
