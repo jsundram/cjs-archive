@@ -25,18 +25,18 @@ def main(filename):
 
             row_html = f"""
             <tr class="border-t border-t-[#d3dbe4]">
-              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+              <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 {date}
               </td>
-              <td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+              <td class="align-top px-4 py-2 w-60 text-sm font-normal leading-normal">
                 <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e9edf1] text-[#101419] text-sm font-medium leading-normal w-full">
                   <span class="truncate">{media}</span>
                 </button>
               </td>
-              <td class="h-[72px] px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
+              <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
                 <a href="{url}" target="_blank" class="underline hover:text-blue-600">{title.upper()}</a>
               </td>
-              <td class="h-[72px] px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
+              <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 {description}
               </td>
             </tr>
