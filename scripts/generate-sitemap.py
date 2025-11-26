@@ -5,6 +5,7 @@ Generate comprehensive sitemap including HTML pages and PDFs
 import os
 from datetime import datetime
 from pathlib import Path
+from html import escape
 
 # Base configuration
 SITE_URL = "https://clarencesundram.org"
@@ -78,7 +79,7 @@ def generate_sitemap():
 
     for url in urls:
         xml_lines.append('  <url>')
-        xml_lines.append(f'    <loc>{url["loc"]}</loc>')
+        xml_lines.append(f'    <loc>{escape(url["loc"])}</loc>')
         xml_lines.append(f'    <lastmod>{url["lastmod"]}</lastmod>')
         xml_lines.append(f'    <changefreq>{url["changefreq"]}</changefreq>')
         xml_lines.append(f'    <priority>{url["priority"]}</priority>')
