@@ -105,11 +105,11 @@ def main(data_file, content_file, output_file):
         template = f.read()
 
     # Populate template
-    html = template.replace('{meta_title}', 'Blackman v. Rowland - Court Monitor Reports')
-    html = html.replace('{meta_description}', 'Court Monitor reports for Blackman v. Rowland by Clarence J. Sundram.')
+    html = template.replace('{meta_title}', 'Blackman v. District of Columbia - Court Monitor Reports')
+    html = html.replace('{meta_description}', 'Court Monitor reports for Blackman v. District of Columbia by Clarence J. Sundram.')
     html = html.replace('{canonical_url}', 'blackman.html')
     html = html.replace('{breadcrumb}', '')
-    html = html.replace('{page_title}', 'Blackman v. Rowland')
+    html = html.replace('{page_title}', 'Blackman v. District of Columbia')
     html = html.replace('{content}', content)
     html = html.replace('{path_prefix}', './')
 
