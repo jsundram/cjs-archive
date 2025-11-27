@@ -1,111 +1,238 @@
-# cjs-archive
+# CJS Archive
 
-##  TODO
-- [x] github repository
-- [x] copy stitchwithgoogle code from https://stitch.withgoogle.com/projects/7798201880332395140?pli=1
-- [x] autogenerate pages with tables for sheets 3 and 4.
-- [x] deploy to github pages and send dad a link
-- [x] point domain to github pages
-- [x] favicon
-- [x] Add the files “timeline””CJS Statement”  and “Final Order of Dismissal”
-    * manually add final order of dismissal to existing otoole.csv
-    * rerun otoole-csv.py
-    * this means looking at the "timeline of case.xlsx" document in the Dropbox Folder
-    * converted to google sheet and edited [here](https://docs.google.com/spreadsheets/d/1HQzrmKri9cTj_yOy0aHg_-KALvczY-R3qNk_T8ibdA8/edit?gid=282188553#gid=282188553)
-    * then exported to csv in data/otoole-timeline.csv
-- [ ] change row alignment so text is at the top, not vertically centered
+A static website archive of professional work by Clarence J. Sundram, documenting his career as:
+- Chairman of the New York State Commission on Quality of Care for the Mentally Disabled
+- Special Advisor to the Governor on the Mentally Disabled
+- Court-appointed Monitor in landmark civil rights cases
 
----
-- [ ] fix tailwind css console error (https://tailwindcss.com/docs/installation/play-cdn)
-- [ ] figure out how to templatize this nicely instead of cut-and-paste monstrosity
-- [ ] copy header from index.html for other files
-- [ ] nicer previews for social (fb/x/iMessage)
-- [ ] Match CQC revision of CQC citations with CQC reports sheet 1.
-- [ ] Make sure mobile styling looks good
-- [ ] Create landing pages for all external links with descriptions for better SEO?
+**Live site**: [clarencesundram.org](https://clarencesundram.org)
 
+## Overview
 
-## Description
-idea is that excel spreadsheets have the content, pull the data into csvs, use python to generate html.
-use about.html as the template file for the repository.
+This is a Python-based static site generator that transforms CSV data exports into a searchable archive with 337+ documents, SEO-optimized landing pages, and client-side search functionality.
 
-##  Resources
-bio: https://docs.google.com/document/d/12xP_eeYnS0Oy7feqvtC87xZ03IaSeLu2/edit
-CQC: https://docs.google.com/spreadsheets/d/1FEB-TLPxuc_buzlWEIJzNzch9QWkWWil/edit?gid=1637828733#gid=1637828733
+## Architecture
 
-## history
-* Email: CQC spreadsheet [https://mail.google.com/mail/u/0/#search/from%3Acjsundram%40gmail.com/FMfcgzQbfVDcqKvnQsHHtZdVLfvChmJF]
-    * sheet 1: reports
-    * sheet 2: merged into publications
-    * sheet 3: media coverage
-    * sheet 4: publications
-    * merged into CQC spreadsheet on google drive (above)
-* Email: bio  -> google drive (see above) [https://mail.google.com/mail/u/0/#search/from%3Acjsundram%40gmail.com/FMfcgzQbfVDczRsXcbQWBpZQGFbcJCQW]
-* headshot (https://mail.google.com/mail/u/0/#search/from%3Acjsundram%40gmail.com/FMfcgzQbfVDczVHgdkQPxLRCFjDFJJfm)
-* [CQC Description Email](https://mail.google.com/mail/u/0/#search/from%3Acjsundram%40gmail.com/FMfcgzQbfVDdJnHVjJlnhZqGXmjCKQzk)
-* Email SAVP.xlsx [https://mail.google.com/mail/u/0/#search/from%3Acjsundram%40gmail.com/FMfcgzQbffbFFXVSWjkCVpGcBxHcsKtC]
-    * Several questions on this
-* Adding "Website SVAP.xlsx" to the site (copy in drobpox folder)
-    * Sheet 1: Special Advisor
-        * Columns should be: Date, Type, Title, Publication, URL.
-        * Move podcast episodes FROM CQC page to be here, so DELETE CQC podcast rows.
-        * Made edits to this file in a .numbers file in my Downloads folder...
-    * Sheets 2 and 3 should be sub-pages of a main "Court Monitor" page
-        * Landing Page (will need a blurb)
-        * Sheet 2: Court Monitor - O'Toole
-            * seems ok except some date formatting issues
-        * Sheet 3: Court Monitor - Blackman
-            * seems ok except some date formatting issues
-            * TODO: clean up some file names?
-* Sheet 1
-    * Edit and export.
-    * 1. create template for SAVP
-        * base on about page (index.html)
-        * modify to have a table like cqc-media.html
-    * 2. python script to read csv and populate template
-    * 3. git commit
-* Court Monitor page
-    * received blurb for landing page via [email](https://mail.google.com/mail/u/0/#inbox/FMfcgzQbgJGVVhZqVtDxnswKfmnNmPML) and copied it to ./data/court-monitor.md
-    * create otoole page
-        * create template
-        * parse csv
-        * git commit
-        * TODO: files need to be moved
-    * create blackman page
-        * create template
-        * parse csv
-        * move files
-        * git commit
-* CQC update (for later)
-Input Files
-The Spreadsheet of CQC Reports has four tabs:
-1. Reports
-2. Publications (these were merged with the publications on sheet 4 for the website)
-3. Media Coverage
-4. Publications (merged with 2, as noted above).
+### Data Flow
 
-The CQC Citation and file matching file has 2 tabs:
-1. missing citation - these were files that you had saved in dropbox which were missing any mention in the CQC spreadsheet above. The first column contains the filename in the dropbox folder CQC Reports. The second column contains the Title which is used in tab 1 of the Spreadsheet of CQC Reports. You've updated the Spreadsheet of CQC reports tab 1 to cite these files.
-2. matches - column 1 contains the Title in tab 1 of the Spreadsheet of CQC reports. column 2 contains one of the following:
-a. a URL to the file
-b. a filename
-c. a notation indicating that there isn't a file -- this means that the report with this Title will not be shown on the website.
+```
+Google Sheets (source of truth)
+    ↓ (manual export)
+CSV files (./data/)
+    ↓ (Python scripts)
+HTML pages + Search Index + Sitemap
+    ↓ (git commit)
+GitHub Pages (clarencesundram.org)
+```
 
-Procedure
-tab 1 ("Reports") of Spreadsheet of CQC Reports will be used to create "cqc-reports.html", a web page containing a table with the following columns: Date, Category, Title, Description.
+### Content Pipeline
 
-Export tab 1 (reports) to csv ("./data/CQC-Reports.csv")
+1. **Source Data**: Google Sheets maintained in Dropbox
+   - [CQC Spreadsheet](https://docs.google.com/spreadsheets/d/1FEB-TLPxuc_buzlWEIJzNzch9QWkWWil/edit?gid=1637828733#gid=1637828733) - Reports, media coverage, publications
+   - Additional spreadsheets for Special Advisor work and Court Monitor cases
 
-Each row in Tab 1 will correspond to a row in that webpage table:
-1. The title will be used to search for a file in the Dropbox "CQC Reports" folder.
-2. If the file is found, it will be copied to the website
-3. If the file is not found, I'll look at "CQC citation and file matching" tab 2, and find a row with the same title.
-4. If I can't find that row, something is broken. That row won't be added.
-5. If I can find that row, it will contain either a URL or a filename, or a notation that there is a file missing.
-6. If the file is missing, that row won't be added
-7. If there is a url or filename, that row will be added and the file will be linked.
+2. **CSV Exports**: Exported to `./data/` directory
+   - `cqc-reports.csv` - CQC reports with file matching logic
+   - `cqc-reports-matching.csv` - Maps titles to PDF files/URLs
+   - `CQC-Coverage.csv` - Media coverage
+   - `CQC-Publications.csv` - Publications
+   - `savp.csv` - Special Advisor publications
+   - `blackman.csv` - Blackman v. Rowland court monitor reports
+   - `otoole.csv` - O'Toole v. Cuomo court monitor reports
+   - `otoole-timeline.csv` - Timeline of O'Toole case events
 
-Output
-will be written to https://clarencesundram.org/cqc-reports.html (currently 404) which is linked from https://clarencesundram.org/cqc.html.
+3. **PDF Assets**: Stored in Dropbox, copied during build
+   - Source: `/Users/jsundram/Dropbox/Archive of CJS/`
+   - Destination: `./docs/assets/[section]/`
+   - **Note**: Update the `assets_origin` paths in Python scripts for your local system
 
+4. **Generated Output**: Static HTML in `./docs/` (GitHub Pages root)
+   - 10 main pages (index, section pages, 404)
+   - 337+ document landing pages
+   - Search index (`search-index.json`)
+   - XML sitemap (455+ URLs)
 
+### Template System
+
+The site uses a DRY template composition approach:
+
+- **Base Template** (`base-template.html`): Master template with navigation, search bar, fonts, and scripts
+- **Content Templates** (`*-content.html`): Page-specific HTML with `{rows}` placeholders
+- **Python Scripts**: Combine content + base template, populate with CSV data
+
+All pages include:
+- Tailwind CSS (CDN)
+- MiniSearch for client-side search
+- Responsive design
+- SEO metadata
+
+## Setup
+
+### Prerequisites
+
+- Python 3.7+
+- Access to Dropbox folder with PDF assets (for building from source)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/jsundram/cjs-archive.git
+cd cjs-archive
+
+# Install dependencies
+cd scripts
+pip install -r requirements.txt
+```
+
+## Build Process
+
+### Full Site Build
+
+```bash
+cd scripts
+python3 build-site.py
+```
+
+This orchestrates the complete build:
+
+1. **Static Pages** - Generates index, CQC overview, Court Monitor overview, 404
+2. **CSV-to-Table Pages** - Processes 7 CSV files to create table-based pages
+3. **Document Landing Pages** - Creates 337+ individual document pages
+4. **Search Index** - Builds searchable JSON index
+5. **Sitemap** - Generates XML sitemap with all URLs
+
+### Individual Script Execution
+
+For development or debugging, run individual generators:
+
+```bash
+# Generate specific pages
+python3 cqc-reports.py
+python3 savp-csv-to-table.py
+python3 blackman-csv-to-table.py
+python3 otoole-csv-to-table.py
+
+# Generate static pages
+python3 generate-static-pages.py
+
+# Generate document landing pages
+python3 generate-document-pages.py
+
+# Build search index
+python3 build-search-index.py
+
+# Generate sitemap
+python3 generate-sitemap.py
+```
+
+### Build Output
+
+```
+docs/
+├── index.html                    # Biography/about page
+├── cqc.html                      # CQC overview
+├── cqc-reports.html             # CQC reports table
+├── cqc-media.html               # CQC media coverage table
+├── cqc-publications.html        # CQC publications table
+├── special-advisor.html         # Special Advisor publications
+├── court-monitor.html           # Court Monitor overview
+├── otoole.html                  # O'Toole case reports
+├── otoole-timeline.html         # O'Toole timeline
+├── blackman.html                # Blackman case reports
+├── 404.html                     # Error page
+├── sitemap.xml                  # XML sitemap
+├── search-index.json            # Search index
+├── documents/                   # 337+ document landing pages
+│   ├── cqc-reports-*.html
+│   ├── savp-*.html
+│   ├── blackman-*.html
+│   └── otoole-*.html
+└── assets/                      # PDF files
+    ├── cqc/
+    ├── savp/
+    ├── blackman/
+    └── otoole/
+```
+
+## Key Scripts
+
+| Script | Purpose |
+|--------|---------|
+| `build-site.py` | Master build orchestrator |
+| `generate-static-pages.py` | Generates static pages from content templates |
+| `cqc-reports.py` | Generates CQC reports page with file matching logic |
+| `cqc-media-csv-to-table.py` | Generates CQC media coverage page |
+| `cqc-publications-csv-to-table.py` | Generates CQC publications page |
+| `savp-csv-to-table.py` | Generates Special Advisor page |
+| `blackman-csv-to-table.py` | Generates Blackman v. Rowland page |
+| `otoole-csv-to-table.py` | Generates O'Toole v. Cuomo page |
+| `otoole-timeline-csv-to-table.py` | Generates O'Toole timeline page |
+| `generate-document-pages.py` | Generates individual document landing pages |
+| `build-search-index.py` | Creates MiniSearch index |
+| `generate-sitemap.py` | Generates XML sitemap |
+| `document_schema.py` | Document data model and slug generation |
+| `check-pdf-text.py` | Utility to verify PDFs have searchable text |
+
+## Updating Content
+
+1. **Edit Google Sheets** - Update source data in Google Sheets
+2. **Export to CSV** - Download sheets as CSV to `./data/` directory
+3. **Clean CSV** - Fix smart quotes, date formats (see CLAUDE.md)
+4. **Run Build** - Execute `python3 build-site.py`
+5. **Review Changes** - Check generated HTML in `./docs/`
+6. **Commit & Push** - Git commit and push to deploy via GitHub Pages
+
+## Deployment
+
+The site is deployed via GitHub Pages:
+- **Source**: `docs/` folder in `main` branch
+- **Domain**: clarencesundram.org (configured via CNAME)
+- **Automatic**: Pushes to `main` deploy automatically
+
+## Features
+
+- **Search**: Client-side full-text search across all 337+ documents
+- **SEO**: Individual landing pages for each document with metadata
+- **Sitemap**: Comprehensive XML sitemap for search engines
+- **Responsive**: Mobile-friendly design using Tailwind CSS
+- **Accessible**: Semantic HTML with proper heading structure
+- **Fast**: Static HTML with no server-side processing
+
+## File Matching Logic (CQC Reports)
+
+CQC reports use a two-stage file matching process:
+
+1. **Explicit Matching**: Look up title in `cqc-reports-matching.csv`
+   - Contains manual mappings of titles → filenames or URLs
+   - Handles special cases and external links
+
+2. **Automatic Matching**: Case-insensitive filename search in Dropbox
+   - Normalizes filenames (lowercase, replace `:` with `-`)
+   - Searches for `[title].pdf` in Dropbox folder
+
+3. **Fallback**: Skip entries without matches (prints warning)
+
+## Document Schema
+
+Each document in the registry includes:
+- `title` - Document title
+- `section` - Category (cqc-reports, savp, blackman, otoole, etc.)
+- `url` - Link to PDF or external resource
+- `date` - Publication/event date
+- `description` - Document description
+- `category` - Document type
+- `slug` - URL-safe identifier (auto-generated, unique per section)
+- `document_url` - Path to generated landing page
+- `file_path` - Local path to PDF asset (if applicable)
+- `source` - Source publication (for media/publications)
+
+Registry saved to `data/document-registry.json` during build.
+
+## Contributing
+
+For detailed development guidance, see [CLAUDE.md](./CLAUDE.md).
+
+## License
+
+Content © Clarence J. Sundram. All rights reserved.
