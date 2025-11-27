@@ -27,7 +27,7 @@ SECTION_CONFIG = {
         'page': 'special-advisor.html'
     },
     'blackman': {
-        'name': 'Blackman v. Rowland',
+        'name': 'Blackman v. District of Columbia',
         'page': 'blackman.html'
     },
     'otoole': {
