@@ -28,7 +28,7 @@
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
-        <header class="relative flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e9edf1] px-10 py-3">
+        <header class="relative flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e9edf1] px-4 md:px-10 py-3">
           <div class="flex items-center gap-4 text-[#101419]">
             <!-- Hamburger Button -->
             <button
@@ -49,7 +49,7 @@
             <!-- Navigation Menu -->
             <nav id="main-nav" class="hidden flex flex-col gap-4
                                       absolute top-full left-0 right-0
-                                      bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
+                                      bg-white border-b border-solid border-b-[#e9edf1] px-4 md:px-10 py-4">
               <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="../index.html">About</a>
               <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="../cqc.html">Commission on Quality of Care</a>
               <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="#">Special Master</a>
@@ -82,15 +82,15 @@
           </div>
         </div>
 
-        <div class="bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
+        <div class="bg-white border-b border-solid border-b-[#e9edf1] px-4 md:px-10 py-4">
           <h1 id="page-title" class="text-[#101419] text-xl font-bold leading-tight tracking-[-0.015em]"></h1>
         </div>
 
         
-        <div class="px-40 flex flex-1 justify-center py-5">
+        <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div class="flex flex-col gap-6 px-4 py-6">
-              <h1 class="text-[#101419] text-4xl font-bold leading-tight tracking-[-0.015em]">Outpatient Mental Health Services</h1>
+              <h1 class="text-[#101419] text-2xl md:text-3xl lg:text-4xl font-bold leading-tight tracking-[-0.015em]">Outpatient Mental Health Services</h1>
               <div class="flex flex-wrap gap-4">
                 
                 <div class="flex items-center gap-2">
@@ -110,13 +110,13 @@
                 <p class="text-[#58728d] text-sm font-medium">Description</p>
                 <p class="text-[#101419] text-base leading-relaxed"> Citing total expenditures of over $800 million annually supporting 950 mental health outpatient programs, this Commission report maintains that existing problems in meeting the community service needs of the State's citizens with serious mental illness have less to do with the need for more money than the need to hold existing programs more accountable for providing them with necessary outpatient mental health services. The Commission report identified numerous weaknesses in accountability for mental health outpatient program performance and their cost-effective expenditure of public funds.</p>
               </div>
-              <div class="flex gap-3 flex-wrap">
+              <div class="flex flex-col sm:flex-row gap-3">
                 <a href="./assets/cqc/outpatient mental health services.pdf" target="_blank"
-                   class="flex min-w-[200px] max-w-[400px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#1971c2] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#1864ab] transition-colors">
+                   class="flex w-full sm:w-auto sm:min-w-[200px] sm:max-w-[400px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#1971c2] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#1864ab] transition-colors">
                   <span class="truncate">View Document</span>
                 </a>
                 <a href="../cqc-reports.html"
-                   class="flex min-w-[200px] max-w-[400px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#e9edf1] text-[#101419] text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#d3dbe4] transition-colors">
+                   class="flex w-full sm:w-auto sm:min-w-[200px] sm:max-w-[400px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#e9edf1] text-[#101419] text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#d3dbe4] transition-colors">
                   <span class="truncate">Back to CQC Reports</span>
                 </a>
               </div>

@@ -103,21 +103,21 @@ def generate_document_page(doc, template):
 
     # Build content
     content = f'''
-        <div class="px-40 flex flex-1 justify-center py-5">
+        <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div class="flex flex-col gap-6 px-4 py-6">
-              <h1 class="text-[#101419] text-4xl font-bold leading-tight tracking-[-0.015em]">{doc['title']}</h1>
+              <h1 class="text-[#101419] text-2xl md:text-3xl lg:text-4xl font-bold leading-tight tracking-[-0.015em]">{doc['title']}</h1>
               <div class="flex flex-wrap gap-4">
                 {metadata_html}
               </div>
               {description_html}
-              <div class="flex gap-3 flex-wrap">
+              <div class="flex flex-col sm:flex-row gap-3">
                 <a href="{doc['url']}" target="_blank"
-                   class="flex min-w-[200px] max-w-[400px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#1971c2] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#1864ab] transition-colors">
+                   class="flex w-full sm:w-auto sm:min-w-[200px] sm:max-w-[400px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#1971c2] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#1864ab] transition-colors">
                   <span class="truncate">View Document</span>
                 </a>
                 <a href="../{section_info['page']}"
-                   class="flex min-w-[200px] max-w-[400px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#e9edf1] text-[#101419] text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#d3dbe4] transition-colors">
+                   class="flex w-full sm:w-auto sm:min-w-[200px] sm:max-w-[400px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#e9edf1] text-[#101419] text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#d3dbe4] transition-colors">
                   <span class="truncate">Back to {section_info['name']}</span>
                 </a>
               </div>
