@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Generate comprehensive sitemap including HTML pages and PDFs
+Generate comprehensive sitemap including HTML pages, document landing pages, and PDFs
 """
 import os
+import json
 from datetime import datetime
 from pathlib import Path
 from html import escape
@@ -10,9 +11,10 @@ from html import escape
 # Base configuration
 SITE_URL = "https://clarencesundram.org"
 DOCS_DIR = Path(__file__).parent.parent / "docs"
+DATA_DIR = Path(__file__).parent.parent / "data"
 OUTPUT_FILE = DOCS_DIR / "sitemap.xml"
 
-# HTML pages with their priorities
+# Main HTML pages with their priorities
 HTML_PAGES = [
     ("index.html", 1.0, "monthly"),
     ("cqc.html", 0.9, "monthly"),
@@ -34,12 +36,12 @@ def get_file_date(filepath):
 
 
 def generate_sitemap():
-    """Generate complete sitemap with HTML and PDF files"""
+    """Generate complete sitemap with HTML pages, document landing pages, and PDFs"""
 
     urls = []
 
-    # Add HTML pages
-    print("Adding HTML pages...")
+    # Add main HTML pages
+    print("Adding main HTML pages...")
     for page, priority, changefreq in HTML_PAGES:
         filepath = DOCS_DIR / page
         if filepath.exists():
@@ -51,6 +53,31 @@ def generate_sitemap():
                 'changefreq': changefreq
             })
             print(f"  ✓ {page}")
+
+    # Add document landing pages from registry
+    print("\nAdding document landing pages...")
+    registry_path = DATA_DIR / "document-registry.json"
+    doc_count = 0
+    if registry_path.exists():
+        with open(registry_path, 'r', encoding='utf-8') as f:
+            documents = json.load(f)
+
+        for doc in documents:
+            doc_url = doc['document_url']
+            filepath = DOCS_DIR / doc_url
+            if filepath.exists():
+                lastmod = get_file_date(filepath)
+                urls.append({
+                    'loc': f"{SITE_URL}/{doc_url}",
+                    'lastmod': lastmod,
+                    'priority': 0.7,
+                    'changefreq': 'monthly'
+                })
+                doc_count += 1
+
+        print(f"  ✓ Added {doc_count} document pages")
+    else:
+        print(f"  ⚠ Document registry not found at {registry_path}")
 
     # Add PDFs
     print("\nAdding PDF files...")
@@ -92,7 +119,10 @@ def generate_sitemap():
         f.write('\n'.join(xml_lines))
 
     print(f"\n✅ Sitemap generated: {OUTPUT_FILE}")
-    print(f"   Total URLs: {len(urls)} ({len(HTML_PAGES)} HTML + {pdf_count} PDFs)")
+    print(f"   Total URLs: {len(urls)}")
+    print(f"   - Main pages: {len(HTML_PAGES)}")
+    print(f"   - Document pages: {doc_count}")
+    print(f"   - PDFs: {pdf_count}")
 
 
 if __name__ == "__main__":

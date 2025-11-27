@@ -10,8 +10,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blackman v. District of Columbia</title>
-    <meta name="description" content="Court monitoring reports and documents from the Blackman-Jones v. Cuomo class action lawsuit regarding supported housing for persons with mental illness in NYC adult homes.">
+    <title>Blackman v. Rowland - Court Monitor Reports</title>
+    <meta name="description" content="Court Monitor reports for Blackman v. Rowland by Clarence J. Sundram.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://clarencesundram.org/blackman.html">
 
@@ -21,14 +21,16 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.8/dist/index.global.min.js"></script>
-    <!-- this gives a warning about not using the browser version, but ... -->
+
+    <!-- MiniSearch for client-side search -->
+    <script src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"></script>
   </head>
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
         <header class="relative flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e9edf1] px-10 py-3">
           <div class="flex items-center gap-4 text-[#101419]">
-            <!-- Hamburger Button (moved to left side) -->
+            <!-- Hamburger Button -->
             <button
               id="hamburger-btn"
               class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e9edf1] text-[#101419] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
@@ -44,7 +46,7 @@
             <h2 id="site-title" class="text-[#101419] text-lg font-bold leading-tight tracking-[-0.015em]">Archive</h2>
           </div>
           <div class="flex flex-1 justify-end gap-8">
-            <!-- Navigation Menu (always mobile-style dropdown) -->
+            <!-- Navigation Menu -->
             <nav id="main-nav" class="hidden flex flex-col gap-4
                                       absolute top-full left-0 right-0
                                       bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
@@ -54,6 +56,16 @@
               <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./court-monitor.html">Court Monitor</a>
               <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./special-advisor.html">Special Advisor</a>
             </nav>
+            <!-- Search Button -->
+            <button
+              id="search-btn"
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e9edf1] text-[#101419] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              title="Search documents"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+              </svg>
+            </button>
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
               style='background-image: url("./assets/headshot.jpg");'
@@ -61,42 +73,35 @@
           </div>
         </header>
 
+        
+
         <div class="bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
-          <h1 id="page-title" class="text-[#101419] text-xl font-bold leading-tight tracking-[-0.015em]"></h1>
+          <h1 id="page-title" class="text-[#101419] text-xl font-bold leading-tight tracking-[-0.015em]">Blackman v. Rowland</h1>
         </div>
 
-        <!-- Content -->
         <div class="px-40 flex flex-1 justify-center py-5">
-            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-
-                <div>
-                    <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
-                    <b>Blackman v. DISTRICT OF COLUMBIA & JONES v. District of Columbia</b>
-                    </p>
-                    <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
-                    Clarence Sundram was appointed as a member of the Evaluation Team and later as the Court Monitor in a special education lawsuit in Washington DC. <a href="https://www.bazelon.org/blackman-v-district-of-columbia/" class="underline hover:text-blue-600">Blackman v. District of Columbia</a> is a class action originally filed in 1997 to challenge the city public school system's failure to comply with requirements of the Individuals with Disabilities Education Act (IDEA), a federal law that guarantees children with disabilities the right to a free and appropriate public education. The case was consolidated with another, Jones v. District of Columbia, and a 2006 consent decree set specific goals for the city to address the needs of hundreds of students with mental or physical disabilities who were awaiting services. The city agreed to eliminate a backlog of more than 1,000 decisions by hearing officers ordering the school system to provide services to which the students are entitled under the IDEA. However, the school system has repeatedly missed deadlines to comply with the decree. In December 2007, an agreement resulting from the dispute-resolution process mandated by the decree committed the city to more than $6 million worth of programs. Included are additional mental health services, more nationally recognized models for helping students with disabilities in the classroom and more support for parents.
-                    </p>
-                </div>
-
-                <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#101419] tracking-light text-[32px] font-bold leading-tight min-w-72">Court Reports</p></div>
-                <div class="px-4 py-3 @container">
-                  <div class="flex overflow-hidden rounded-xl border border-[#d3dbe4] bg-gray-50">
-                    <table class="flex-1">
-                        <thead>
-                            <tr class="bg-gray-50">
-                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-120 px-4 py-3 text-left text-[#101419] w-[150px] text-sm font-medium leading-normal">Date</th>
-                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-360 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Title</th>
-                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-480 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
+    <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+        <div class="flex flex-wrap justify-between gap-3 p-4">
+            <p class="text-[#101419] tracking-light text-[32px] font-bold leading-tight min-w-72">Court Monitor Reports</p>
+        </div>
+        <div class="px-4 py-3 @container">
+          <div class="flex overflow-hidden rounded-xl border border-[#d3dbe4] bg-gray-50">
+            <table class="flex-1">
+                <thead>
+                    <tr class="bg-gray-50">
+                        <th class="table-column-120 px-4 py-3 text-left text-[#101419] w-[150px] text-sm font-medium leading-normal">Date</th>
+                        <th class="table-column-360 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Title</th>
+                        <th class="table-column-480 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
             <tr class="border-t border-t-[#d3dbe4]">
               <td class="align-top px-4 py-2 w-[150px] text-[#58728d] text-sm font-normal leading-normal">
                 2008-10-01
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/blackman/Evaluation Team Report for 2007-08.pdf" target="_blank" class="underline hover:text-blue-600">EVALUATION TEAM REPORT FOR 2007-08</a>
+                <a href="./documents/blackman-evaluation-team-report-for-2007-08.html" class="underline hover:text-blue-600">EVALUATION TEAM REPORT FOR 2007-08</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 First report of the Evaluation Team of the implementation efforts of the DC Public Schools and the Office of State Superintendent of Education
@@ -109,7 +114,7 @@
                 2009-09-25
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/blackman/Evaluation Team Report for 2008-09.pdf" target="_blank" class="underline hover:text-blue-600">EVALUATION TEAM REPORT FOR 2008-09</a>
+                <a href="./documents/blackman-evaluation-team-report-for-2008-09.html" class="underline hover:text-blue-600">EVALUATION TEAM REPORT FOR 2008-09</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Reporting on improved level of performance although falling short of the compliance levels required, and describing systemic problems with data systems
@@ -122,7 +127,7 @@
                 2009-09-25
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/blackman/Executive Summary for 2008-09 Report.pdf" target="_blank" class="underline hover:text-blue-600">EXECUTIVE SUMMARY FOR 2008-09 REPORT</a>
+                <a href="./documents/blackman-executive-summary-for-2008-09-report.html" class="underline hover:text-blue-600">EXECUTIVE SUMMARY FOR 2008-09 REPORT</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Reporting on improved level of performance although falling short of the compliance levels required, and describing systemic problems with data systems
@@ -135,7 +140,7 @@
                 2010-12-10
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/blackman/Evaluation Team Report for 2009-10.pdf" target="_blank" class="underline hover:text-blue-600">EVALUATION TEAM REPORT FOR 2009-10</a>
+                <a href="./documents/blackman-evaluation-team-report-for-2009-10.html" class="underline hover:text-blue-600">EVALUATION TEAM REPORT FOR 2009-10</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Reporting on the misclassification of cases as timely when they were not in order to report higher levels of compliance than the data would support.
@@ -148,7 +153,7 @@
                 2011-12-23
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/blackman/Court Monitor's Year End Report for 2010-11.pdf" target="_blank" class="underline hover:text-blue-600">COURT MONITOR'S YEAR END REPORT FOR 2010-11</a>
+                <a href="./documents/blackman-court-monitors-year-end-report-for-2010-11.html" class="underline hover:text-blue-600">COURT MONITOR'S YEAR END REPORT FOR 2010-11</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Report describing implementation practices which continue to report cases as timely which were not due to administrative practices which mischaracterized implementation effort. Also report on attorney fee payment practices, data accuracy and related services capacity.
@@ -161,7 +166,7 @@
                 2012-12-10
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/blackman/Court Monitor's Year End Report for 2011-12.pdf" target="_blank" class="underline hover:text-blue-600">COURT MONITOR'S YEAR END REPORT FOR 2011-12</a>
+                <a href="./documents/blackman-court-monitors-year-end-report-for-2011-12.html" class="underline hover:text-blue-600">COURT MONITOR'S YEAR END REPORT FOR 2011-12</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Report describing implementation practices which continue to report cases as timely which were not due to administrative practices which mischaracterized implementation effort. Also report on attorney fee payment practices, data accuracy and related services capacity.
@@ -174,7 +179,7 @@
                 2014-02-03
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/blackman/Court Monitor's Year End Report for 2012-13.pdf" target="_blank" class="underline hover:text-blue-600">COURT MONITOR'S YEAR END REPORT FOR 2012-13</a>
+                <a href="./documents/blackman-court-monitors-year-end-report-for-2012-13.html" class="underline hover:text-blue-600">COURT MONITOR'S YEAR END REPORT FOR 2012-13</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Finding that the  Defendants  are close to achieving compliance with the metrics in the Jones case, but despite their assertions, have not. The report also found significant improvements in the special education practices and a decline in the number of due process complaints.
@@ -187,7 +192,7 @@
                 2014-11-17
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/blackman/Court Monitor's Year End Report for 2013-14.pdf" target="_blank" class="underline hover:text-blue-600">COURT MONITOR'S YEAR END REPORT FOR 2013-14</a>
+                <a href="./documents/blackman-court-monitors-year-end-report-for-2013-14.html" class="underline hover:text-blue-600">COURT MONITOR'S YEAR END REPORT FOR 2013-14</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Reviewing evidence of compliance with the exit criteria. And reviewing samples of case where the Monitor was authorized to review "provision waivers" by students' attorneys which exempted the Defendants from implementing requirements of relief won as a result of due process complaints.
@@ -200,7 +205,7 @@
                 2013-04-23
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/blackman/Court Monitor's Report on DCPS Attorney Fee payment practices.pdf" target="_blank" class="underline hover:text-blue-600">COURT MONITOR'S REPORT ON DCPS ATTORNEY FEE PAYMENT PRACTICES</a>
+                <a href="./documents/blackman-court-monitors-report-on-dcps-attorney-fee-payment-practices.html" class="underline hover:text-blue-600">COURT MONITOR'S REPORT ON DCPS ATTORNEY FEE PAYMENT PRACTICES</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Examining the working of the administrative process created by DCPS for the payment of attorney fees as an alternative to application to a court. The report found that attorneys use this process for its speed and simplicity but that it lacked transparency in the process and consistent application of rules.
@@ -213,26 +218,44 @@
                 2014-12-16
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/blackman/Statement of Clarence J Sundram to the Court.pdf" target="_blank" class="underline hover:text-blue-600">STATEMENT OF CLARENCE J SUNDRAM TO THE COURT</a>
+                <a href="./documents/blackman-statement-of-clarence-j-sundram-to-the-court.html" class="underline hover:text-blue-600">STATEMENT OF CLARENCE J SUNDRAM TO THE COURT</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Reporting that the Defendants had achieved compliance with the metrics in the court orders in both cases and commending them for their efforts.
               </td>
             </tr>
             
-                        </tbody>
-                    </table>
-                  </div>
-                  <style>
-                    @container(max-width:120px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-120{display: none;}}
-                    @container(max-width:240px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-240{display: none;}}
-                    @container(max-width:360px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-360{display: none;}}
-                    @container(max-width:480px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-480{display: none;}}
-                  </style>
-                </div>
-            </div>
+                </tbody>
+            </table>
+          </div>
         </div>
-        <!-- End Content -->
+    </div>
+</div>
+
+
+      </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center pt-20">
+      <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl mx-4">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold text-[#101419]">Search Documents</h2>
+            <button id="close-search" class="text-[#58728d] hover:text-[#101419]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+              </svg>
+            </button>
+          </div>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search by title, description, or category..."
+            class="w-full px-4 py-3 border border-[#d3dbe4] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1971c2] text-[#101419]"
+          />
+          <div id="search-results" class="mt-4 max-h-96 overflow-y-auto"></div>
+        </div>
       </div>
     </div>
 
@@ -241,9 +264,8 @@
       const hamburgerBtn = document.getElementById('hamburger-btn');
       const mobileMenu = document.getElementById('main-nav');
 
-      // Toggle menu on hamburger button click
       hamburgerBtn.addEventListener('click', function(e) {
-        e.stopPropagation(); // Prevent event from bubbling up
+        e.stopPropagation();
         if (mobileMenu.classList.contains('hidden')) {
           mobileMenu.classList.remove('hidden');
         } else {
@@ -251,9 +273,7 @@
         }
       });
 
-      // Close menu when clicking outside
       document.addEventListener('click', function(e) {
-        // Check if the menu is visible and the click is outside the menu and hamburger button
         if (!mobileMenu.classList.contains('hidden') &&
             !mobileMenu.contains(e.target) &&
             !hamburgerBtn.contains(e.target)) {
@@ -261,13 +281,109 @@
         }
       });
 
-      // Prevent menu from closing when clicking inside the menu
       mobileMenu.addEventListener('click', function(e) {
         e.stopPropagation();
       });
 
       // Set page title from document title
-      document.getElementById('page-title').textContent = document.title;
+      if (document.getElementById('page-title') && !document.getElementById('page-title').textContent) {
+        document.getElementById('page-title').textContent = document.title;
+      }
+
+      // Search functionality
+      let miniSearch = null;
+      let searchIndexLoaded = false;
+
+      // Load search index
+      fetch('./search-index.json')
+        .then(response => response.json())
+        .then(documents => {
+          miniSearch = new MiniSearch({
+            fields: ['title', 'description', 'category', 'source'],
+            storeFields: ['title', 'description', 'category', 'date', 'section', 'url'],
+            searchOptions: {
+              boost: { title: 2 },
+              fuzzy: 0.2,
+              prefix: true
+            }
+          });
+          miniSearch.addAll(documents);
+          searchIndexLoaded = true;
+        })
+        .catch(error => console.error('Error loading search index:', error));
+
+      // Search modal controls
+      const searchBtn = document.getElementById('search-btn');
+      const searchModal = document.getElementById('search-modal');
+      const closeSearch = document.getElementById('close-search');
+      const searchInput = document.getElementById('search-input');
+      const searchResults = document.getElementById('search-results');
+
+      searchBtn.addEventListener('click', () => {
+        searchModal.classList.remove('hidden');
+        searchInput.focus();
+      });
+
+      closeSearch.addEventListener('click', () => {
+        searchModal.classList.add('hidden');
+        searchInput.value = '';
+        searchResults.innerHTML = '';
+      });
+
+      searchModal.addEventListener('click', (e) => {
+        if (e.target === searchModal) {
+          searchModal.classList.add('hidden');
+          searchInput.value = '';
+          searchResults.innerHTML = '';
+        }
+      });
+
+      // Escape key to close
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !searchModal.classList.contains('hidden')) {
+          searchModal.classList.add('hidden');
+          searchInput.value = '';
+          searchResults.innerHTML = '';
+        }
+      });
+
+      // Search on input
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.trim();
+
+        if (!searchIndexLoaded) {
+          searchResults.innerHTML = '<p class="text-[#58728d] p-4">Loading search index...</p>';
+          return;
+        }
+
+        if (query.length < 2) {
+          searchResults.innerHTML = '';
+          return;
+        }
+
+        const results = miniSearch.search(query, { limit: 20 });
+
+        if (results.length === 0) {
+          searchResults.innerHTML = '<p class="text-[#58728d] p-4">No results found.</p>';
+          return;
+        }
+
+        const resultsHTML = results.map(result => {
+          const doc = result;
+          return `
+            <a href="./${doc.url}" class="block p-4 hover:bg-gray-50 border-b border-[#e9edf1]">
+              <h3 class="font-bold text-[#101419] mb-1">${doc.title}</h3>
+              ${doc.description ? `<p class="text-sm text-[#58728d] mb-2">${doc.description.substring(0, 150)}${doc.description.length > 150 ? '...' : ''}</p>` : ''}
+              <div class="flex gap-2 text-xs">
+                ${doc.category ? `<span class="px-2 py-1 bg-[#e9edf1] text-[#101419] rounded">${doc.category}</span>` : ''}
+                ${doc.date ? `<span class="text-[#58728d]">${doc.date}</span>` : ''}
+              </div>
+            </a>
+          `;
+        }).join('');
+
+        searchResults.innerHTML = resultsHTML;
+      });
     </script>
   </body>
 </html>

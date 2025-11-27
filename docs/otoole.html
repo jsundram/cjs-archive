@@ -10,8 +10,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O'Toole v. Cuomo</title>
-    <meta name="description" content="Court monitoring reports and documents from Clarence J. Sundram's service in the O'Toole v. Cuomo class action lawsuit.">
+    <title>O'Toole v. Cuomo - Court Monitor Reports</title>
+    <meta name="description" content="Court Monitor reports for O'Toole v. Cuomo by Clarence J. Sundram.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://clarencesundram.org/otoole.html">
 
@@ -21,14 +21,16 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.8/dist/index.global.min.js"></script>
-    <!-- this gives a warning about not using the browser version, but ... -->
+
+    <!-- MiniSearch for client-side search -->
+    <script src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"></script>
   </head>
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
         <header class="relative flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e9edf1] px-10 py-3">
           <div class="flex items-center gap-4 text-[#101419]">
-            <!-- Hamburger Button (moved to left side) -->
+            <!-- Hamburger Button -->
             <button
               id="hamburger-btn"
               class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e9edf1] text-[#101419] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
@@ -44,7 +46,7 @@
             <h2 id="site-title" class="text-[#101419] text-lg font-bold leading-tight tracking-[-0.015em]">Archive</h2>
           </div>
           <div class="flex flex-1 justify-end gap-8">
-            <!-- Navigation Menu (always mobile-style dropdown) -->
+            <!-- Navigation Menu -->
             <nav id="main-nav" class="hidden flex flex-col gap-4
                                       absolute top-full left-0 right-0
                                       bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
@@ -54,6 +56,16 @@
               <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./court-monitor.html">Court Monitor</a>
               <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./special-advisor.html">Special Advisor</a>
             </nav>
+            <!-- Search Button -->
+            <button
+              id="search-btn"
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e9edf1] text-[#101419] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              title="Search documents"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+              </svg>
+            </button>
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
               style='background-image: url("./assets/headshot.jpg");'
@@ -61,46 +73,35 @@
           </div>
         </header>
 
+        
+
         <div class="bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
-          <h1 id="page-title" class="text-[#101419] text-xl font-bold leading-tight tracking-[-0.015em]"></h1>
+          <h1 id="page-title" class="text-[#101419] text-xl font-bold leading-tight tracking-[-0.015em]">O'Toole v. Cuomo</h1>
         </div>
 
-        <!-- Content -->
         <div class="px-40 flex flex-1 justify-center py-5">
-            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-
-                <div>
-                    <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
-                    <b>United States v. New York, O'Toole v. Cuomo, United States District Court for the Eastern District of New York.</b>
-                    </p>
-                    <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
-                    Mr. Sundram serves as the Independent Reviewer for the federal court overseeing the implementation of a Settlement Agreement in a class action which offers approximately 4000 persons with mental illness residing in 22 adult homes in NYC the opportunity to move to supported housing with support services. A fuller description of this litigation and its early history can be found at: <a href="https://www.bazelon.org/otoole-v-cuomo/" class="underline hover:text-blue-600">O'Toole v. Cuomo</a>. The Independent Reviewer team members are: <a href="https://www.linkedin.com/in/tom-harmon-b7a81414/" class="underline hover:text-blue-600">Thomas Harmon</a>, <a href="https://www.linkedin.com/in/steve-hirschhorn-96273353/" class="underline hover:text-blue-600">Stephen Hirschhorn</a>, <a href="">Mindy Becker</a> and <a href="https://www.linkedin.com/in/kathleen-o-hara-086237131/" class="underline hover:text-blue-600">Dr. Kathleeen O'Hara</a>.
-                    </p>
-                    <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
-                    A detailed timeline of the case can be found
-                        <a href="./otoole-timeline.html" class="underline hover:text-blue-600">here</a>.
-                    </p>
-                </div>
-
-                <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#101419] tracking-light text-[32px] font-bold leading-tight min-w-72">Court Reports</p></div>
-                <div class="px-4 py-3 @container">
-                  <div class="flex overflow-hidden rounded-xl border border-[#d3dbe4] bg-gray-50">
-                    <table class="flex-1">
-                        <thead>
-                            <tr class="bg-gray-50">
-                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-120 px-4 py-3 text-left text-[#101419] w-[150px] text-sm font-medium leading-normal">Date</th>
-                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-360 px-4 py-3 text-left text-[#101419] w-[200px] text-sm font-medium leading-normal">Title</th>
-                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-480 px-4 py-3 text-left text-[#101419] w-[600px] text-sm font-medium leading-normal">Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
+    <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+        <div class="flex flex-wrap justify-between gap-3 p-4">
+            <p class="text-[#101419] tracking-light text-[32px] font-bold leading-tight min-w-72">Court Monitor Reports</p>
+        </div>
+        <div class="px-4 py-3 @container">
+          <div class="flex overflow-hidden rounded-xl border border-[#d3dbe4] bg-gray-50">
+            <table class="flex-1">
+                <thead>
+                    <tr class="bg-gray-50">
+                        <th class="table-column-120 px-4 py-3 text-left text-[#101419] w-[150px] text-sm font-medium leading-normal">Date</th>
+                        <th class="table-column-360 px-4 py-3 text-left text-[#101419] w-[200px] text-sm font-medium leading-normal">Title</th>
+                        <th class="table-column-480 px-4 py-3 text-left text-[#101419] w-[600px] text-sm font-medium leading-normal">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
             <tr class="border-t border-t-[#d3dbe4]">
               <td class="align-top px-4 py-2 w-[150px] text-[#58728d] text-sm font-normal leading-normal">
                 2015-10-01
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/2015 Annual Report.pdf" target="_blank" class="underline hover:text-blue-600">2015 ANNUAL REPORT</a>
+                <a href="./documents/otoole-2015-annual-report.html" class="underline hover:text-blue-600">2015 ANNUAL REPORT</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 Progress report on implementation of Settlement Agreement requiring that a class of approximately 4000 mentally ill residents of adult homes in New York City be provided with a choice to move to supported housing in the community. This report describes the initial actions by the State Defendants to implement the settlement agreement and the rate of progress in the first year.  It identifies numerous actions that would be required to increase the pace of implementation to achieve compliance with the targets established in that agreement.
@@ -113,7 +114,7 @@
                 2016-04-01
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/2016 Annual Report.pdf" target="_blank" class="underline hover:text-blue-600">2016 ANNUAL REPORT</a>
+                <a href="./documents/otoole-2016-annual-report.html" class="underline hover:text-blue-600">2016 ANNUAL REPORT</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 This report describes the experiences of a sample of class members who transitioned to the community, as well as exploring various obstacles class members encounter after expressing an interest in moving to community housing.
@@ -126,7 +127,7 @@
                 2017-04-01
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/2017 Annual Report.pdf" target="_blank" class="underline hover:text-blue-600">2017 ANNUAL REPORT</a>
+                <a href="./documents/otoole-2017-annual-report.html" class="underline hover:text-blue-600">2017 ANNUAL REPORT</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 Report on progress in Implementing a Settlement Agreement between the US Department of Justice and a class of Private Plaintiffs vs. the State of New York, which requires that approximately 4000 residents of adult homes with serious mental illness be offered the opportunity to move to supported housing in the community, with wrap around services as needed. 
@@ -139,7 +140,7 @@
                 2018-04-01
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/2018 Annual Report.pdf" target="_blank" class="underline hover:text-blue-600">2018 ANNUAL REPORT</a>
+                <a href="./documents/otoole-2018-annual-report.html" class="underline hover:text-blue-600">2018 ANNUAL REPORT</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 This report again describes the experiences of a sample of class members who had moved to the community, including some of the difficulties they experienced.  It also reports on class members in Assisted Living Programs within adult homes, which are intended to provide an enriched level of care.  It identifies the need for formal quality assurance mechanisms to be implemented by the State.
@@ -152,7 +153,7 @@
                 2019-04-01
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/2019 Annual Report.pdf" target="_blank" class="underline hover:text-blue-600">2019 ANNUAL REPORT</a>
+                <a href="./documents/otoole-2019-annual-report.html" class="underline hover:text-blue-600">2019 ANNUAL REPORT</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 During this report year, the parties agreed to a Supplemental Agreement which made significant changes to the Settlement Agreement including streamlining the assessment process, expanding the incident reporting and review process and creating a peer bridger program at each of the impacted adult homes.   This report describes the effect of the changes during the approximately six months they had been in effect.  Appendices to the report address Class Members Who Did Not Transition, after going through the process for approval; Quality Assurance, and Level II Housing (24 hour supervised housing).
@@ -165,7 +166,7 @@
                 2021-07-09
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/Review of Pre-Admission Screening.pdf" target="_blank" class="underline hover:text-blue-600">REVIEW OF PRE-ADMISSION SCREENING</a>
+                <a href="./documents/otoole-review-of-pre-admission-screening.html" class="underline hover:text-blue-600">REVIEW OF PRE-ADMISSION SCREENING</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 This report describes the process used to screen potential admissions to impacted adult homes for Serious Mental Illness and the weaknesses in the screening process that permits such admissions despite a State policy to prohibit them. 
@@ -178,7 +179,7 @@
                 2019-07-19
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/Defendant's Incident Reviews.pdf" target="_blank" class="underline hover:text-blue-600">DEFENDANT'S INCIDENT REVIEWS</a>
+                <a href="./documents/otoole-defendants-incident-reviews.html" class="underline hover:text-blue-600">DEFENDANT'S INCIDENT REVIEWS</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 This report assesses the State's compliance with the requirements for implementing an incident reporting and investigation process for class members who have moved from adult homes to supported housing in the community. 
@@ -191,7 +192,7 @@
                 2020-04-01
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/2020 Annual Report.pdf" target="_blank" class="underline hover:text-blue-600">2020 ANNUAL REPORT</a>
+                <a href="./documents/otoole-2020-annual-report.html" class="underline hover:text-blue-600">2020 ANNUAL REPORT</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 This report describes the continuing structural and process problems in implementation of the Settlement Agreement and the slowing pace of transitions to the community against the backdrop of the developing COVID-19 pandemic. It includes the Third Transition Metric Report, as well as the state of compliance with other metrics incorporated into the Supplemental Agreement in 2018.  This report also includes a description of the Housing Procurement process used by housing contractors to locate apartments for class members, as well as a report on the implementation of the Peer Bridger program.
@@ -204,7 +205,7 @@
                 2020-09-01
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/Impact of COVID-19 on Class Members.pdf" target="_blank" class="underline hover:text-blue-600">IMPACT OF COVID-19 ON CLASS MEMBERS</a>
+                <a href="./documents/otoole-impact-of-covid-19-on-class-members.html" class="underline hover:text-blue-600">IMPACT OF COVID-19 ON CLASS MEMBERS</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 This report submitted to the United States District Court describes the impact of restrictions on visitation upon a class of mentally ill residents of 22 adult homes (congregate care board and care facilities) in New York City. These restrictions on access to the facilities were imposed in the wake of the COVID-19 pandemic and limited the ability of families and support professionals to meet the residents in person since Mid-March 2020.
@@ -217,7 +218,7 @@
                 2021-04-01
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/2021 Annual Report.pdf" target="_blank" class="underline hover:text-blue-600">2021 ANNUAL REPORT</a>
+                <a href="./documents/otoole-2021-annual-report.html" class="underline hover:text-blue-600">2021 ANNUAL REPORT</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 This report describes the continuing decline in the number of class members transitioning each year since 2017, exacerbated by the COVID-19 pandemic. The extraordinary conditions led the parties and the court to agree to suspend the Transition Metric Reports until February 2022.  This report also discusses the closure of the Brooklyn Terrace Home for Adults and the transfer of its residents to supported housing and other congregate care facilities.  It also discusses an investigation by the Independent Reviewer into complaints of Discouragement and Interference which culminated in a Settlement Agreement with the Wavecrest Home for Adults on March 17, 2021.
@@ -230,7 +231,7 @@
                 2022-04-01
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/2022 Annual Report.pdf" target="_blank" class="underline hover:text-blue-600">2022 ANNUAL REPORT</a>
+                <a href="./documents/otoole-2022-annual-report.html" class="underline hover:text-blue-600">2022 ANNUAL REPORT</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 This is the Eighth Annual report of the Independent Reviewer's monitoring of the implementation of a federal court Settlement Agreement in a class action lawsuit under the Americans with Disabilities Act which provided a class of approximately 4,000 persons with Serious Mental Illness, residing in 22 adult homes (board and care) in New York City, the opportunity to move to supported housing and other community residential options, with support services.
@@ -243,7 +244,7 @@
                 2023-04-01
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/2023 Annual Report.pdf" target="_blank" class="underline hover:text-blue-600">2023 ANNUAL REPORT</a>
+                <a href="./documents/otoole-2023-annual-report.html" class="underline hover:text-blue-600">2023 ANNUAL REPORT</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 This report follows the State’s Full Court Press at additional adult homes and reports on emerging issues affecting performance. It also reports on incidents of discouragement and interference by adult home providers, the implementation of space plans to enable settlement provider staff to work in adult homes and the distribution of notices about the Decision Date by which class members had to make known their interest in being assessed for transition to community housing.
@@ -256,7 +257,7 @@
                 2024-04-01
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/2024 Annual Report.pdf" target="_blank" class="underline hover:text-blue-600">2024 ANNUAL REPORT</a>
+                <a href="./documents/otoole-2024-annual-report.html" class="underline hover:text-blue-600">2024 ANNUAL REPORT</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 The tenth annual report on the implementation of an Olmstead class action settlement that gave a class of approximately 4,000 persons with serious mental illness residing in 23 adult homes in NYC the choice to move to supported housing or other suitable community housing alternatives, with appropriate support services. This report provides a retrospective view of the State’s implementation efforts over the past decade, the progress made to date and the work left to be accomplished.
@@ -269,7 +270,7 @@
                 2024-11-01
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/2024 Semi-Annual Report.pdf" target="_blank" class="underline hover:text-blue-600">2024 SEMI-ANNUAL REPORT</a>
+                <a href="./documents/otoole-2024-semi-annual-report.html" class="underline hover:text-blue-600">2024 SEMI-ANNUAL REPORT</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 This text presents the First Semi-Annual Report by an Independent Reviewer overseeing a civil action concerning the State of New York's compliance with a Settlement Agreement. The lawsuit addresses the rights of a class of individuals with Serious Mental Illness (SMI) residing in Impacted Adult Homes, focusing on their opportunity to transition to and receive support in community-based housing. The report details the status of the case, including the number of active class members and the review process for those choosing not to transition. It provides an update on the admissions and screening process at these facilities, ultimately offering conclusions and recommendations for the State based on monitoring activities and interviews with class members.
@@ -282,7 +283,7 @@
                 2025-05-15
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/2025 Semi-Annual Report.pdf" target="_blank" class="underline hover:text-blue-600">2025 SEMI-ANNUAL REPORT</a>
+                <a href="./documents/otoole-2025-semi-annual-report.html" class="underline hover:text-blue-600">2025 SEMI-ANNUAL REPORT</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 This text presents the Second Semi-Annual Report by an Independent Reviewer overseeing a civil action in the Eastern District of New York concerning the State of New York's compliance with a Settlement Agreement. The lawsuit addresses the rights of a class of individuals with Serious Mental Illness (SMI) residing in Impacted Adult Homes, focusing on their opportunity to transition to and receive support in community-based housing. The report details the status of the case, including the number of active class members and the review process for those choosing not to transition. It further discusses the implementation of a Person-Centered Transition Planning (PCTP) initiative and provides an update on the admissions and screening process at these facilities, ultimately offering conclusions and recommendations for the State based on monitoring activities and interviews with class members.
@@ -295,7 +296,7 @@
                 2025-05-15
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/2025 Semi-Annual Report - Appendix A.pdf" target="_blank" class="underline hover:text-blue-600">2025 SEMI-ANNUAL REPORT - APPENDIX A</a>
+                <a href="./documents/otoole-2025-semi-annual-report-appendix-a.html" class="underline hover:text-blue-600">2025 SEMI-ANNUAL REPORT - APPENDIX A</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 This is Appendix A of a Semi-Annual Report, providing a review of a sample of class members living in supported housing. It details the methods used to select and study 30 individuals, highlighting that the sample primarily consists of those who have remained stably housed for over two years. The report then presents detailed findings across various domains, including housing and neighborhood experiences, financial and food security, medication management, community integration, and evolving physical and mental health needs, with a particular emphasis on the challenges faced by members and the roles of settlement service providers in addressing them.
@@ -308,7 +309,7 @@
                 2025-06-23
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/Final Order of Dismissal and Judgment.pdf" target="_blank" class="underline hover:text-blue-600">FINAL ORDER OF DISMISSAL AND JUDGMENT</a>
+                <a href="./documents/otoole-final-order-of-dismissal-and-judgment.html" class="underline hover:text-blue-600">FINAL ORDER OF DISMISSAL AND JUDGMENT</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 Final status conference regarding dismissal of the case upon joint motion of the parties. Statement of Independent Reviewer to the Court.
@@ -321,26 +322,44 @@
                 2025-06-23
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/otoole/Statement of Clarence J. Sundram to the Court.pdf" target="_blank" class="underline hover:text-blue-600">STATEMENT OF CLARENCE J. SUNDRAM TO THE COURT</a>
+                <a href="./documents/otoole-statement-of-clarence-j-sundram-to-the-court.html" class="underline hover:text-blue-600">STATEMENT OF CLARENCE J. SUNDRAM TO THE COURT</a>
               </td>
               <td class="align-top px-4 py-2 w-[600px] text-[#58728d] text-sm font-normal leading-normal">
                 Conclusion
               </td>
             </tr>
             
-                        </tbody>
-                    </table>
-                  </div>
-                  <style>
-                    @container(max-width:120px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-120{display: none;}}
-                    @container(max-width:240px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-240{display: none;}}
-                    @container(max-width:360px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-360{display: none;}}
-                    @container(max-width:480px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-480{display: none;}}
-                  </style>
-                </div>
-            </div>
+                </tbody>
+            </table>
+          </div>
         </div>
-        <!-- End Content -->
+    </div>
+</div>
+
+
+      </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center pt-20">
+      <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl mx-4">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold text-[#101419]">Search Documents</h2>
+            <button id="close-search" class="text-[#58728d] hover:text-[#101419]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+              </svg>
+            </button>
+          </div>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search by title, description, or category..."
+            class="w-full px-4 py-3 border border-[#d3dbe4] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1971c2] text-[#101419]"
+          />
+          <div id="search-results" class="mt-4 max-h-96 overflow-y-auto"></div>
+        </div>
       </div>
     </div>
 
@@ -349,9 +368,8 @@
       const hamburgerBtn = document.getElementById('hamburger-btn');
       const mobileMenu = document.getElementById('main-nav');
 
-      // Toggle menu on hamburger button click
       hamburgerBtn.addEventListener('click', function(e) {
-        e.stopPropagation(); // Prevent event from bubbling up
+        e.stopPropagation();
         if (mobileMenu.classList.contains('hidden')) {
           mobileMenu.classList.remove('hidden');
         } else {
@@ -359,9 +377,7 @@
         }
       });
 
-      // Close menu when clicking outside
       document.addEventListener('click', function(e) {
-        // Check if the menu is visible and the click is outside the menu and hamburger button
         if (!mobileMenu.classList.contains('hidden') &&
             !mobileMenu.contains(e.target) &&
             !hamburgerBtn.contains(e.target)) {
@@ -369,13 +385,109 @@
         }
       });
 
-      // Prevent menu from closing when clicking inside the menu
       mobileMenu.addEventListener('click', function(e) {
         e.stopPropagation();
       });
 
       // Set page title from document title
-      document.getElementById('page-title').textContent = document.title;
+      if (document.getElementById('page-title') && !document.getElementById('page-title').textContent) {
+        document.getElementById('page-title').textContent = document.title;
+      }
+
+      // Search functionality
+      let miniSearch = null;
+      let searchIndexLoaded = false;
+
+      // Load search index
+      fetch('./search-index.json')
+        .then(response => response.json())
+        .then(documents => {
+          miniSearch = new MiniSearch({
+            fields: ['title', 'description', 'category', 'source'],
+            storeFields: ['title', 'description', 'category', 'date', 'section', 'url'],
+            searchOptions: {
+              boost: { title: 2 },
+              fuzzy: 0.2,
+              prefix: true
+            }
+          });
+          miniSearch.addAll(documents);
+          searchIndexLoaded = true;
+        })
+        .catch(error => console.error('Error loading search index:', error));
+
+      // Search modal controls
+      const searchBtn = document.getElementById('search-btn');
+      const searchModal = document.getElementById('search-modal');
+      const closeSearch = document.getElementById('close-search');
+      const searchInput = document.getElementById('search-input');
+      const searchResults = document.getElementById('search-results');
+
+      searchBtn.addEventListener('click', () => {
+        searchModal.classList.remove('hidden');
+        searchInput.focus();
+      });
+
+      closeSearch.addEventListener('click', () => {
+        searchModal.classList.add('hidden');
+        searchInput.value = '';
+        searchResults.innerHTML = '';
+      });
+
+      searchModal.addEventListener('click', (e) => {
+        if (e.target === searchModal) {
+          searchModal.classList.add('hidden');
+          searchInput.value = '';
+          searchResults.innerHTML = '';
+        }
+      });
+
+      // Escape key to close
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !searchModal.classList.contains('hidden')) {
+          searchModal.classList.add('hidden');
+          searchInput.value = '';
+          searchResults.innerHTML = '';
+        }
+      });
+
+      // Search on input
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.trim();
+
+        if (!searchIndexLoaded) {
+          searchResults.innerHTML = '<p class="text-[#58728d] p-4">Loading search index...</p>';
+          return;
+        }
+
+        if (query.length < 2) {
+          searchResults.innerHTML = '';
+          return;
+        }
+
+        const results = miniSearch.search(query, { limit: 20 });
+
+        if (results.length === 0) {
+          searchResults.innerHTML = '<p class="text-[#58728d] p-4">No results found.</p>';
+          return;
+        }
+
+        const resultsHTML = results.map(result => {
+          const doc = result;
+          return `
+            <a href="./${doc.url}" class="block p-4 hover:bg-gray-50 border-b border-[#e9edf1]">
+              <h3 class="font-bold text-[#101419] mb-1">${doc.title}</h3>
+              ${doc.description ? `<p class="text-sm text-[#58728d] mb-2">${doc.description.substring(0, 150)}${doc.description.length > 150 ? '...' : ''}</p>` : ''}
+              <div class="flex gap-2 text-xs">
+                ${doc.category ? `<span class="px-2 py-1 bg-[#e9edf1] text-[#101419] rounded">${doc.category}</span>` : ''}
+                ${doc.date ? `<span class="text-[#58728d]">${doc.date}</span>` : ''}
+              </div>
+            </a>
+          `;
+        }).join('');
+
+        searchResults.innerHTML = resultsHTML;
+      });
     </script>
   </body>
 </html>

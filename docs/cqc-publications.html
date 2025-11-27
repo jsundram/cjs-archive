@@ -10,20 +10,27 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commission on Quality of Care</title>
-    <meta name="description" content="Publications and research from the New York State Commission on Quality of Care for the Mentally Disabled.">
+    <title>Commission on Quality of Care - Publications</title>
+    <meta name="description" content="Published articles and papers by Clarence J. Sundram about the Commission on Quality of Care.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://clarencesundram.org/cqc-publications.html">
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.8/dist/index.global.min.js"></script>
+
+    <!-- MiniSearch for client-side search -->
+    <script src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"></script>
   </head>
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
         <header class="relative flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e9edf1] px-10 py-3">
           <div class="flex items-center gap-4 text-[#101419]">
-            <!-- Hamburger Button (moved to left side) -->
+            <!-- Hamburger Button -->
             <button
               id="hamburger-btn"
               class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e9edf1] text-[#101419] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
@@ -39,7 +46,7 @@
             <h2 id="site-title" class="text-[#101419] text-lg font-bold leading-tight tracking-[-0.015em]">Archive</h2>
           </div>
           <div class="flex flex-1 justify-end gap-8">
-            <!-- Navigation Menu (always mobile-style dropdown) -->
+            <!-- Navigation Menu -->
             <nav id="main-nav" class="hidden flex flex-col gap-4
                                       absolute top-full left-0 right-0
                                       bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
@@ -49,6 +56,16 @@
               <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./court-monitor.html">Court Monitor</a>
               <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./special-advisor.html">Special Advisor</a>
             </nav>
+            <!-- Search Button -->
+            <button
+              id="search-btn"
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e9edf1] text-[#101419] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              title="Search documents"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+              </svg>
+            </button>
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
               style='background-image: url("./assets/headshot.jpg");'
@@ -56,34 +73,35 @@
           </div>
         </header>
 
+        
+
         <div class="bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
-          <h1 id="page-title" class="text-[#101419] text-xl font-bold leading-tight tracking-[-0.015em]"></h1>
+          <h1 id="page-title" class="text-[#101419] text-xl font-bold leading-tight tracking-[-0.015em]">Commission on Quality of Care - Publications</h1>
         </div>
 
-        <!-- Content -->
         <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#101419] tracking-light text-[32px] font-bold leading-tight min-w-72">Publications</p></div>
-            <div class="px-4 py-3 @container">
-              <div class="flex overflow-hidden rounded-xl border border-[#d3dbe4] bg-gray-50">
-                <table class="flex-1">
-                  <thead>
+    <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+        <div class="flex flex-wrap justify-between gap-3 p-4">
+            <p class="text-[#101419] tracking-light text-[32px] font-bold leading-tight min-w-72">Publications</p>
+        </div>
+        <div class="px-4 py-3 @container">
+          <div class="flex overflow-hidden rounded-xl border border-[#d3dbe4] bg-gray-50">
+            <table class="flex-1">
+                <thead>
                     <tr class="bg-gray-50">
-                      <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-120 px-4 py-3 text-left text-[#101419] w-[150px] text-sm font-medium leading-normal">Date</th>
-                      <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-360 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Title</th>
-                      <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-480 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">
-                        Publication
-                      </th>
+                        <th class="table-column-120 px-4 py-3 text-left text-[#101419] w-[150px] text-sm font-medium leading-normal">Date</th>
+                        <th class="table-column-360 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Title</th>
+                        <th class="table-column-480 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Publication</th>
                     </tr>
-                  </thead>
-                  <tbody>
-
+                </thead>
+                <tbody>
+                    
     <tr class="border-t border-t-[#d3dbe4]">
       <td class="align-top px-4 py-2 w-[150px] text-[#58728d] text-sm font-normal leading-normal">
         1980-01-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/281206526_Independent_Oversight_of_Mental_Hygiene_Facilities_The_New_York_Experience" target="_blank" class="underline hover:text-blue-600">Independent Oversight of Mental Hygiene Facilities: The New York Experience</a>
+        <a href="./documents/cqc-publications-independent-oversight-of-mental-hygiene-facilities-the-new-york-experience.html" class="underline hover:text-blue-600">Independent Oversight of Mental Hygiene Facilities: The New York Experience</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         Journal of Psychiatric Treatment and Evaluation
@@ -96,7 +114,7 @@
         1984-04-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/16490658_Obstacles_to_Reducing_Patient_Abuse_in_Public_Institutions" target="_blank" class="underline hover:text-blue-600">Obstacles to Reducing Patient Abuse in Public Institutions</a>
+        <a href="./documents/cqc-publications-obstacles-to-reducing-patient-abuse-in-public-institutions.html" class="underline hover:text-blue-600">Obstacles to Reducing Patient Abuse in Public Institutions</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         Hospital & Community Psychiatry
@@ -109,7 +127,7 @@
         1985-02-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/13008289_The_mentally_retarded_and_the_mentally_ill" target="_blank" class="underline hover:text-blue-600">The mentally retarded and the mentally ill</a>
+        <a href="./documents/cqc-publications-the-mentally-retarded-and-the-mentally-ill.html" class="underline hover:text-blue-600">The mentally retarded and the mentally ill</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         New England journal of human services
@@ -122,7 +140,7 @@
         1986-02-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/19428023_Mental_Illness_and_Health_Care_Policy" target="_blank" class="underline hover:text-blue-600">Mental Illness and Health Care Policy</a>
+        <a href="./documents/cqc-publications-mental-illness-and-health-care-policy.html" class="underline hover:text-blue-600">Mental Illness and Health Care Policy</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         Journal of Public Health Policy
@@ -135,7 +153,7 @@
         1986-02-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/13008369_Strategies_to_prevent_patient_abuse_in_public_institutions" target="_blank" class="underline hover:text-blue-600">Strategies to prevent patient abuse in public institutions</a>
+        <a href="./documents/cqc-publications-strategies-to-prevent-patient-abuse-in-public-institutions.html" class="underline hover:text-blue-600">Strategies to prevent patient abuse in public institutions</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         New England journal of human services
@@ -148,7 +166,7 @@
         1987-02-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/19718695_Patient_idleness_in_public_mental_hospitals" target="_blank" class="underline hover:text-blue-600">Patient idleness in public mental hospitals</a>
+        <a href="./documents/cqc-publications-patient-idleness-in-public-mental-hospitals.html" class="underline hover:text-blue-600">Patient idleness in public mental hospitals</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         Psychiatric Quarterly
@@ -161,7 +179,7 @@
         1987-02-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/19358183_Secondary_Substance_Abuse" target="_blank" class="underline hover:text-blue-600">Secondary Substance Abuse</a>
+        <a href="./documents/cqc-publications-secondary-substance-abuse.html" class="underline hover:text-blue-600">Secondary Substance Abuse</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         Hospital & Community Psychiatry
@@ -174,7 +192,7 @@
         1988-03-10
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://mn.gov/mnddc/parallels2/pdf/80s/88/88-AAN-CJS.pdf" target="_blank" class="underline hover:text-blue-600">Abuse & Neglect--What the heck are we talking about?</a>
+        <a href="./documents/cqc-publications-abuse-neglect-what-the-heck-are-we-talking-about.html" class="underline hover:text-blue-600">Abuse & Neglect--What the heck are we talking about?</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         The Minnesota Governor's Council on Developmental Disabilities
@@ -187,7 +205,7 @@
         1988-06-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/19788255_Informed_Consent_for_Major_Medical_Treatment_of_Mentally_Disabled_People" target="_blank" class="underline hover:text-blue-600">Informed Consent for Major Medical Treatment of Mentally Disabled People</a>
+        <a href="./documents/cqc-publications-informed-consent-for-major-medical-treatment-of-mentally-disabled-people.html" class="underline hover:text-blue-600">Informed Consent for Major Medical Treatment of Mentally Disabled People</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         The New-England Medical Review and Journal
@@ -200,7 +218,7 @@
         1989-04-13
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://mn.gov/mnddc/parallels2/pdf/80s/89/89-WSA-QOC.pdf" target="_blank" class="underline hover:text-blue-600">Advocacy: To What Should We Aspire?</a>
+        <a href="./documents/cqc-publications-advocacy-to-what-should-we-aspire.html" class="underline hover:text-blue-600">Advocacy: To What Should We Aspire?</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         The Minnesota Governor's Council on Developmental Disabilities
@@ -213,7 +231,7 @@
         1991-04-24
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://mn.gov/mnddc/parallels2/pdf/90s/91/91-sundram-lessons-learned.pdf" target="_blank" class="underline hover:text-blue-600">Closing Institutions: Lessons Learned?</a>
+        <a href="./documents/cqc-publications-closing-institutions-lessons-learned.html" class="underline hover:text-blue-600">Closing Institutions: Lessons Learned?</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         The Minnesota Governor's Council on Developmental Disabilities
@@ -226,7 +244,7 @@
         1992-06-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/254380881_The_Legal_Aspects_of_Narcolepsy" target="_blank" class="underline hover:text-blue-600">The Legal Aspects of Narcolepsy</a>
+        <a href="./documents/cqc-publications-the-legal-aspects-of-narcolepsy.html" class="underline hover:text-blue-600">The Legal Aspects of Narcolepsy</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         Loss, Grief & Care
@@ -239,7 +257,7 @@
         1993-08-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/254163390_SEXUAL_BEHAVIOR_AND_MENTAL_RETARDATION" target="_blank" class="underline hover:text-blue-600">Sexual Behavior and Mental Retardation</a>
+        <a href="./documents/cqc-publications-sexual-behavior-and-mental-retardation.html" class="underline hover:text-blue-600">Sexual Behavior and Mental Retardation</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         Mental & Physical Disability Law Reporter
@@ -252,7 +270,7 @@
         1994-09-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/15229798_Sexuality_and_mental_retardation_Unmet_challenges" target="_blank" class="underline hover:text-blue-600">Sexuality and mental retardation: Unmet challenges</a>
+        <a href="./documents/cqc-publications-sexuality-and-mental-retardation-unmet-challenges.html" class="underline hover:text-blue-600">Sexuality and mental retardation: Unmet challenges</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         Mental Retardation
@@ -265,7 +283,7 @@
         1994-11-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/15215366_Quality_assurance_in_an_era_of_consumer_empowerment_and_choice" target="_blank" class="underline hover:text-blue-600">Quality assurance in an era of consumer empowerment and choice</a>
+        <a href="./documents/cqc-publications-quality-assurance-in-an-era-of-consumer-empowerment-and-choice.html" class="underline hover:text-blue-600">Quality assurance in an era of consumer empowerment and choice</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         Mental Retardation
@@ -278,7 +296,7 @@
         1994-12-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/254146191_Patient_Advocacy_in_the_United_States" target="_blank" class="underline hover:text-blue-600">Patient Advocacy in the United States</a>
+        <a href="./documents/cqc-publications-patient-advocacy-in-the-united-states.html" class="underline hover:text-blue-600">Patient Advocacy in the United States</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         International Journal of Mental Health
@@ -291,7 +309,7 @@
         1995-08-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/15645679_Implementation_and_activities_of_protection_and_advocacy_programs_for_persons_with_mental_illness" target="_blank" class="underline hover:text-blue-600">Implementation and activities of protection and advocacy programs for persons with mental illness</a>
+        <a href="./documents/cqc-publications-implementation-and-activities-of-protection-and-advocacy-programs-for-persons-with-mental-illness.html" class="underline hover:text-blue-600">Implementation and activities of protection and advocacy programs for persons with mental illness</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         Psychiatric services
@@ -304,7 +322,7 @@
         1998-02-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/8155027_In_harm's_way_research_subjects_who_are_decisionally_impaired" target="_blank" class="underline hover:text-blue-600">In harm's way: research subjects who are decisionally impaired</a>
+        <a href="./documents/cqc-publications-in-harms-way-research-subjects-who-are-decisionally-impaired.html" class="underline hover:text-blue-600">In harm's way: research subjects who are decisionally impaired</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         Journal of Health Care Law & Policy
@@ -317,7 +335,7 @@
         1999-03-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/13260410_Pitfalls_in_the_Pursuit_of_Life_Liberty_and_Happiness" target="_blank" class="underline hover:text-blue-600">Pitfalls in the Pursuit of Life, Liberty, and Happiness</a>
+        <a href="./documents/cqc-publications-pitfalls-in-the-pursuit-of-life-liberty-and-happiness.html" class="underline hover:text-blue-600">Pitfalls in the Pursuit of Life, Liberty, and Happiness</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         Mental Retardation
@@ -330,7 +348,7 @@
         1999-04-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/13073016_Obtaining_Informed_Consent_for_Treatment_of_Mentally_Incompetent_Patients" target="_blank" class="underline hover:text-blue-600">Obtaining Informed Consent for Treatment of Mentally Incompetent Patients</a>
+        <a href="./documents/cqc-publications-obtaining-informed-consent-for-treatment-of-mentally-incompetent-patients.html" class="underline hover:text-blue-600">Obtaining Informed Consent for Treatment of Mentally Incompetent Patients</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         International Journal of Law and Psychiatry
@@ -343,7 +361,7 @@
         1999-10-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/249900630_The_Americans_With_Disabilities_Act_and_the_Emerging_Workforce_Employment_of_People_With_Mental_Retardation" target="_blank" class="underline hover:text-blue-600">The Americans With Disabilities Act and the Emerging Workforce: Employment of People With Mental Retardation</a>
+        <a href="./documents/cqc-publications-the-americans-with-disabilities-act-and-the-emerging-workforce-employment-of-people-with-mental-retardation.html" class="underline hover:text-blue-600">The Americans With Disabilities Act and the Emerging Workforce: Employment of People With Mental Retardation</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         Mental Retardation
@@ -356,7 +374,7 @@
         2000-05-20
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://mn.gov/mnddc/parallels2/pdf/00s/00/00-WTC-CJS.pdf" target="_blank" class="underline hover:text-blue-600">Willowbrook, The Community Challenge & The Role of Leadership</a>
+        <a href="./documents/cqc-publications-willowbrook-the-community-challenge-the-role-of-leadership.html" class="underline hover:text-blue-600">Willowbrook, The Community Challenge & The Role of Leadership</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         The Minnesota Governor's Council on Developmental Disabilities
@@ -369,7 +387,7 @@
         2002-01-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/281206202_International_Human_Rights_and_Mental_Health_Legislation" target="_blank" class="underline hover:text-blue-600">International Human Rights and Mental Health Legislation</a>
+        <a href="./documents/cqc-publications-international-human-rights-and-mental-health-legislation.html" class="underline hover:text-blue-600">International Human Rights and Mental Health Legislation</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         NYLJournal of Int. & Comparative Law
@@ -382,7 +400,7 @@
         2003-05-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/281206121_Monitoring_the_Quality_and_Utilization_of_Mental_Health_Services_in_Correctional_Facilities" target="_blank" class="underline hover:text-blue-600">Monitoring the Quality and Utilization of Mental Health Services in Correctional Facilities</a>
+        <a href="./documents/cqc-publications-monitoring-the-quality-and-utilization-of-mental-health-services-in-correctional-facilities.html" class="underline hover:text-blue-600">Monitoring the Quality and Utilization of Mental Health Services in Correctional Facilities</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         University of the District of Columbia Law Review
@@ -395,7 +413,7 @@
         2011-10-01
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.researchgate.net/publication/51637393_Reflections_on_Monitoring_the_Implementation_of_Court_Orders_in_Class_Action_Lawsuits" target="_blank" class="underline hover:text-blue-600">Reflections on Monitoring the Implementation of Court Orders in Class Action Lawsuits</a>
+        <a href="./documents/cqc-publications-reflections-on-monitoring-the-implementation-of-court-orders-in-class-action-lawsuits.html" class="underline hover:text-blue-600">Reflections on Monitoring the Implementation of Court Orders in Class Action Lawsuits</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         J. Intellectual and Dev. Disability
@@ -408,7 +426,7 @@
         2022-04-12
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#101419] text-sm font-normal leading-normal">
-        <a href="https://www.youtube.com/watch?v=EkODug0dXSE" target="_blank" class="underline hover:text-blue-600">Willowbrook: A Retrospective on Systems Change--Systems Change through Court ordered reform</a>
+        <a href="./documents/cqc-publications-willowbrook-a-retrospective-on-systems-change-systems-change-through-court-ordered-reform.html" class="underline hover:text-blue-600">Willowbrook: A Retrospective on Systems Change--Systems Change through Court ordered reform</a>
       </td>
       <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
         
@@ -416,28 +434,47 @@ CUNY School of Professional Studies
       </td>
     </tr>
     
-                  </tbody>
-                </table>
-              </div>
-              <style>
-                @container(max-width:120px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-120{display: none;}}
-                @container(max-width:240px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-240{display: none;}}
-                @container(max-width:360px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-360{display: none;}}
-                @container(max-width:480px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-480{display: none;}}
-              </style>
-            </div>
+                </tbody>
+            </table>
           </div>
+        </div>
+    </div>
+</div>
+
+
+      </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center pt-20">
+      <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl mx-4">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold text-[#101419]">Search Documents</h2>
+            <button id="close-search" class="text-[#58728d] hover:text-[#101419]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+              </svg>
+            </button>
+          </div>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search by title, description, or category..."
+            class="w-full px-4 py-3 border border-[#d3dbe4] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1971c2] text-[#101419]"
+          />
+          <div id="search-results" class="mt-4 max-h-96 overflow-y-auto"></div>
         </div>
       </div>
     </div>
+
     <script>
       // Hamburger menu functionality
       const hamburgerBtn = document.getElementById('hamburger-btn');
       const mobileMenu = document.getElementById('main-nav');
 
-      // Toggle menu on hamburger button click
       hamburgerBtn.addEventListener('click', function(e) {
-        e.stopPropagation(); // Prevent event from bubbling up
+        e.stopPropagation();
         if (mobileMenu.classList.contains('hidden')) {
           mobileMenu.classList.remove('hidden');
         } else {
@@ -445,9 +482,7 @@ CUNY School of Professional Studies
         }
       });
 
-      // Close menu when clicking outside
       document.addEventListener('click', function(e) {
-        // Check if the menu is visible and the click is outside the menu and hamburger button
         if (!mobileMenu.classList.contains('hidden') &&
             !mobileMenu.contains(e.target) &&
             !hamburgerBtn.contains(e.target)) {
@@ -455,13 +490,109 @@ CUNY School of Professional Studies
         }
       });
 
-      // Prevent menu from closing when clicking inside the menu
       mobileMenu.addEventListener('click', function(e) {
         e.stopPropagation();
       });
 
       // Set page title from document title
-      document.getElementById('page-title').textContent = document.title;
+      if (document.getElementById('page-title') && !document.getElementById('page-title').textContent) {
+        document.getElementById('page-title').textContent = document.title;
+      }
+
+      // Search functionality
+      let miniSearch = null;
+      let searchIndexLoaded = false;
+
+      // Load search index
+      fetch('./search-index.json')
+        .then(response => response.json())
+        .then(documents => {
+          miniSearch = new MiniSearch({
+            fields: ['title', 'description', 'category', 'source'],
+            storeFields: ['title', 'description', 'category', 'date', 'section', 'url'],
+            searchOptions: {
+              boost: { title: 2 },
+              fuzzy: 0.2,
+              prefix: true
+            }
+          });
+          miniSearch.addAll(documents);
+          searchIndexLoaded = true;
+        })
+        .catch(error => console.error('Error loading search index:', error));
+
+      // Search modal controls
+      const searchBtn = document.getElementById('search-btn');
+      const searchModal = document.getElementById('search-modal');
+      const closeSearch = document.getElementById('close-search');
+      const searchInput = document.getElementById('search-input');
+      const searchResults = document.getElementById('search-results');
+
+      searchBtn.addEventListener('click', () => {
+        searchModal.classList.remove('hidden');
+        searchInput.focus();
+      });
+
+      closeSearch.addEventListener('click', () => {
+        searchModal.classList.add('hidden');
+        searchInput.value = '';
+        searchResults.innerHTML = '';
+      });
+
+      searchModal.addEventListener('click', (e) => {
+        if (e.target === searchModal) {
+          searchModal.classList.add('hidden');
+          searchInput.value = '';
+          searchResults.innerHTML = '';
+        }
+      });
+
+      // Escape key to close
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !searchModal.classList.contains('hidden')) {
+          searchModal.classList.add('hidden');
+          searchInput.value = '';
+          searchResults.innerHTML = '';
+        }
+      });
+
+      // Search on input
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.trim();
+
+        if (!searchIndexLoaded) {
+          searchResults.innerHTML = '<p class="text-[#58728d] p-4">Loading search index...</p>';
+          return;
+        }
+
+        if (query.length < 2) {
+          searchResults.innerHTML = '';
+          return;
+        }
+
+        const results = miniSearch.search(query, { limit: 20 });
+
+        if (results.length === 0) {
+          searchResults.innerHTML = '<p class="text-[#58728d] p-4">No results found.</p>';
+          return;
+        }
+
+        const resultsHTML = results.map(result => {
+          const doc = result;
+          return `
+            <a href="./${doc.url}" class="block p-4 hover:bg-gray-50 border-b border-[#e9edf1]">
+              <h3 class="font-bold text-[#101419] mb-1">${doc.title}</h3>
+              ${doc.description ? `<p class="text-sm text-[#58728d] mb-2">${doc.description.substring(0, 150)}${doc.description.length > 150 ? '...' : ''}</p>` : ''}
+              <div class="flex gap-2 text-xs">
+                ${doc.category ? `<span class="px-2 py-1 bg-[#e9edf1] text-[#101419] rounded">${doc.category}</span>` : ''}
+                ${doc.date ? `<span class="text-[#58728d]">${doc.date}</span>` : ''}
+              </div>
+            </a>
+          `;
+        }).join('');
+
+        searchResults.innerHTML = resultsHTML;
+      });
     </script>
   </body>
 </html>

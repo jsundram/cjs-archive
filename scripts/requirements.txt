@@ -1,0 +1,4 @@
+# Python dependencies for CJS Archive static site generator
+
+# Date parsing for CSV inputs
+dateparser>=1.2.0

@@ -10,7 +10,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About Clarence J. Sundram</title>
     <meta name="description" content="Clarence J. Sundram is a nationally recognized expert on conditions in institutions and community programs for persons with mental disabilities, serving as court monitor, special advisor, and founding chairman of the NY Commission on Quality of Care.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://clarencesundram.org/index.html">
@@ -21,14 +21,16 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.8/dist/index.global.min.js"></script>
-    <!-- this gives a warning about not using the browser version, but ... -->
+
+    <!-- MiniSearch for client-side search -->
+    <script src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"></script>
   </head>
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
         <header class="relative flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e9edf1] px-10 py-3">
           <div class="flex items-center gap-4 text-[#101419]">
-            <!-- Hamburger Button (moved to left side) -->
+            <!-- Hamburger Button -->
             <button
               id="hamburger-btn"
               class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e9edf1] text-[#101419] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
@@ -44,7 +46,7 @@
             <h2 id="site-title" class="text-[#101419] text-lg font-bold leading-tight tracking-[-0.015em]">Archive</h2>
           </div>
           <div class="flex flex-1 justify-end gap-8">
-            <!-- Navigation Menu (always mobile-style dropdown) -->
+            <!-- Navigation Menu -->
             <nav id="main-nav" class="hidden flex flex-col gap-4
                                       absolute top-full left-0 right-0
                                       bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
@@ -54,6 +56,16 @@
               <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./court-monitor.html">Court Monitor</a>
               <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./special-advisor.html">Special Advisor</a>
             </nav>
+            <!-- Search Button -->
+            <button
+              id="search-btn"
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e9edf1] text-[#101419] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              title="Search documents"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+              </svg>
+            </button>
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
               style='background-image: url("./assets/headshot.jpg");'
@@ -61,55 +73,83 @@
           </div>
         </header>
 
+        
+
         <div class="bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
-          <h1 id="page-title" class="text-[#101419] text-xl font-bold leading-tight tracking-[-0.015em]"></h1>
+          <h1 id="page-title" class="text-[#101419] text-xl font-bold leading-tight tracking-[-0.015em]">About</h1>
         </div>
 
-        <!-- Content -->
         <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex p-4 @container">
-              <div class="flex w-full flex-col gap-4 items-center">
-                <div class="flex gap-4 flex-col items-center">
-                  <div
-                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
-                    style='background-image: url("./assets/headshot.jpg");'
-                  ></div>
-                  <div class="flex flex-col items-center justify-center justify-center">
-                    <p class="text-[#101419] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Clarence Sundram</p>
-                    <p class="text-[#58728d] text-base font-normal leading-normal text-center">Based in New York</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-                <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
-Clarence J. Sundram, JD, is a nationally recognized expert on conditions in institutions and community programs for persons with mental disabilities. Currently, he serves as the Independent Monitor for the federal court overseeing the implementation of a Settlement Agreement class action which offers approximately 4000 persons with mental illness residing in adult homes in NYC the opportunity to move to supported housing with support services. Mr. Sundram's reports to the Court have influenced numerous refinements in the implementation process including the creation of a peer bridger program to be implemented in 22 impacted adult homes.
-</p>
-                <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
-In March 2011, Governor Andrew Cuomo asked Mr. Sundram to serve as Special Advisor to the Governor for Vulnerable Persons to help address the issue of abuse and neglect of persons in residential care. The report he made to the Governor in April 2012 "The Measure Of A Society: Protection Of Vulnerable  Persons In Residential Facilities Against Abuse & Neglect" recommended sweeping reforms in the system for prevention, reporting, investigating and responding to such incidents in New York. Governor Cuomo proposed and the legislature unanimously adopted The Protection of People with Special Needs Act, implementing the key recommendations of the report, on June 20, 2012.
-</p>
-                <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
-He also served a member of the Willowbrook Review Panel monitoring the implementation of the Willowbrook Consent Judgment, and as the Special Master & Court Monitor in class action lawsuits in New York, Washington, DC and Maine involving the rights of persons with mental disabilities under the Constitution, the Americans with Disabilities Act and other laws. He has served as President of the Board of Directors of Disability Rights International, a non-governmental agency which advocates on behalf of persons with mental disabilities worldwide and as a trustee of the van Ameringen Foundation.
-</p>
-                <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
-For 20 years, he served as the founding Chairman of the New York State Commission on Quality of Care for the Mentally Disabled, an independent state oversight agency charged with advising the governor and legislature, investigating deaths, child abuse, patient abuse, and financial fraud and abuse in programs serving persons with mental disabilities. Mr. Sundram has also served as a member of the Board of Directors of the National Association of Protection & Advocacy Systems (now National Disability Rights Network).
-</p>
-                <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
-Mr. Sundram has participated in international efforts to reform mental health services in Argentina, Armenia, Bulgaria, Hungary, Kosovo, Mexico, Paraguay, Peru, Romania, Serbia, Turkey, the Russian Federation and Uruguay as a member of the Board of Disability Rights International and as a consultant to UNICEF and WHO.
-</p>
-                <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
-He has testified by invitation before both Houses of the US Congress and before legislative committees in New York, Maine, Massachusetts and Washington, DC regarding legislation dealing with abuse, neglect and exploitation. He has published numerous articles in legal and other professional journals, and is a frequent speaker at national conferences. He has appeared on such programs as Nightline, 48 Hours and The CBS Evening News. He has received several awards in recognition of his public service, including legislative resolutions by the New York State Senate and Assembly; Distinguished Public Service Awards from the Nelson A. Rockefeller College of the University of Albany and from the New York State Association of Rehabilitation Facilities, the Dybwad Humanitarian Award from AAIDD, Human Rights Award from the American Psychosocial Rehabilitation Association; the Public Policy Leadership Award from the NYS Association of Psychiatric Rehabilitation Services; a Special Award from the American Association on Mental Retardation "for Courageous Advocacy & Exemplary Leadership," and the Humanitarian Award & a Lifetime Achievement Award from the New York City Chapter of the Association for Retarded Children.
-</p>
-            </div>
-            <h2 class="text-[#101419] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact</h2>
-            <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
-                <a href="https://linkedin.com/in/clarence-sundram/">linkedin.com/in/clarence-sundram/</a>
-            </p>
+  <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+    <div class="flex p-4 @container">
+      <div class="flex w-full flex-col gap-4 items-center">
+        <div class="flex gap-4 flex-col items-center">
+          <div
+            class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
+            style='background-image: url("./assets/headshot.jpg");'
+          ></div>
+          <div class="flex flex-col items-center justify-center justify-center">
+            <p class="text-[#101419] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Clarence Sundram</p>
+            <p class="text-[#58728d] text-base font-normal leading-normal text-center">Based in New York</p>
           </div>
         </div>
-        <!-- End Content -->
+      </div>
+    </div>
+
+    <div>
+        <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
+Clarence J. Sundram, JD, is a nationally recognized expert on conditions in institutions and community programs for persons with mental disabilities. Currently, he serves as the Independent Monitor for the federal court overseeing the implementation of a Settlement Agreement class action which offers approximately 4000 persons with mental illness residing in adult homes in NYC the opportunity to move to supported housing with support services. Mr. Sundram's reports to the Court have influenced numerous refinements in the implementation process including the creation of a peer bridger program to be implemented in 22 impacted adult homes.
+</p>
+        <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
+In March 2011, Governor Andrew Cuomo asked Mr. Sundram to serve as Special Advisor to the Governor for Vulnerable Persons to help address the issue of abuse and neglect of persons in residential care. The report he made to the Governor in April 2012 "The Measure Of A Society: Protection Of Vulnerable  Persons In Residential Facilities Against Abuse & Neglect" recommended sweeping reforms in the system for prevention, reporting, investigating and responding to such incidents in New York. Governor Cuomo proposed and the legislature unanimously adopted The Protection of People with Special Needs Act, implementing the key recommendations of the report, on June 20, 2012.
+</p>
+        <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
+He also served a member of the Willowbrook Review Panel monitoring the implementation of the Willowbrook Consent Judgment, and as the Special Master & Court Monitor in class action lawsuits in New York, Washington, DC and Maine involving the rights of persons with mental disabilities under the Constitution, the Americans with Disabilities Act and other laws. He has served as President of the Board of Directors of Disability Rights International, a non-governmental agency which advocates on behalf of persons with mental disabilities worldwide and as a trustee of the van Ameringen Foundation.
+</p>
+        <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
+For 20 years, he served as the founding Chairman of the New York State Commission on Quality of Care for the Mentally Disabled, an independent state oversight agency charged with advising the governor and legislature, investigating deaths, child abuse, patient abuse, and financial fraud and abuse in programs serving persons with mental disabilities. Mr. Sundram has also served as a member of the Board of Directors of the National Association of Protection & Advocacy Systems (now National Disability Rights Network).
+</p>
+        <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
+Mr. Sundram has participated in international efforts to reform mental health services in Argentina, Armenia, Bulgaria, Hungary, Kosovo, Mexico, Paraguay, Peru, Romania, Serbia, Turkey, the Russian Federation and Uruguay as a member of the Board of Disability Rights International and as a consultant to UNICEF and WHO.
+</p>
+        <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
+In addition to his professional work, Mr. Sundram has actively participated in civic and community affairs as a board member and former president of United Way of Rockland County, former president of the Rockland County YMCA, co-founder and former board president of Jawonio, Inc. (a nonprofit provider of services to persons with mental disabilities), and co-founder of the county's only not-for-profit radio station, WRCR, serving local government, community organizations and charities. He has also served on the Rockland County Democratic Committee and the NYS Democratic Committee.
+</p>
+        <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
+He has testified by invitation before both Houses of the US Congress and before legislative committees in New York, Maine, Massachusetts and Washington, DC regarding legislation dealing with abuse, neglect and exploitation. He has published numerous articles in legal and other professional journals, and is a frequent speaker at national conferences. He has appeared on such programs as Nightline, 48 Hours and The CBS Evening News. He has received several awards in recognition of his public service, including legislative resolutions by the New York State Senate and Assembly; Distinguished Public Service Awards from the Nelson A. Rockefeller College of the University of Albany and from the New York State Association of Rehabilitation Facilities, the Dybwad Humanitarian Award from AAIDD, Human Rights Award from the American Psychosocial Rehabilitation Association; the Public Policy Leadership Award from the NYS Association of Psychiatric Rehabilitation Services; a Special Award from the American Association on Mental Retardation "for Courageous Advocacy & Exemplary Leadership," and the Humanitarian Award & a Lifetime Achievement Award from the New York City Chapter of the Association for Retarded Children.
+</p>
+    </div>
+    <h2 class="text-[#101419] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact</h2>
+    <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
+        <a href="https://linkedin.com/in/clarence-sundram/">linkedin.com/in/clarence-sundram/</a>
+    </p>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center pt-20">
+      <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl mx-4">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold text-[#101419]">Search Documents</h2>
+            <button id="close-search" class="text-[#58728d] hover:text-[#101419]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+              </svg>
+            </button>
+          </div>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search by title, description, or category..."
+            class="w-full px-4 py-3 border border-[#d3dbe4] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1971c2] text-[#101419]"
+          />
+          <div id="search-results" class="mt-4 max-h-96 overflow-y-auto"></div>
+        </div>
       </div>
     </div>
 
@@ -118,9 +158,8 @@ He has testified by invitation before both Houses of the US Congress and before 
       const hamburgerBtn = document.getElementById('hamburger-btn');
       const mobileMenu = document.getElementById('main-nav');
 
-      // Toggle menu on hamburger button click
       hamburgerBtn.addEventListener('click', function(e) {
-        e.stopPropagation(); // Prevent event from bubbling up
+        e.stopPropagation();
         if (mobileMenu.classList.contains('hidden')) {
           mobileMenu.classList.remove('hidden');
         } else {
@@ -128,9 +167,7 @@ He has testified by invitation before both Houses of the US Congress and before 
         }
       });
 
-      // Close menu when clicking outside
       document.addEventListener('click', function(e) {
-        // Check if the menu is visible and the click is outside the menu and hamburger button
         if (!mobileMenu.classList.contains('hidden') &&
             !mobileMenu.contains(e.target) &&
             !hamburgerBtn.contains(e.target)) {
@@ -138,13 +175,109 @@ He has testified by invitation before both Houses of the US Congress and before 
         }
       });
 
-      // Prevent menu from closing when clicking inside the menu
       mobileMenu.addEventListener('click', function(e) {
         e.stopPropagation();
       });
 
       // Set page title from document title
-      document.getElementById('page-title').textContent = document.title;
+      if (document.getElementById('page-title') && !document.getElementById('page-title').textContent) {
+        document.getElementById('page-title').textContent = document.title;
+      }
+
+      // Search functionality
+      let miniSearch = null;
+      let searchIndexLoaded = false;
+
+      // Load search index
+      fetch('./search-index.json')
+        .then(response => response.json())
+        .then(documents => {
+          miniSearch = new MiniSearch({
+            fields: ['title', 'description', 'category', 'source'],
+            storeFields: ['title', 'description', 'category', 'date', 'section', 'url'],
+            searchOptions: {
+              boost: { title: 2 },
+              fuzzy: 0.2,
+              prefix: true
+            }
+          });
+          miniSearch.addAll(documents);
+          searchIndexLoaded = true;
+        })
+        .catch(error => console.error('Error loading search index:', error));
+
+      // Search modal controls
+      const searchBtn = document.getElementById('search-btn');
+      const searchModal = document.getElementById('search-modal');
+      const closeSearch = document.getElementById('close-search');
+      const searchInput = document.getElementById('search-input');
+      const searchResults = document.getElementById('search-results');
+
+      searchBtn.addEventListener('click', () => {
+        searchModal.classList.remove('hidden');
+        searchInput.focus();
+      });
+
+      closeSearch.addEventListener('click', () => {
+        searchModal.classList.add('hidden');
+        searchInput.value = '';
+        searchResults.innerHTML = '';
+      });
+
+      searchModal.addEventListener('click', (e) => {
+        if (e.target === searchModal) {
+          searchModal.classList.add('hidden');
+          searchInput.value = '';
+          searchResults.innerHTML = '';
+        }
+      });
+
+      // Escape key to close
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !searchModal.classList.contains('hidden')) {
+          searchModal.classList.add('hidden');
+          searchInput.value = '';
+          searchResults.innerHTML = '';
+        }
+      });
+
+      // Search on input
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.trim();
+
+        if (!searchIndexLoaded) {
+          searchResults.innerHTML = '<p class="text-[#58728d] p-4">Loading search index...</p>';
+          return;
+        }
+
+        if (query.length < 2) {
+          searchResults.innerHTML = '';
+          return;
+        }
+
+        const results = miniSearch.search(query, { limit: 20 });
+
+        if (results.length === 0) {
+          searchResults.innerHTML = '<p class="text-[#58728d] p-4">No results found.</p>';
+          return;
+        }
+
+        const resultsHTML = results.map(result => {
+          const doc = result;
+          return `
+            <a href="./${doc.url}" class="block p-4 hover:bg-gray-50 border-b border-[#e9edf1]">
+              <h3 class="font-bold text-[#101419] mb-1">${doc.title}</h3>
+              ${doc.description ? `<p class="text-sm text-[#58728d] mb-2">${doc.description.substring(0, 150)}${doc.description.length > 150 ? '...' : ''}</p>` : ''}
+              <div class="flex gap-2 text-xs">
+                ${doc.category ? `<span class="px-2 py-1 bg-[#e9edf1] text-[#101419] rounded">${doc.category}</span>` : ''}
+                ${doc.date ? `<span class="text-[#58728d]">${doc.date}</span>` : ''}
+              </div>
+            </a>
+          `;
+        }).join('');
+
+        searchResults.innerHTML = resultsHTML;
+      });
     </script>
   </body>
 </html>

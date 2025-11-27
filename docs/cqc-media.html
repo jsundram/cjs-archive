@@ -10,20 +10,27 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commission on Quality of Care</title>
-    <meta name="description" content="Media coverage of the New York State Commission on Quality of Care for the Mentally Disabled under Chairman Clarence J. Sundram.">
+    <title>Commission on Quality of Care - Media Coverage</title>
+    <meta name="description" content="Media coverage and news articles about the work of the Commission on Quality of Care under Clarence J. Sundram.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://clarencesundram.org/cqc-media.html">
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.8/dist/index.global.min.js"></script>
+
+    <!-- MiniSearch for client-side search -->
+    <script src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"></script>
   </head>
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
         <header class="relative flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e9edf1] px-10 py-3">
           <div class="flex items-center gap-4 text-[#101419]">
-            <!-- Hamburger Button (moved to left side) -->
+            <!-- Hamburger Button -->
             <button
               id="hamburger-btn"
               class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e9edf1] text-[#101419] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
@@ -39,7 +46,7 @@
             <h2 id="site-title" class="text-[#101419] text-lg font-bold leading-tight tracking-[-0.015em]">Archive</h2>
           </div>
           <div class="flex flex-1 justify-end gap-8">
-            <!-- Navigation Menu (always mobile-style dropdown) -->
+            <!-- Navigation Menu -->
             <nav id="main-nav" class="hidden flex flex-col gap-4
                                       absolute top-full left-0 right-0
                                       bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
@@ -49,6 +56,16 @@
               <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./court-monitor.html">Court Monitor</a>
               <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./special-advisor.html">Special Advisor</a>
             </nav>
+            <!-- Search Button -->
+            <button
+              id="search-btn"
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e9edf1] text-[#101419] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              title="Search documents"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+              </svg>
+            </button>
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
               style='background-image: url("./assets/headshot.jpg");'
@@ -56,29 +73,30 @@
           </div>
         </header>
 
+        
+
         <div class="bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
-          <h1 id="page-title" class="text-[#101419] text-xl font-bold leading-tight tracking-[-0.015em]"></h1>
+          <h1 id="page-title" class="text-[#101419] text-xl font-bold leading-tight tracking-[-0.015em]">Commission on Quality of Care - Media Coverage</h1>
         </div>
-        <!-- Content -->
 
         <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#101419] tracking-light text-[32px] font-bold leading-tight min-w-72">Media Coverage</p></div>
-            <div class="px-4 py-3 @container">
-              <div class="flex overflow-hidden rounded-xl border border-[#d3dbe4] bg-gray-50">
-                <table class="flex-1">
-                  <thead>
+    <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+        <div class="flex flex-wrap justify-between gap-3 p-4">
+            <p class="text-[#101419] tracking-light text-[32px] font-bold leading-tight min-w-72">Media Coverage</p>
+        </div>
+        <div class="px-4 py-3 @container">
+          <div class="flex overflow-hidden rounded-xl border border-[#d3dbe4] bg-gray-50">
+            <table class="flex-1">
+                <thead>
                     <tr class="bg-gray-50">
-                      <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-120 px-4 py-3 text-left text-[#101419] w-[150px] text-sm font-medium leading-normal">Date</th>
-                      <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-240 px-4 py-3 text-left text-[#101419] w-60 text-sm font-medium leading-normal">Type</th>
-                      <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-360 px-4 py-3 text-left text-[#101419] w-[200px] text-sm font-medium leading-normal">Title</th>
-                      <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-480 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">
-                        Description
-                      </th>
+                        <th class="table-column-120 px-4 py-3 text-left text-[#101419] w-[150px] text-sm font-medium leading-normal">Date</th>
+                        <th class="table-column-240 px-4 py-3 text-left text-[#101419] w-60 text-sm font-medium leading-normal">Media</th>
+                        <th class="table-column-360 px-4 py-3 text-left text-[#101419] w-[200px] text-sm font-medium leading-normal">Title</th>
+                        <th class="table-column-480 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Description</th>
                     </tr>
-                  </thead>
-                  <tbody>
-
+                </thead>
+                <tbody>
+                    
             <tr class="border-t border-t-[#d3dbe4]">
               <td class="align-top px-4 py-2 w-[150px] text-[#58728d] text-sm font-normal leading-normal">
                 1978-05-26
@@ -89,7 +107,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1978/05/26/archives/accord-on-mentalpatient-homes-agreement-on-review-time-could-go-to.html?searchResultPosition=74" target="_blank" class="underline hover:text-blue-600">ACCORD ON MENTAL-PATIENT HOMES</a>
+                <a href="./documents/cqc-media-accord-on-mental-patient-homes.html" class="underline hover:text-blue-600">ACCORD ON MENTAL-PATIENT HOMES</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of site selection law
@@ -107,7 +125,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1981/03/08/nyregion/state-panel-assails-management-of-a-school-for-retarded.html?searchResultPosition=54" target="_blank" class="underline hover:text-blue-600">STATE PANEL ASSAILS MANAGEMENT OF A SCHOOL FOR RETARDED</a>
+                <a href="./documents/cqc-media-state-panel-assails-management-of-a-school-for-retarded.html" class="underline hover:text-blue-600">STATE PANEL ASSAILS MANAGEMENT OF A SCHOOL FOR RETARDED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on Greenwood Rehabilitation Center
@@ -125,7 +143,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1981/07/17/nyregion/patients-deaths-tied-to-the-heat-are-investigated.html?searchResultPosition=65" target="_blank" class="underline hover:text-blue-600">PATIENTS' DEATHS TIED TO THE HEAT ARE INVESTIGATED</a>
+                <a href="./documents/cqc-media-patients-deaths-tied-to-the-heat-are-investigated.html" class="underline hover:text-blue-600">PATIENTS' DEATHS TIED TO THE HEAT ARE INVESTIGATED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC investigation into heat related deaths
@@ -143,7 +161,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1982/02/28/nyregion/report-on-a-death-faults-si-mental-center.html?searchResultPosition=10" target="_blank" class="underline hover:text-blue-600">REPORT ON A DEATH FAULTS S.I. MENTAL CENTER</a>
+                <a href="./documents/cqc-media-report-on-a-death-faults-si-mental-center.html" class="underline hover:text-blue-600">REPORT ON A DEATH FAULTS S.I. MENTAL CENTER</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC investigation into a restraint death at South Beach PC
@@ -161,7 +179,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesmachine.nytimes.com/timesmachine/1982/06/20/222121.html?pageNumber=41" target="_blank" class="underline hover:text-blue-600">STATE SPENDING ON MENTALLY ILL IN CENTERS IS TERMED INFLATED</a>
+                <a href="./documents/cqc-media-state-spending-on-mentally-ill-in-centers-is-termed-inflated.html" class="underline hover:text-blue-600">STATE SPENDING ON MENTALLY ILL IN CENTERS IS TERMED INFLATED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on Deficit funding
@@ -179,7 +197,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1982/08/29/nyregion/state-residences-for-retarded-found-inferior-and-expensive.html?searchResultPosition=21" target="_blank" class="underline hover:text-blue-600">STATE RESIDENCES FOR RETARDED FOUND INFERIOR AND EXPENSIVE</a>
+                <a href="./documents/cqc-media-state-residences-for-retarded-found-inferior-and-expensive.html" class="underline hover:text-blue-600">STATE RESIDENCES FOR RETARDED FOUND INFERIOR AND EXPENSIVE</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC study of OMRDD residences
@@ -197,7 +215,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1982/11/26/opinion/l-no-more-warehouses-for-the-mentally-ill-057187.html?searchResultPosition=30" target="_blank" class="underline hover:text-blue-600">NO MORE WAREHOUSES FOR THE MENTALLY ILL</a>
+                <a href="./documents/cqc-media-no-more-warehouses-for-the-mentally-ill.html" class="underline hover:text-blue-600">NO MORE WAREHOUSES FOR THE MENTALLY ILL</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Letter re budget problems and staffing
@@ -215,7 +233,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1983/03/08/nyregion/court-lifts-ban-on-group-home-for-the-retarded.html?searchResultPosition=44" target="_blank" class="underline hover:text-blue-600">COURT LIFTS BAN ON GROUP HOME FOR THE RETARDED</a>
+                <a href="./documents/cqc-media-court-lifts-ban-on-group-home-for-the-retarded.html" class="underline hover:text-blue-600">COURT LIFTS BAN ON GROUP HOME FOR THE RETARDED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Court ruling overturning the use of restrictive covenants to bar group homes
@@ -233,7 +251,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1983/03/13/nyregion/baby-sitting-of-mentally-ill-is-termed-costly.html?searchResultPosition=56" target="_blank" class="underline hover:text-blue-600">BABY-SITTING' OF MENTALLY ILL IS TERMED COSTLY</a>
+                <a href="./documents/cqc-media-baby-sitting-of-mentally-ill-is-termed-costly.html" class="underline hover:text-blue-600">BABY-SITTING' OF MENTALLY ILL IS TERMED COSTLY</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report
@@ -251,7 +269,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1983/09/25/nyregion/inquiry-criticizes-mental-hospitals.html?searchResultPosition=66" target="_blank" class="underline hover:text-blue-600">INQUIRY CRITICIZES MENTAL HOSPITALS</a>
+                <a href="./documents/cqc-media-inquiry-criticizes-mental-hospitals.html" class="underline hover:text-blue-600">INQUIRY CRITICIZES MENTAL HOSPITALS</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on use of psychotropic medications at six PCs
@@ -269,7 +287,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1984/03/18/nyregion/more-funds-for-home-care-of-retarded-urged.html?searchResultPosition=25" target="_blank" class="underline hover:text-blue-600">MORE FUNDS FOR HOME CARE OF RETARDED URGED</a>
+                <a href="./documents/cqc-media-more-funds-for-home-care-of-retarded-urged.html" class="underline hover:text-blue-600">MORE FUNDS FOR HOME CARE OF RETARDED URGED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of report on family support services
@@ -287,7 +305,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesmachine.nytimes.com/timesmachine/1984/10/14/008996.html?pageNumber=52" target="_blank" class="underline hover:text-blue-600">GROUP HOME PROBLEMS CITED</a>
+                <a href="./documents/cqc-media-group-home-problems-cited.html" class="underline hover:text-blue-600">GROUP HOME PROBLEMS CITED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report of problems at the Niagara County ARC facilties
@@ -305,7 +323,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/107B44570E4FFF01?search_terms=sundram&pub%255B0%255D=KBNB&text=sundram&content_added=&date_from=&date_to=&pdate=1986-04-09" target="_blank" class="underline hover:text-blue-600">PROGRAM SEEKS TO SPEED MEDICAL AID FOR RETARDED</a>
+                <a href="./documents/cqc-media-program-seeks-to-speed-medical-aid-for-retarded.html" class="underline hover:text-blue-600">PROGRAM SEEKS TO SPEED MEDICAL AID FOR RETARDED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of Surrogate Decision-Making" program
@@ -323,7 +341,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5D90217D71E34?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=3&pdate=1986-04-10" target="_blank" class="underline hover:text-blue-600">NEW SYSTEM DESIGNED TO HELP IN CARING FOR THE MENTALLY DISABLED</a>
+                <a href="./documents/cqc-media-new-system-designed-to-help-in-caring-for-the-mentally-disabled.html" class="underline hover:text-blue-600">NEW SYSTEM DESIGNED TO HELP IN CARING FOR THE MENTALLY DISABLED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of SDMC program
@@ -341,7 +359,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/107B44638C36B334?search_terms=sundram&pub%255B0%255D=KBNB&text=sundram&content_added=&date_from=&date_to=&pdate=1986-04-22" target="_blank" class="underline hover:text-blue-600">FAMILY STILL BITTER AFTER PROBE OF TROY SUICIDE</a>
+                <a href="./documents/cqc-media-family-still-bitter-after-probe-of-troy-suicide.html" class="underline hover:text-blue-600">FAMILY STILL BITTER AFTER PROBE OF TROY SUICIDE</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC investigation of a death
@@ -359,7 +377,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/107B447B0B449CC9?search_terms=sundram&pub%255B0%255D=KBNB&text=sundram&content_added=&date_from=&date_to=&pdate=1986-05-15" target="_blank" class="underline hover:text-blue-600">PSYCHIATRIC CENTER CLEANLINESS SCORED</a>
+                <a href="./documents/cqc-media-psychiatric-center-cleanliness-scored.html" class="underline hover:text-blue-600">PSYCHIATRIC CENTER CLEANLINESS SCORED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on living conditions
@@ -377,7 +395,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5D94302B82D9D?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=2&pdate=1986-05-28" target="_blank" class="underline hover:text-blue-600">STATE SURROGATE PANEL DECIDES FIRST CASE</a>
+                <a href="./documents/cqc-media-state-surrogate-panel-decides-first-case.html" class="underline hover:text-blue-600">STATE SURROGATE PANEL DECIDES FIRST CASE</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of SDMC program
@@ -395,7 +413,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5D966AAE5AC7C?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=3&pdate=1986-06-26" target="_blank" class="underline hover:text-blue-600">PSYCHIATRIC PATIENTS' IDLENESS HIT</a>
+                <a href="./documents/cqc-media-psychiatric-patients-idleness-hit.html" class="underline hover:text-blue-600">PSYCHIATRIC PATIENTS' IDLENESS HIT</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Report on patient inactivity in psychiatric hospitals
@@ -413,7 +431,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5D993973BD2DD?search_terms=sundram&text=sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=6&pdate=1986-08-03" target="_blank" class="underline hover:text-blue-600">PANEL SAYS 'FERRY SLASHER' CASE MISHANDLED REPORT CRITICIZES HOSPITAL'S PSYCHIATRIC PROCEDURES</a>
+                <a href="./documents/cqc-media-panel-says-ferry-slasher-case-mishandled-report-criticizes-hospitals-psychiatric-procedures.html" class="underline hover:text-blue-600">PANEL SAYS 'FERRY SLASHER' CASE MISHANDLED REPORT CRITICIZES HOSPITAL'S PSYCHIATRIC PROCEDURES</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Covereage of CQC investigation of the Staten Island ferry slasher
@@ -431,7 +449,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5D9CF07F13FFE?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=4&pdate=1986-09-17" target="_blank" class="underline hover:text-blue-600">MENTAL PATIENTS FACE DRUG, ALCOHOL ABUSE AGENCY: ILL NEED MORE TREATMENT</a>
+                <a href="./documents/cqc-media-mental-patients-face-drug-alcohol-abuse-agency-ill-need-more-treatment.html" class="underline hover:text-blue-600">MENTAL PATIENTS FACE DRUG, ALCOHOL ABUSE AGENCY: ILL NEED MORE TREATMENT</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Report on MICA patients
@@ -449,7 +467,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/107B44EFE066D4E3?search_terms=sundram&pub%255B0%255D=KBNB&text=sundram&content_added=&date_from=&date_to=&pdate=1986-09-17" target="_blank" class="underline hover:text-blue-600">REPORT: MANY MENTAL PATIENTS IN NEED OF DRUG TREATMENT</a>
+                <a href="./documents/cqc-media-report-many-mental-patients-in-need-of-drug-treatment.html" class="underline hover:text-blue-600">REPORT: MANY MENTAL PATIENTS IN NEED OF DRUG TREATMENT</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on Mentally Ill Chemical Abusers
@@ -467,7 +485,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5DA576F1B9904?search_terms=sundram&text=sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=8&pdate=1986-12-25" target="_blank" class="underline hover:text-blue-600">MENTALLY ILL</a>
+                <a href="./documents/cqc-media-mentally-ill.html" class="underline hover:text-blue-600">MENTALLY ILL</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Comments on the implications of easing commitment standards
@@ -485,7 +503,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1987/02/02/nyregion/doctors-faulted-in-patient-death-at-state-center.html?searchResultPosition=62" target="_blank" class="underline hover:text-blue-600">DOCTORS FAULTED IN PATIENT DEATH AT STATE CENTER</a>
+                <a href="./documents/cqc-media-doctors-faulted-in-patient-death-at-state-center.html" class="underline hover:text-blue-600">DOCTORS FAULTED IN PATIENT DEATH AT STATE CENTER</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 CQC investigation of death at Manhattan PC
@@ -503,7 +521,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5DC20C3E34202?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=3&pdate=1987-04-30" target="_blank" class="underline hover:text-blue-600">AT PSYCHIATRIC CENTERS PANEL URGES BETTER STATE MANAGEMENT</a>
+                <a href="./documents/cqc-media-at-psychiatric-centers-panel-urges-better-state-management.html" class="underline hover:text-blue-600">AT PSYCHIATRIC CENTERS PANEL URGES BETTER STATE MANAGEMENT</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of report on living consitions in state psychiatric centers
@@ -521,7 +539,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/107B46C828BE5A98?search_terms=sundram&pub%255B0%255D=KBNB&text=sundram&content_added=&date_from=&date_to=&pdate=1987-06-09" target="_blank" class="underline hover:text-blue-600">MENTAL HEALTH HEAD IS LEAVING "HOT SEAT"</a>
+                <a href="./documents/cqc-media-mental-health-head-is-leaving-hot-seat.html" class="underline hover:text-blue-600">MENTAL HEALTH HEAD IS LEAVING "HOT SEAT"</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of Steve Katz resignation
@@ -539,7 +557,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1987/06/16/nyregion/hospital-cited-for-violating-patients-rights.html?searchResultPosition=46" target="_blank" class="underline hover:text-blue-600">HOSPITAL CITED FOR VIOLATING PATIENTS' RIGHTS</a>
+                <a href="./documents/cqc-media-hospital-cited-for-violating-patients-rights.html" class="underline hover:text-blue-600">HOSPITAL CITED FOR VIOLATING PATIENTS' RIGHTS</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Violation of patients rights re consent to research at Creedmoor PC
@@ -557,7 +575,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesmachine.nytimes.com/timesmachine/1987/09/03/253287.html?pageNumber=1" target="_blank" class="underline hover:text-blue-600">CHRONIC CRISIS' IS CITED IN CARE FOR MENTALLY ILL</a>
+                <a href="./documents/cqc-media-chronic-crisis-is-cited-in-care-for-mentally-ill.html" class="underline hover:text-blue-600">CHRONIC CRISIS' IS CITED IN CARE FOR MENTALLY ILL</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC work on overcrowding in emergency rooms
@@ -575,7 +593,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/1406F1BB52C42748?search_terms=sundram&pub%255B0%255D=KBNB&text=sundram&content_added=&date_from=&date_to=&pdate=1987-09-23" target="_blank" class="underline hover:text-blue-600">MENTAL DISABILITY PROGRAM REFORM URGED</a>
+                <a href="./documents/cqc-media-mental-disability-program-reform-urged.html" class="underline hover:text-blue-600">MENTAL DISABILITY PROGRAM REFORM URGED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC hearings
@@ -593,7 +611,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1987/12/01/nyregion/child-abuse-found-high-in-new-york-mental-centers.html?searchResultPosition=73" target="_blank" class="underline hover:text-blue-600">CHILD ABUSE FOUND HIGH IN NEW YORK MENTAL CENTERS</a>
+                <a href="./documents/cqc-media-child-abuse-found-high-in-new-york-mental-centers.html" class="underline hover:text-blue-600">CHILD ABUSE FOUND HIGH IN NEW YORK MENTAL CENTERS</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on child abuse in residential facilities
@@ -611,7 +629,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/1406F1EF1F15A440?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=4&pdate=1987-12-01" target="_blank" class="underline hover:text-blue-600">ABUSE RATE HIGH IN STATE FACILITIES</a>
+                <a href="./documents/cqc-media-abuse-rate-high-in-state-facilities.html" class="underline hover:text-blue-600">ABUSE RATE HIGH IN STATE FACILITIES</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on child abuse in residential facilities
@@ -629,7 +647,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/107B4719EE178A6A?search_terms=sundram&pub%255B0%255D=KBNB&text=sundram&content_added=&date_from=&date_to=&pdate=1988-01-11" target="_blank" class="underline hover:text-blue-600">PANEL SPEEDS MEDICAL CARE FOR INCOMPETENT</a>
+                <a href="./documents/cqc-media-panel-speeds-medical-care-for-incompetent.html" class="underline hover:text-blue-600">PANEL SPEEDS MEDICAL CARE FOR INCOMPETENT</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC SDMC program
@@ -647,7 +665,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5DD7C55C30D96?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=3&pdate=1988-03-09" target="_blank" class="underline hover:text-blue-600">SYSTEM 'CHAOTIC' AFTER-CARE RATED LAX FOR MENTAL PATIENTS</a>
+                <a href="./documents/cqc-media-system-chaotic-after-care-rated-lax-for-mental-patients.html" class="underline hover:text-blue-600">SYSTEM 'CHAOTIC' AFTER-CARE RATED LAX FOR MENTAL PATIENTS</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of legislative testimony on patient leaves without consent and discharge planning
@@ -665,7 +683,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesmachine.nytimes.com/timesmachine/1988/04/10/298688.html?pageNumber=34" target="_blank" class="underline hover:text-blue-600">CROWDING CITED IN MENTAL WARDS</a>
+                <a href="./documents/cqc-media-crowding-cited-in-mental-wards.html" class="underline hover:text-blue-600">CROWDING CITED IN MENTAL WARDS</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of a CQC report on overcrowding in psychiatric hospitals
@@ -683,7 +701,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5DDD15094B4F3?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=4&pdate=1988-04-10" target="_blank" class="underline hover:text-blue-600">MENTAL HEALTH SYSTEM IN A STATE OF 'CHAOS'</a>
+                <a href="./documents/cqc-media-mental-health-system-in-a-state-of-chaos.html" class="underline hover:text-blue-600">MENTAL HEALTH SYSTEM IN A STATE OF 'CHAOS'</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on discharged patients
@@ -701,7 +719,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/107B4772ADAC9325?search_terms=sundram&pub%255B0%255D=KBNB&text=sundram&content_added=&date_from=&date_to=&pdate=1988-04-12" target="_blank" class="underline hover:text-blue-600">7,000 A YEAR ESCAPE MENTAL HOSPITALS</a>
+                <a href="./documents/cqc-media-7000-a-year-escape-mental-hospitals.html" class="underline hover:text-blue-600">7,000 A YEAR ESCAPE MENTAL HOSPITALS</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on leaves without consent
@@ -719,7 +737,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5DE0A0730977D?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=1&pdate=1988-07-29" target="_blank" class="underline hover:text-blue-600">MENTAL OUTPATIENT SUICIDES EXAMINED REPORT CITES A LACK OF SUPPORT</a>
+                <a href="./documents/cqc-media-mental-outpatient-suicides-examined-report-cites-a-lack-of-support.html" class="underline hover:text-blue-600">MENTAL OUTPATIENT SUICIDES EXAMINED REPORT CITES A LACK OF SUPPORT</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 News coverage of report on ourpatient suicides
@@ -737,7 +755,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1988/07/31/nyregion/panel-urges-efforts-to-cut-suicides-by-the-mentally-ill.html?searchResultPosition=11" target="_blank" class="underline hover:text-blue-600">PANEL URGES EFFORTS TO CUT SUICIDES BY THE MENTALLY ILL</a>
+                <a href="./documents/cqc-media-panel-urges-efforts-to-cut-suicides-by-the-mentally-ill.html" class="underline hover:text-blue-600">PANEL URGES EFFORTS TO CUT SUICIDES BY THE MENTALLY ILL</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of report on outpatient suicides
@@ -755,7 +773,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5DEB52C1848DD?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=4&pdate=1988-12-06" target="_blank" class="underline hover:text-blue-600">MAJOR PROBLEMS UNCOVERED IN 15% OF GROUP HOMES FOR MENTALLY IL L</a>
+                <a href="./documents/cqc-media-major-problems-uncovered-in-15-of-group-homes-for-mentally-il-l.html" class="underline hover:text-blue-600">MAJOR PROBLEMS UNCOVERED IN 15% OF GROUP HOMES FOR MENTALLY IL L</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on Mental Health community residences
@@ -773,7 +791,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1989/01/20/nyregion/sex-club-found-at-mental-unit.html?searchResultPosition=69" target="_blank" class="underline hover:text-blue-600">SEX CLUB' FOUND AT MENTAL UNIT</a>
+                <a href="./documents/cqc-media-sex-club-found-at-mental-unit.html" class="underline hover:text-blue-600">SEX CLUB' FOUND AT MENTAL UNIT</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC investigation of Western New York Children's Psyhiatric Center
@@ -791,7 +809,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesmachine.nytimes.com/timesmachine/1989/01/29/153689.html?pageNumber=26" target="_blank" class="underline hover:text-blue-600">INQUIRIES CONCLUDE 'SEX CLUB' AT CHILDREN'S CENTER WAD ABERRATION</a>
+                <a href="./documents/cqc-media-inquiries-conclude-sex-club-at-childrens-center-wad-aberration.html" class="underline hover:text-blue-600">INQUIRIES CONCLUDE 'SEX CLUB' AT CHILDREN'S CENTER WAD ABERRATION</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC investigation of Western New York Children's Psyhiatric Center
@@ -809,7 +827,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5DFB2460F7880?search_terms=sundram&text=sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=8&pdate=1989-06-26" target="_blank" class="underline hover:text-blue-600">SYSTEM FAULTED IN DEATH</a>
+                <a href="./documents/cqc-media-system-faulted-in-death.html" class="underline hover:text-blue-600">SYSTEM FAULTED IN DEATH</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC death investigation of Francia Helms
@@ -827,7 +845,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5DFB8DB47A997?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=1&pdate=1989-07-03" target="_blank" class="underline hover:text-blue-600">DELMAR ATTORNEY NAMED TO PANEL</a>
+                <a href="./documents/cqc-media-delmar-attorney-named-to-panel.html" class="underline hover:text-blue-600">DELMAR ATTORNEY NAMED TO PANEL</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Appointment to ABA Commission on the Mentally Disabled
@@ -845,7 +863,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1989/07/20/nyregion/metro-datelines-outpatient-program-criticized-in-report.html?searchResultPosition=40" target="_blank" class="underline hover:text-blue-600">OUTPATIENT PROGRAM CRITICIZED IN REPORT</a>
+                <a href="./documents/cqc-media-outpatient-program-criticized-in-report.html" class="underline hover:text-blue-600">OUTPATIENT PROGRAM CRITICIZED IN REPORT</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of report on outpatient mental health services
@@ -863,7 +881,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5DFCBD0FCD435?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=1&pdate=1989-07-26" target="_blank" class="underline hover:text-blue-600">2 STATE OUTPATIENT PROGRAMS AUDITED</a>
+                <a href="./documents/cqc-media-2-state-outpatient-programs-audited.html" class="underline hover:text-blue-600">2 STATE OUTPATIENT PROGRAMS AUDITED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 
@@ -881,7 +899,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5E0232A4E8832?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=3&pdate=1989-12-24" target="_blank" class="underline hover:text-blue-600">MEDICAID STUNG FOR $1.4 MILLION REPORT BLAMES MENTAL HEALTH OFFICE FOR LAX OVERSIGHT</a>
+                <a href="./documents/cqc-media-medicaid-stung-for-14-million-report-blames-mental-health-office-for-lax-oversight.html" class="underline hover:text-blue-600">MEDICAID STUNG FOR $1.4 MILLION REPORT BLAMES MENTAL HEALTH OFFICE FOR LAX OVERSIGHT</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on NYPCC fiscal abuse
@@ -899,7 +917,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5E1DE396558BB?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=3&pdate=1990-03-04" target="_blank" class="underline hover:text-blue-600">GIRL'S DEATH IN YOUTH HOME SPURS CALL FOR RESTRUCTURING</a>
+                <a href="./documents/cqc-media-girls-death-in-youth-home-spurs-call-for-restructuring.html" class="underline hover:text-blue-600">GIRL'S DEATH IN YOUTH HOME SPURS CALL FOR RESTRUCTURING</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of aCQC  death investigation
@@ -917,7 +935,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1990/05/24/nyregion/death-among-the-disturbed-were-police-inattentive.html?searchResultPosition=39" target="_blank" class="underline hover:text-blue-600">DEATH AMONG THE DISTURBED: WERE POLICE INATTENTIVE?</a>
+                <a href="./documents/cqc-media-death-among-the-disturbed-were-police-inattentive.html" class="underline hover:text-blue-600">DEATH AMONG THE DISTURBED: WERE POLICE INATTENTIVE?</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of deaths at Leben Home
@@ -935,7 +953,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1990/08/06/nyregion/neglect-found-in-residences-for-disabled.html?searchResultPosition=35" target="_blank" class="underline hover:text-blue-600">NEGLECT FOUND IN RESIDENCE FOR THE DISABLED</a>
+                <a href="./documents/cqc-media-neglect-found-in-residence-for-the-disabled.html" class="underline hover:text-blue-600">NEGLECT FOUND IN RESIDENCE FOR THE DISABLED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC Adult Home report
@@ -953,7 +971,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5E29325344300?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=4&pdate=1990-08-06" target="_blank" class="underline hover:text-blue-600">STATE INSPECTORS FIND SEVERE NEGLECT IN ADULT GROUP HOMES</a>
+                <a href="./documents/cqc-media-state-inspectors-find-severe-neglect-in-adult-group-homes.html" class="underline hover:text-blue-600">STATE INSPECTORS FIND SEVERE NEGLECT IN ADULT GROUP HOMES</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on adult homes
@@ -971,7 +989,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1990/10/17/nyregion/agency-reports-little-oversight-of-adult-homes.html?searchResultPosition=57" target="_blank" class="underline hover:text-blue-600">AGENCY REPORTS LITTLE OVERSIGHT OF ADULT HOMES</a>
+                <a href="./documents/cqc-media-agency-reports-little-oversight-of-adult-homes.html" class="underline hover:text-blue-600">AGENCY REPORTS LITTLE OVERSIGHT OF ADULT HOMES</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 CQC report ON Fiscal proactices of adult homes
@@ -989,7 +1007,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5E3D1AF8D61A3?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=5&pdate=1991-02-21" target="_blank" class="underline hover:text-blue-600">TASK FORCE TO MAKE LIFESAVING PROVISIONS FOR MENTALLY RETARDED</a>
+                <a href="./documents/cqc-media-task-force-to-make-lifesaving-provisions-for-mentally-retarded.html" class="underline hover:text-blue-600">TASK FORCE TO MAKE LIFESAVING PROVISIONS FOR MENTALLY RETARDED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on transporatiion of the disabled  following deaths
@@ -1007,7 +1025,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5E3F199A4DB43?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=3&pdate=1991-03-20" target="_blank" class="underline hover:text-blue-600">STATE STUDY CONCLUSIONS 2 PERCENT OF INMATES MENTALLY DISABLED</a>
+                <a href="./documents/cqc-media-state-study-conclusions-2-percent-of-inmates-mentally-disabled.html" class="underline hover:text-blue-600">STATE STUDY CONCLUSIONS 2 PERCENT OF INMATES MENTALLY DISABLED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on Developmentally disabled inmates
@@ -1025,7 +1043,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5E449AA5EE895?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=1&pdate=1991-06-04" target="_blank" class="underline hover:text-blue-600">SERVICE AWARD PRESENTED BY LAW ALUMNI ASSOCIATION</a>
+                <a href="./documents/cqc-media-service-award-presented-by-law-alumni-association.html" class="underline hover:text-blue-600">SERVICE AWARD PRESENTED BY LAW ALUMNI ASSOCIATION</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 
@@ -1043,7 +1061,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1992/01/15/opinion/l-don-t-pull-the-plug-on-ny-mental-health-173192.html?searchResultPosition=15" target="_blank" class="underline hover:text-blue-600">DON'T PULL THE PLUG ON N.Y. MENTAL HEALTH</a>
+                <a href="./documents/cqc-media-dont-pull-the-plug-on-ny-mental-health.html" class="underline hover:text-blue-600">DON'T PULL THE PLUG ON N.Y. MENTAL HEALTH</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 
@@ -1061,7 +1079,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5E709BB3F78FE?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=1&pdate=1992-10-20" target="_blank" class="underline hover:text-blue-600">OFFICIAL URGES LINK OF NURSING HOME COST, PAY</a>
+                <a href="./documents/cqc-media-official-urges-link-of-nursing-home-cost-pay.html" class="underline hover:text-blue-600">OFFICIAL URGES LINK OF NURSING HOME COST, PAY</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 
@@ -1079,7 +1097,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1992/11/29/nyregion/psychiatric-hospitals-faulted-on-medication-of-children.html?searchResultPosition=28" target="_blank" class="underline hover:text-blue-600">PSYCHIATRIC HOSPITALS FAULTED ON MEDICATION OF CHILDREN</a>
+                <a href="./documents/cqc-media-psychiatric-hospitals-faulted-on-medication-of-children.html" class="underline hover:text-blue-600">PSYCHIATRIC HOSPITALS FAULTED ON MEDICATION OF CHILDREN</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on use of medications with children
@@ -1097,7 +1115,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB6D155ABBEE867?search_terms=sundram&text=sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=8&pdate=1993-03-14" target="_blank" class="underline hover:text-blue-600">STATE ACCUSED OF NEGLECTING DISTURBED KIDS</a>
+                <a href="./documents/cqc-media-state-accused-of-neglecting-disturbed-kids.html" class="underline hover:text-blue-600">STATE ACCUSED OF NEGLECTING DISTURBED KIDS</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on children in institutions
@@ -1115,7 +1133,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1993/04/29/nyregion/follow-up-care-for-mental-patients-is-criticized.html?searchResultPosition=19" target="_blank" class="underline hover:text-blue-600">FOLLOW-UP CARE FOR MENTAL PATIENTS IS CRITICIZED</a>
+                <a href="./documents/cqc-media-follow-up-care-for-mental-patients-is-criticized.html" class="underline hover:text-blue-600">FOLLOW-UP CARE FOR MENTAL PATIENTS IS CRITICIZED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of Discharge planning report & incentive payments
@@ -1133,7 +1151,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1993/09/05/opinion/in-america-mental-health-failures.html" target="_blank" class="underline hover:text-blue-600">IN AMERICA; MENTAL HEALTH FAILURES</a>
+                <a href="./documents/cqc-media-in-america-mental-health-failures.html" class="underline hover:text-blue-600">IN AMERICA; MENTAL HEALTH FAILURES</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 News coverage of CQC report on discharge planning
@@ -1151,7 +1169,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1993/12/14/nyregion/lapses-in-oversight-found-in-residences-for-disabled.html?searchResultPosition=38" target="_blank" class="underline hover:text-blue-600">LAPSES IN OVERSIGHT FOUND IN RESIDENCES FOR DISABLED</a>
+                <a href="./documents/cqc-media-lapses-in-oversight-found-in-residences-for-disabled.html" class="underline hover:text-blue-600">LAPSES IN OVERSIGHT FOUND IN RESIDENCES FOR DISABLED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC investigation of the death of Joan Stalker
@@ -1169,7 +1187,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1994/07/07/nyregion/abuse-found-in-center-for-retarded.html?searchResultPosition=26" target="_blank" class="underline hover:text-blue-600">ABUSE FOUND IN CENTER FOR RETARDED</a>
+                <a href="./documents/cqc-media-abuse-found-in-center-for-retarded.html" class="underline hover:text-blue-600">ABUSE FOUND IN CENTER FOR RETARDED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on financial abuse Community Living Alternative 
@@ -1187,7 +1205,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0FB5EE177A61AE4E?search_terms=sundram&text=sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=8&pdate=1994-09-22" target="_blank" class="underline hover:text-blue-600">AGENCY FINDS VARYING USE OF RESTRAINTS IN PSYCHIATRIC FACILITIES REPORT CRITICIZES STATE OFFICE FOR INADEQUATE MONITORING OF PRIVATE PSYCHIATRIC WARDS</a>
+                <a href="./documents/cqc-media-agency-finds-varying-use-of-restraints-in-psychiatric-facilities-report-criticizes-state-office-for-inadequate-monitoring-of-private-psychiatric-wards.html" class="underline hover:text-blue-600">AGENCY FINDS VARYING USE OF RESTRAINTS IN PSYCHIATRIC FACILITIES REPORT CRITICIZES STATE OFFICE FOR INADEQUATE MONITORING OF PRIVATE PSYCHIATRIC WARDS</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of CQC report on use of restraints and seclusion
@@ -1205,7 +1223,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesmachine.nytimes.com/timesmachine/1995/01/19/issue.html" target="_blank" class="underline hover:text-blue-600">PATAKI PLANS TIGHTER SECURITY AT STATE PSYCHIATRIC HOSPITALS</a>
+                <a href="./documents/cqc-media-pataki-plans-tighter-security-at-state-psychiatric-hospitals.html" class="underline hover:text-blue-600">PATAKI PLANS TIGHTER SECURITY AT STATE PSYCHIATRIC HOSPITALS</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of escapes and a subway killing
@@ -1223,7 +1241,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1996/11/15/nyregion/2-accused-of-stealing-funds-at-queens-home-for-retarded.html?searchResultPosition=34" target="_blank" class="underline hover:text-blue-600">2 ACCUSED OF STEALING FUNDS AT QUEENS HOME FOR RETARDED</a>
+                <a href="./documents/cqc-media-2-accused-of-stealing-funds-at-queens-home-for-retarded.html" class="underline hover:text-blue-600">2 ACCUSED OF STEALING FUNDS AT QUEENS HOME FOR RETARDED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 New coverage of CLA arrests and QCPI investigation
@@ -1241,7 +1259,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0EAC5332D85DEE66?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=2&pdate=1999-05-30" target="_blank" class="underline hover:text-blue-600">TREATMENT? OR CONFINEMENT?GOVERNOR, LEGISLATURE SEARCH FOR BEST WAY TO HELP MENTALLY ILL</a>
+                <a href="./documents/cqc-media-treatment-or-confinementgovernor-legislature-search-for-best-way-to-help-mentally-ill.html" class="underline hover:text-blue-600">TREATMENT? OR CONFINEMENT?GOVERNOR, LEGISLATURE SEARCH FOR BEST WAY TO HELP MENTALLY ILL</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Comment on expanding involuntary commitment
@@ -1259,7 +1277,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/1999/11/14/nyregion/experts-say-state-mental-health-system-defies-easy-repair.html?searchResultPosition=18" target="_blank" class="underline hover:text-blue-600">EXPERTS SAY STATE MENTAL HEALTH SYSTEM DEFIES EASY REPAIR</a>
+                <a href="./documents/cqc-media-experts-say-state-mental-health-system-defies-easy-repair.html" class="underline hover:text-blue-600">EXPERTS SAY STATE MENTAL HEALTH SYSTEM DEFIES EASY REPAIR</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of State reponse to reforms in the wake of Kendra Webdale's death
@@ -1277,7 +1295,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/2001/04/18/nyregion/broken-home-a-special-report-for-mentally-ill-chaos-in-an-intended-refuge.html?searchResultPosition=19" target="_blank" class="underline hover:text-blue-600">BROKEN HOME/A SPECIAL REPORT.; FOR MENTALLY ILL, CHAOS IN AN INTENDED REFUGE</a>
+                <a href="./documents/cqc-media-broken-homea-special-report-for-mentally-ill-chaos-in-an-intended-refuge.html" class="underline hover:text-blue-600">BROKEN HOME/A SPECIAL REPORT.; FOR MENTALLY ILL, CHAOS IN AN INTENDED REFUGE</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of the Leben Home for Adults & CQC reports
@@ -1295,7 +1313,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/0F3A7E4C683205A1?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=2&pdate=2002-05-19" target="_blank" class="underline hover:text-blue-600">STATE FAILS IN ITS DUTY TO THE MENTALLY ILL</a>
+                <a href="./documents/cqc-media-state-fails-in-its-duty-to-the-mentally-ill.html" class="underline hover:text-blue-600">STATE FAILS IN ITS DUTY TO THE MENTALLY ILL</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Op ed about adult home conditions
@@ -1313,7 +1331,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/10CEC31FD34FE0D0?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&pdate=2005-09-28" target="_blank" class="underline hover:text-blue-600">HELPING ILL KIDS IS PASSION, CAREER</a>
+                <a href="./documents/cqc-media-helping-ill-kids-is-passion-career.html" class="underline hover:text-blue-600">HELPING ILL KIDS IS PASSION, CAREER</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Report on visit to orphanages in Turkey
@@ -1331,7 +1349,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/112F00FD5B8570D0?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=2&pdate=2006-07-16" target="_blank" class="underline hover:text-blue-600">UNLEARN SHOCKING BEHAVIORS</a>
+                <a href="./documents/cqc-media-unlearn-shocking-behaviors.html" class="underline hover:text-blue-600">UNLEARN SHOCKING BEHAVIORS</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Op ed re use/misuse of aversives
@@ -1349,7 +1367,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/11820E683810BCC8?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=2&pdate=2007-03-25" target="_blank" class="underline hover:text-blue-600">REAL REFORM ADDRESSES ROOT OF ABUSE</a>
+                <a href="./documents/cqc-media-real-reform-addresses-root-of-abuse.html" class="underline hover:text-blue-600">REAL REFORM ADDRESSES ROOT OF ABUSE</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Comment on the Jonathan Carey case and the need to change institutional child abuse laws
@@ -1367,7 +1385,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://timesunion.newsbank.com/doc/news/12D7A92E67B9A5B0?search_terms=Sundram&text=Sundram&content_added=&date_from=&date_to=&pub%255B0%255D=ATUB&page=2&pdate=2010-01-25" target="_blank" class="underline hover:text-blue-600">WHERE HAS WATCHDOG GONE?</a>
+                <a href="./documents/cqc-media-where-has-watchdog-gone.html" class="underline hover:text-blue-600">WHERE HAS WATCHDOG GONE?</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Comment on CQC inaction
@@ -1385,7 +1403,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/2011/03/13/nyregion/13homes.html?searchResultPosition=38" target="_blank" class="underline hover:text-blue-600">USED AND ABUSED: AT STATE -RUN HOMES, ABUSE AND IMPUNITY</a>
+                <a href="./documents/cqc-media-used-and-abused-at-state-run-homes-abuse-and-impunity.html" class="underline hover:text-blue-600">USED AND ABUSED: AT STATE -RUN HOMES, ABUSE AND IMPUNITY</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 NYT Series on OPWDD group homes
@@ -1403,7 +1421,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/2011/10/13/nyregion/cuomo-says-he-will-reform-agencies-serving-disabled.html?searchResultPosition=42" target="_blank" class="underline hover:text-blue-600">CUOMO SAYS HE WILL REFORM AGENCIES SERVING DISABLED</a>
+                <a href="./documents/cqc-media-cuomo-says-he-will-reform-agencies-serving-disabled.html" class="underline hover:text-blue-600">CUOMO SAYS HE WILL REFORM AGENCIES SERVING DISABLED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Report on my presentation at a cabinet meeting
@@ -1421,7 +1439,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.timesunion.com/local/article/Acting-to-close-gaps-in-safety-2216043.php" target="_blank" class="underline hover:text-blue-600">ACTING TO CLOSE GAPS IN SAFETY</a>
+                <a href="./documents/cqc-media-acting-to-close-gaps-in-safety.html" class="underline hover:text-blue-600">ACTING TO CLOSE GAPS IN SAFETY</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Officials report on efforts to improve reporting abuse in care system
@@ -1439,7 +1457,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/2012/05/07/nyregion/governor-to-propose-new-agency-to-fight-abuse-of-disabled.html?searchResultPosition=13" target="_blank" class="underline hover:text-blue-600">CUOMO SEEKING NEW AGENCY TO POLICE CARE OF DISABLED</a>
+                <a href="./documents/cqc-media-cuomo-seeking-new-agency-to-police-care-of-disabled.html" class="underline hover:text-blue-600">CUOMO SEEKING NEW AGENCY TO POLICE CARE OF DISABLED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of creation of the Justice Center
@@ -1457,7 +1475,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.timesunion.com/local/article/Justice-Center-on-track-3643123.php" target="_blank" class="underline hover:text-blue-600">JUSTICE CENTER ON TRACK</a>
+                <a href="./documents/cqc-media-justice-center-on-track.html" class="underline hover:text-blue-600">JUSTICE CENTER ON TRACK</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Watchdog agency designed to protect state residents with disabilities is set for approval this week
@@ -1475,7 +1493,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.timesunion.com/opinion/article/and-justice-for-all-in-n-y-3658415.php" target="_blank" class="underline hover:text-blue-600">AND JUSTICE FOR ALL IN N.Y.</a>
+                <a href="./documents/cqc-media-and-justice-for-all-in-ny.html" class="underline hover:text-blue-600">AND JUSTICE FOR ALL IN N.Y.</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Describes legislation creating the Justice Center for the Protection of People with Special Needs
@@ -1493,7 +1511,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://thecounty.me/2019/04/26/business-news/speaker-advocates-for-support-of-community-programs-for-people-with-disabilities/" target="_blank" class="underline hover:text-blue-600">SPEAKER ADVOCATES FOR SUPPORT OF COMMUNITY PROGRAMS FOR PEOPLE WITH DISABILITIES</a>
+                <a href="./documents/cqc-media-speaker-advocates-for-support-of-community-programs-for-people-with-disabilities.html" class="underline hover:text-blue-600">SPEAKER ADVOCATES FOR SUPPORT OF COMMUNITY PROGRAMS FOR PEOPLE WITH DISABILITIES</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Coverage of a speech at the University of Maine in Presque Isle
@@ -1511,7 +1529,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="USCIS application fees may rise, while some Capital Region immigrants already struggle to pay" target="_blank" class="underline hover:text-blue-600">USCIS APPLICATION FEES MAY RISE, WHILE SOME CAPITAL REGION IMMIGRANTS ALREADY STRUGGLE TO PAY</a>
+                <a href="./documents/cqc-media-uscis-application-fees-may-rise-while-some-capital-region-immigrants-already-struggle-to-pay.html" class="underline hover:text-blue-600">USCIS APPLICATION FEES MAY RISE, WHILE SOME CAPITAL REGION IMMIGRANTS ALREADY STRUGGLE TO PAY</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Delmar lawyer creates fund in response to 21% spike in 2016. Now it might happen again
@@ -1529,7 +1547,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.timesunion.com/opinion/article/Direct-care-workers-deserve-combat-pay-15178116.php" target="_blank" class="underline hover:text-blue-600">DIRECT CARE WORKERS DESERVE COMBAT PAY</a>
+                <a href="./documents/cqc-media-direct-care-workers-deserve-combat-pay.html" class="underline hover:text-blue-600">DIRECT CARE WORKERS DESERVE COMBAT PAY</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 
@@ -1547,7 +1565,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://capitolpressroom.org/2023/07/05/justice-for-all-a-cycle-of-abuse-and-neglect/" target="_blank" class="underline hover:text-blue-600">JUSTICE FOR ALL: A CYCLE OF ABUSE AND NEGLECT</a>
+                <a href="./documents/cqc-media-justice-for-all-a-cycle-of-abuse-and-neglect.html" class="underline hover:text-blue-600">JUSTICE FOR ALL: A CYCLE OF ABUSE AND NEGLECT</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Nearly 40 years before reporting in 2011 by the New York Times prompted a re-examination of the care for people with special needs, the state underwent a similar phase of introspection and reform. On the first installment of the “Justice for All” series, we highlight this four decades of history, including New York’s response to the failings at the Willowbrook school, the creation of an advocate, and a report intended to transform care for the most vulnerable New Yorkers.
@@ -1565,7 +1583,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://capitolpressroom.org/2023/07/12/justice-for-all-a-new-sheriff-in-albany/" target="_blank" class="underline hover:text-blue-600">JUSTICE FOR ALL: A NEW SHERIFF IN </a>
+                <a href="./documents/cqc-media-justice-for-all-a-new-sheriff-in.html" class="underline hover:text-blue-600">JUSTICE FOR ALL: A NEW SHERIFF IN </a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 On the second installment of the “Justice for All” series, we highlight the work undertaken by the Justice Center over the last decade, including their approach to investigations, role in bringing prosecutions and preventing future abuse.
@@ -1583,35 +1601,60 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://capitolpressroom.org/2023/07/19/justice-for-all-unfinished-business/" target="_blank" class="underline hover:text-blue-600">JUSTICE FOR ALL: UNFINISHED BUSINESS</a>
+                <a href="./documents/cqc-media-justice-for-all-unfinished-business.html" class="underline hover:text-blue-600">JUSTICE FOR ALL: UNFINISHED BUSINESS</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 A 2012 report examining the state’s care for people with special needs offered a holistic series of recommendations on how to improve the quality of supervision and supports for vulnerable New Yorkers, but the reaction from state policymakers at the time – and since – has largely ignored the broader conversation about the human services system. On the third installment of the “Justice for All” series, we focus primarily on the workforce providing care to more than 1 million New Yorkers with special needs. We also examine the independence of the Justice Center for the Protection of People with Special Needs and consider how abuse and neglect is reported.
               </td>
             </tr>
             
-                  </tbody>
-                </table>
-              </div>
-              <style>
-                @container(max-width:120px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-120{display: none;}}
-                @container(max-width:240px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-240{display: none;}}
-                @container(max-width:360px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-360{display: none;}}
-                @container(max-width:480px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-480{display: none;}}
-              </style>
-            </div>
+                </tbody>
+            </table>
           </div>
+          <style>
+            @container(max-width:120px){.table-column-120{display: none;}}
+            @container(max-width:240px){.table-column-240{display: none;}}
+            @container(max-width:360px){.table-column-360{display: none;}}
+            @container(max-width:480px){.table-column-480{display: none;}}
+          </style>
+        </div>
+    </div>
+</div>
+
+
+      </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center pt-20">
+      <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl mx-4">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold text-[#101419]">Search Documents</h2>
+            <button id="close-search" class="text-[#58728d] hover:text-[#101419]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+              </svg>
+            </button>
+          </div>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search by title, description, or category..."
+            class="w-full px-4 py-3 border border-[#d3dbe4] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1971c2] text-[#101419]"
+          />
+          <div id="search-results" class="mt-4 max-h-96 overflow-y-auto"></div>
         </div>
       </div>
     </div>
+
     <script>
       // Hamburger menu functionality
       const hamburgerBtn = document.getElementById('hamburger-btn');
       const mobileMenu = document.getElementById('main-nav');
 
-      // Toggle menu on hamburger button click
       hamburgerBtn.addEventListener('click', function(e) {
-        e.stopPropagation(); // Prevent event from bubbling up
+        e.stopPropagation();
         if (mobileMenu.classList.contains('hidden')) {
           mobileMenu.classList.remove('hidden');
         } else {
@@ -1619,9 +1662,7 @@
         }
       });
 
-      // Close menu when clicking outside
       document.addEventListener('click', function(e) {
-        // Check if the menu is visible and the click is outside the menu and hamburger button
         if (!mobileMenu.classList.contains('hidden') &&
             !mobileMenu.contains(e.target) &&
             !hamburgerBtn.contains(e.target)) {
@@ -1629,13 +1670,109 @@
         }
       });
 
-      // Prevent menu from closing when clicking inside the menu
       mobileMenu.addEventListener('click', function(e) {
         e.stopPropagation();
       });
 
       // Set page title from document title
-      document.getElementById('page-title').textContent = document.title;
+      if (document.getElementById('page-title') && !document.getElementById('page-title').textContent) {
+        document.getElementById('page-title').textContent = document.title;
+      }
+
+      // Search functionality
+      let miniSearch = null;
+      let searchIndexLoaded = false;
+
+      // Load search index
+      fetch('./search-index.json')
+        .then(response => response.json())
+        .then(documents => {
+          miniSearch = new MiniSearch({
+            fields: ['title', 'description', 'category', 'source'],
+            storeFields: ['title', 'description', 'category', 'date', 'section', 'url'],
+            searchOptions: {
+              boost: { title: 2 },
+              fuzzy: 0.2,
+              prefix: true
+            }
+          });
+          miniSearch.addAll(documents);
+          searchIndexLoaded = true;
+        })
+        .catch(error => console.error('Error loading search index:', error));
+
+      // Search modal controls
+      const searchBtn = document.getElementById('search-btn');
+      const searchModal = document.getElementById('search-modal');
+      const closeSearch = document.getElementById('close-search');
+      const searchInput = document.getElementById('search-input');
+      const searchResults = document.getElementById('search-results');
+
+      searchBtn.addEventListener('click', () => {
+        searchModal.classList.remove('hidden');
+        searchInput.focus();
+      });
+
+      closeSearch.addEventListener('click', () => {
+        searchModal.classList.add('hidden');
+        searchInput.value = '';
+        searchResults.innerHTML = '';
+      });
+
+      searchModal.addEventListener('click', (e) => {
+        if (e.target === searchModal) {
+          searchModal.classList.add('hidden');
+          searchInput.value = '';
+          searchResults.innerHTML = '';
+        }
+      });
+
+      // Escape key to close
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !searchModal.classList.contains('hidden')) {
+          searchModal.classList.add('hidden');
+          searchInput.value = '';
+          searchResults.innerHTML = '';
+        }
+      });
+
+      // Search on input
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.trim();
+
+        if (!searchIndexLoaded) {
+          searchResults.innerHTML = '<p class="text-[#58728d] p-4">Loading search index...</p>';
+          return;
+        }
+
+        if (query.length < 2) {
+          searchResults.innerHTML = '';
+          return;
+        }
+
+        const results = miniSearch.search(query, { limit: 20 });
+
+        if (results.length === 0) {
+          searchResults.innerHTML = '<p class="text-[#58728d] p-4">No results found.</p>';
+          return;
+        }
+
+        const resultsHTML = results.map(result => {
+          const doc = result;
+          return `
+            <a href="./${doc.url}" class="block p-4 hover:bg-gray-50 border-b border-[#e9edf1]">
+              <h3 class="font-bold text-[#101419] mb-1">${doc.title}</h3>
+              ${doc.description ? `<p class="text-sm text-[#58728d] mb-2">${doc.description.substring(0, 150)}${doc.description.length > 150 ? '...' : ''}</p>` : ''}
+              <div class="flex gap-2 text-xs">
+                ${doc.category ? `<span class="px-2 py-1 bg-[#e9edf1] text-[#101419] rounded">${doc.category}</span>` : ''}
+                ${doc.date ? `<span class="text-[#58728d]">${doc.date}</span>` : ''}
+              </div>
+            </a>
+          `;
+        }).join('');
+
+        searchResults.innerHTML = resultsHTML;
+      });
     </script>
   </body>
 </html>

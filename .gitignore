@@ -1,1 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# OS
 .DS_Store
+Thumbs.db
+*.bak
+
+# Build/dependencies (legacy)
+_site/
+node_modules/
+
+# Project specific - generated files
+# Note: We commit the generated docs/ folder as it's the GitHub Pages root
+# But exclude temporary or local-only files if needed

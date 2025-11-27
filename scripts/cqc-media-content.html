@@ -1,0 +1,30 @@
+<div class="px-40 flex flex-1 justify-center py-5">
+    <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+        <div class="flex flex-wrap justify-between gap-3 p-4">
+            <p class="text-[#101419] tracking-light text-[32px] font-bold leading-tight min-w-72">Media Coverage</p>
+        </div>
+        <div class="px-4 py-3 @container">
+          <div class="flex overflow-hidden rounded-xl border border-[#d3dbe4] bg-gray-50">
+            <table class="flex-1">
+                <thead>
+                    <tr class="bg-gray-50">
+                        <th class="table-column-120 px-4 py-3 text-left text-[#101419] w-[150px] text-sm font-medium leading-normal">Date</th>
+                        <th class="table-column-240 px-4 py-3 text-left text-[#101419] w-60 text-sm font-medium leading-normal">Media</th>
+                        <th class="table-column-360 px-4 py-3 text-left text-[#101419] w-[200px] text-sm font-medium leading-normal">Title</th>
+                        <th class="table-column-480 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {rows}
+                </tbody>
+            </table>
+          </div>
+          <style>
+            @container(max-width:120px){.table-column-120{display: none;}}
+            @container(max-width:240px){.table-column-240{display: none;}}
+            @container(max-width:360px){.table-column-360{display: none;}}
+            @container(max-width:480px){.table-column-480{display: none;}}
+          </style>
+        </div>
+    </div>
+</div>

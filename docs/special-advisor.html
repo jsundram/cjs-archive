@@ -10,8 +10,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Advisor</title>
-    <meta name="description" content="Documents and publications from Clarence J. Sundram's service as Special Advisor to Governor Cuomo on protection of vulnerable persons in residential facilities.">
+    <title>Special Advisor to the Governor</title>
+    <meta name="description" content="Publications and presentations from Clarence J. Sundram's work as Special Advisor to the Governor on the Mentally Disabled.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://clarencesundram.org/special-advisor.html">
 
@@ -21,14 +21,16 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.8/dist/index.global.min.js"></script>
-    <!-- this gives a warning about not using the browser version, but ... -->
+
+    <!-- MiniSearch for client-side search -->
+    <script src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js"></script>
   </head>
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
         <header class="relative flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e9edf1] px-10 py-3">
           <div class="flex items-center gap-4 text-[#101419]">
-            <!-- Hamburger Button (moved to left side) -->
+            <!-- Hamburger Button -->
             <button
               id="hamburger-btn"
               class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e9edf1] text-[#101419] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
@@ -44,7 +46,7 @@
             <h2 id="site-title" class="text-[#101419] text-lg font-bold leading-tight tracking-[-0.015em]">Archive</h2>
           </div>
           <div class="flex flex-1 justify-end gap-8">
-            <!-- Navigation Menu (always mobile-style dropdown) -->
+            <!-- Navigation Menu -->
             <nav id="main-nav" class="hidden flex flex-col gap-4
                                       absolute top-full left-0 right-0
                                       bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
@@ -54,6 +56,16 @@
               <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./court-monitor.html">Court Monitor</a>
               <a class="text-[#101419] text-sm font-medium leading-normal hover:bg-gray-100 hover:text-[#0066cc] px-2 py-1 rounded transition-colors duration-200" href="./special-advisor.html">Special Advisor</a>
             </nav>
+            <!-- Search Button -->
+            <button
+              id="search-btn"
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e9edf1] text-[#101419] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              title="Search documents"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+              </svg>
+            </button>
             <div
               class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
               style='background-image: url("./assets/headshot.jpg");'
@@ -61,44 +73,30 @@
           </div>
         </header>
 
+        
+
         <div class="bg-white border-b border-solid border-b-[#e9edf1] px-10 py-4">
-          <h1 id="page-title" class="text-[#101419] text-xl font-bold leading-tight tracking-[-0.015em]"></h1>
+          <h1 id="page-title" class="text-[#101419] text-xl font-bold leading-tight tracking-[-0.015em]">Special Advisor to the Governor</h1>
         </div>
 
-        <!-- Content -->
         <div class="px-40 flex flex-1 justify-center py-5">
-            <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-
-                <div>
-                    <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
-                    Following a series of stories in the New York Times about abuse and neglect of residents of state-run group homes for persons with developmental disabilities, in March 2011, Governor Andrew Cuomo asked Mr. Sundram to serve as Special Advisor to the Governor for Vulnerable Persons. Mr. Sundram was tasked with developing recommendations to address the problem of abuse and neglect of persons in residential care. The report he made to the Governor in April 2012 <a href="./assets/savp/the%20measure%20of%20a%20society-%20protection%20of%20vulnerable%20persons%20in%20residential%20facilities%20against%20abuse%20&%20neglect.pdf" class="underline hover:text-blue-600">The Measure Of A Society: Protection Of Vulnerable Persons In Residential Facilities Against Abuse & Neglect</a> recommended sweeping reforms in the system for prevention, reporting, investigating and responding to such incidents in residential facilities operated or authorized by six State agencies in New York. Governor Cuomo proposed and the legislature unanimously adopted The Protection of People with Special Needs Act, implementing the key recommendations of the report, on June 20, 2012.
-                    </p>
-
-                    <div class="flex flex-wrap justify-between gap-3 p-4">
-                        <p class="text-[#101419] tracking-light text-[32px] font-bold leading-tight min-w-72">Report to the Governor</p>
-
-                        <p class="text-[#101419] text-base font-normal leading-normal pb-3 pt-1 px-4">
-                        <a href="./assets/savp/the%20measure%20of%20a%20society-%20protection%20of%20vulnerable%20persons%20in%20residential%20facilities%20against%20abuse%20&%20neglect.pdf" class="underline hover:text-blue-600">The Measure Of A Society: Protection Of Vulnerable Persons In Residential Facilities Against Abuse & Neglect</a>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex flex-wrap justify-between gap-3 p-4">
-                    <p class="text-[#101419] tracking-light text-[32px] font-bold leading-tight min-w-72">Media Coverage</p>
-                </div>
-                <div class="px-4 py-3 @container">
-                  <div class="flex overflow-hidden rounded-xl border border-[#d3dbe4] bg-gray-50">
-                    <table class="flex-1">
-                        <thead>
-                            <tr class="bg-gray-50">
-                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-120 px-4 py-3 text-left text-[#101419] w-[150px] text-sm font-medium leading-normal">Date</th>
-                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-240 px-4 py-3 text-left text-[#101419] w-60 text-sm font-medium leading-normal">Type</th>
-                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-360 px-4 py-3 text-left text-[#101419] w-[200px] text-sm font-medium leading-normal">Title</th>
-                                <th class="table-58d24071-6485-423f-b2c3-39e973cb6d48-column-480 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
+    <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+        <div class="flex flex-wrap justify-between gap-3 p-4">
+            <p class="text-[#101419] tracking-light text-[32px] font-bold leading-tight min-w-72">Publications</p>
+        </div>
+        <div class="px-4 py-3 @container">
+          <div class="flex overflow-hidden rounded-xl border border-[#d3dbe4] bg-gray-50">
+            <table class="flex-1">
+                <thead>
+                    <tr class="bg-gray-50">
+                        <th class="table-column-120 px-4 py-3 text-left text-[#101419] w-[150px] text-sm font-medium leading-normal">Date</th>
+                        <th class="table-column-240 px-4 py-3 text-left text-[#101419] w-60 text-sm font-medium leading-normal">Type</th>
+                        <th class="table-column-360 px-4 py-3 text-left text-[#101419] w-[200px] text-sm font-medium leading-normal">Title</th>
+                        <th class="table-column-480 px-4 py-3 text-left text-[#101419] w-[400px] text-sm font-medium leading-normal">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
             <tr class="border-t border-t-[#d3dbe4]">
               <td class="align-top px-4 py-2 w-[150px] text-[#58728d] text-sm font-normal leading-normal">
                 2011-03-12
@@ -109,7 +107,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/2011/03/13/nyregion/13homes.html" target="_blank" class="underline hover:text-blue-600">ABUSED AND USED: AT STATE-RUN HOMES, ABUSE AND IMPUNITY</a>
+                <a href="./documents/savp-abused-and-used-at-state-run-homes-abuse-and-impunity.html" class="underline hover:text-blue-600">ABUSED AND USED: AT STATE-RUN HOMES, ABUSE AND IMPUNITY</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 New York Times Series on abuse in state-run group homes for people with developmental disability
@@ -127,7 +125,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/2011/10/13/nyregion/cuomo-says-he-will-reform-agencies-serving-disabled.html" target="_blank" class="underline hover:text-blue-600">CUOMO SAYS HE WILL REFORM AGENCIES SERVING DISABLED</a>
+                <a href="./documents/savp-cuomo-says-he-will-reform-agencies-serving-disabled.html" class="underline hover:text-blue-600">CUOMO SAYS HE WILL REFORM AGENCIES SERVING DISABLED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 New York Times Report on Sundram briefing at a cabinet meeting
@@ -145,7 +143,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.timesunion.com/local/article/Acting-to-close-gaps-in-safety-2216043.php" target="_blank" class="underline hover:text-blue-600">ACTING TO CLOSE GAPS IN SAFETY</a>
+                <a href="./documents/savp-acting-to-close-gaps-in-safety.html" class="underline hover:text-blue-600">ACTING TO CLOSE GAPS IN SAFETY</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Officials report on efforts to improve reporting abuse in care system
@@ -163,7 +161,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/2012/05/07/nyregion/governor-to-propose-new-agency-to-fight-abuse-of-disabled.html" target="_blank" class="underline hover:text-blue-600">CUOMO SEEKING NEW AGENCY TO POLICE CARE OF DISABLED</a>
+                <a href="./documents/savp-cuomo-seeking-new-agency-to-police-care-of-disabled.html" class="underline hover:text-blue-600">CUOMO SEEKING NEW AGENCY TO POLICE CARE OF DISABLED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 New York Times coverage of creation of the Justice Center
@@ -181,7 +179,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/savp/cuomo plan for watchdog agency will protect new york's vulnerable citizens.pdf" target="_blank" class="underline hover:text-blue-600">CUOMO PLAN FOR WATCHDOG AGENCY WILL PROTECT NEW YORK'S VULNERABLE CITIZENS</a>
+                <a href="./documents/savp-cuomo-plan-for-watchdog-agency-will-protect-new-yorks-vulnerable-citizens.html" class="underline hover:text-blue-600">CUOMO PLAN FOR WATCHDOG AGENCY WILL PROTECT NEW YORK'S VULNERABLE CITIZENS</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Newsday editorial
@@ -199,7 +197,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/savp/justice center on track.pdf" target="_blank" class="underline hover:text-blue-600">JUSTICE CENTER ON TRACK</a>
+                <a href="./documents/savp-justice-center-on-track.html" class="underline hover:text-blue-600">JUSTICE CENTER ON TRACK</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Albany Times Union
@@ -217,7 +215,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/savp/the justice center real reform for vulnerable individuals.pdf" target="_blank" class="underline hover:text-blue-600">THE JUSTICE CENTER REAL REFORM FOR VULNERABLE INDIVIDUALS</a>
+                <a href="./documents/savp-the-justice-center-real-reform-for-vulnerable-individuals.html" class="underline hover:text-blue-600">THE JUSTICE CENTER REAL REFORM FOR VULNERABLE INDIVIDUALS</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 New York Nonprofit Press
@@ -235,7 +233,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/savp/balancing justice with sundram's first pillar.pdf" target="_blank" class="underline hover:text-blue-600">BALANCING JUSTICE WITH SUNDRAM'S FIRST PILLAR</a>
+                <a href="./documents/savp-balancing-justice-with-sundrams-first-pillar.html" class="underline hover:text-blue-600">BALANCING JUSTICE WITH SUNDRAM'S FIRST PILLAR</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 New Horizon Resources
@@ -253,7 +251,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/savp/editorial- justice center sorely needed.pdf" target="_blank" class="underline hover:text-blue-600">EDITORIAL: JUSTICE CENTER SORELY NEEDED</a>
+                <a href="./documents/savp-editorial-justice-center-sorely-needed.html" class="underline hover:text-blue-600">EDITORIAL: JUSTICE CENTER SORELY NEEDED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Editorial in Plattsburg Press Republican
@@ -271,7 +269,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/savp/cuomo advisor explains justice center plan.pdf" target="_blank" class="underline hover:text-blue-600">CUOMO ADVISOR EXPLAINS JUSTICE CENTER PLAN</a>
+                <a href="./documents/savp-cuomo-advisor-explains-justice-center-plan.html" class="underline hover:text-blue-600">CUOMO ADVISOR EXPLAINS JUSTICE CENTER PLAN</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Adirondak Daily Enterprise
@@ -289,7 +287,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/savp/editorial- special needs act a necessity.pdf" target="_blank" class="underline hover:text-blue-600">EDITORIAL: SPECIAL NEEDS ACT A NECESSITY</a>
+                <a href="./documents/savp-editorial-special-needs-act-a-necessity.html" class="underline hover:text-blue-600">EDITORIAL: SPECIAL NEEDS ACT A NECESSITY</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Rockland Journal News Editorial
@@ -307,7 +305,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/savp/get tougher on those who abuse disabled people.pdf" target="_blank" class="underline hover:text-blue-600">GET TOUGHER ON THOSE WHO ABUSE DISABLED PEOPLE</a>
+                <a href="./documents/savp-get-tougher-on-those-who-abuse-disabled-people.html" class="underline hover:text-blue-600">GET TOUGHER ON THOSE WHO ABUSE DISABLED PEOPLE</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 Editorial Utica Observer Dispatch
@@ -325,7 +323,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/savp/helping the disabled.pdf" target="_blank" class="underline hover:text-blue-600">HELPING THE DISABLED</a>
+                <a href="./documents/savp-helping-the-disabled.html" class="underline hover:text-blue-600">HELPING THE DISABLED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 The New York Observer
@@ -343,7 +341,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/savp/ending abuse- governor's proposed legislation will improve care for vulnerable.pdf" target="_blank" class="underline hover:text-blue-600">ENDING ABUSE: GOVERNOR'S PROPOSED LEGISLATION WILL IMPROVE CARE FOR VULNERABLE</a>
+                <a href="./documents/savp-ending-abuse-governors-proposed-legislation-will-improve-care-for-vulnerable.html" class="underline hover:text-blue-600">ENDING ABUSE: GOVERNOR'S PROPOSED LEGISLATION WILL IMPROVE CARE FOR VULNERABLE</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 The Syracuse Post-Standard 
@@ -361,7 +359,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="./assets/savp/cuomo is right to protect the developmentally disabled.pdf" target="_blank" class="underline hover:text-blue-600">CUOMO IS RIGHT TO PROTECT THE DEVELOPMENTALLY DISABLED</a>
+                <a href="./documents/savp-cuomo-is-right-to-protect-the-developmentally-disabled.html" class="underline hover:text-blue-600">CUOMO IS RIGHT TO PROTECT THE DEVELOPMENTALLY DISABLED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 The Rochester Democrat  Chronicle
@@ -379,7 +377,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://www.nytimes.com/2012/05/08/opinion/monitoring-care-for-the-disabled.html" target="_blank" class="underline hover:text-blue-600">MONITORING CARE FOR THE DISABLED</a>
+                <a href="./documents/savp-monitoring-care-for-the-disabled.html" class="underline hover:text-blue-600">MONITORING CARE FOR THE DISABLED</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 New York Times Editorial
@@ -397,7 +395,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://capitolpressroom.org/2023/07/05/justice-for-all-a-cycle-of-abuse-and-neglect/" target="_blank" class="underline hover:text-blue-600">JUSTICE FOR ALL: A CYCLE OF ABUSE AND NEGLECT</a>
+                <a href="./documents/savp-justice-for-all-a-cycle-of-abuse-and-neglect.html" class="underline hover:text-blue-600">JUSTICE FOR ALL: A CYCLE OF ABUSE AND NEGLECT</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 On the first installment of the "Justice for All" series, we highlight New York's response to the failings at the Willowbrook school, the creation of an advocate, and a report intended to transform care for the most vulnerable New Yorkers.
@@ -415,7 +413,7 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://capitolpressroom.org/2023/07/12/justice-for-all-a-new-sheriff-in-albany/" target="_blank" class="underline hover:text-blue-600">JUSTICE FOR ALL: A NEW SHERIFF IN </a>
+                <a href="./documents/savp-justice-for-all-a-new-sheriff-in.html" class="underline hover:text-blue-600">JUSTICE FOR ALL: A NEW SHERIFF IN </a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 On the second installment of the "Justice for All" series, we highlight the work undertaken by the Justice Center over the last decade, 
@@ -433,26 +431,50 @@
                 </button>
               </td>
               <td class="align-top px-4 py-2 w-[200px] text-[#101419] text-sm font-normal leading-normal">
-                <a href="https://capitolpressroom.org/2023/07/19/justice-for-all-unfinished-business/" target="_blank" class="underline hover:text-blue-600">JUSTICE FOR ALL: UNFINISHED BUSINESS</a>
+                <a href="./documents/savp-justice-for-all-unfinished-business.html" class="underline hover:text-blue-600">JUSTICE FOR ALL: UNFINISHED BUSINESS</a>
               </td>
               <td class="align-top px-4 py-2 w-[400px] text-[#58728d] text-sm font-normal leading-normal">
                 On the third installment of the "Justice for All" series, we focus primarily on the workforce providing care to more than 1 million New Yorkers with special needs.
               </td>
             </tr>
             
-                        </tbody>
-                    </table>
-                  </div>
-                  <style>
-                    @container(max-width:120px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-120{display: none;}}
-                    @container(max-width:240px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-240{display: none;}}
-                    @container(max-width:360px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-360{display: none;}}
-                    @container(max-width:480px){.table-58d24071-6485-423f-b2c3-39e973cb6d48-column-480{display: none;}}
-                  </style>
-                </div>
-            </div>
+                </tbody>
+            </table>
+          </div>
+          <style>
+            @container(max-width:120px){.table-column-120{display: none;}}
+            @container(max-width:240px){.table-column-240{display: none;}}
+            @container(max-width:360px){.table-column-360{display: none;}}
+            @container(max-width:480px){.table-column-480{display: none;}}
+          </style>
         </div>
-        <!-- End Content -->
+    </div>
+</div>
+
+
+      </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center pt-20">
+      <div class="bg-white rounded-lg shadow-xl w-full max-w-2xl mx-4">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold text-[#101419]">Search Documents</h2>
+            <button id="close-search" class="text-[#58728d] hover:text-[#101419]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+              </svg>
+            </button>
+          </div>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search by title, description, or category..."
+            class="w-full px-4 py-3 border border-[#d3dbe4] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1971c2] text-[#101419]"
+          />
+          <div id="search-results" class="mt-4 max-h-96 overflow-y-auto"></div>
+        </div>
       </div>
     </div>
 
@@ -461,9 +483,8 @@
       const hamburgerBtn = document.getElementById('hamburger-btn');
       const mobileMenu = document.getElementById('main-nav');
 
-      // Toggle menu on hamburger button click
       hamburgerBtn.addEventListener('click', function(e) {
-        e.stopPropagation(); // Prevent event from bubbling up
+        e.stopPropagation();
         if (mobileMenu.classList.contains('hidden')) {
           mobileMenu.classList.remove('hidden');
         } else {
@@ -471,9 +492,7 @@
         }
       });
 
-      // Close menu when clicking outside
       document.addEventListener('click', function(e) {
-        // Check if the menu is visible and the click is outside the menu and hamburger button
         if (!mobileMenu.classList.contains('hidden') &&
             !mobileMenu.contains(e.target) &&
             !hamburgerBtn.contains(e.target)) {
@@ -481,13 +500,109 @@
         }
       });
 
-      // Prevent menu from closing when clicking inside the menu
       mobileMenu.addEventListener('click', function(e) {
         e.stopPropagation();
       });
 
       // Set page title from document title
-      document.getElementById('page-title').textContent = document.title;
+      if (document.getElementById('page-title') && !document.getElementById('page-title').textContent) {
+        document.getElementById('page-title').textContent = document.title;
+      }
+
+      // Search functionality
+      let miniSearch = null;
+      let searchIndexLoaded = false;
+
+      // Load search index
+      fetch('./search-index.json')
+        .then(response => response.json())
+        .then(documents => {
+          miniSearch = new MiniSearch({
+            fields: ['title', 'description', 'category', 'source'],
+            storeFields: ['title', 'description', 'category', 'date', 'section', 'url'],
+            searchOptions: {
+              boost: { title: 2 },
+              fuzzy: 0.2,
+              prefix: true
+            }
+          });
+          miniSearch.addAll(documents);
+          searchIndexLoaded = true;
+        })
+        .catch(error => console.error('Error loading search index:', error));
+
+      // Search modal controls
+      const searchBtn = document.getElementById('search-btn');
+      const searchModal = document.getElementById('search-modal');
+      const closeSearch = document.getElementById('close-search');
+      const searchInput = document.getElementById('search-input');
+      const searchResults = document.getElementById('search-results');
+
+      searchBtn.addEventListener('click', () => {
+        searchModal.classList.remove('hidden');
+        searchInput.focus();
+      });
+
+      closeSearch.addEventListener('click', () => {
+        searchModal.classList.add('hidden');
+        searchInput.value = '';
+        searchResults.innerHTML = '';
+      });
+
+      searchModal.addEventListener('click', (e) => {
+        if (e.target === searchModal) {
+          searchModal.classList.add('hidden');
+          searchInput.value = '';
+          searchResults.innerHTML = '';
+        }
+      });
+
+      // Escape key to close
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !searchModal.classList.contains('hidden')) {
+          searchModal.classList.add('hidden');
+          searchInput.value = '';
+          searchResults.innerHTML = '';
+        }
+      });
+
+      // Search on input
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.trim();
+
+        if (!searchIndexLoaded) {
+          searchResults.innerHTML = '<p class="text-[#58728d] p-4">Loading search index...</p>';
+          return;
+        }
+
+        if (query.length < 2) {
+          searchResults.innerHTML = '';
+          return;
+        }
+
+        const results = miniSearch.search(query, { limit: 20 });
+
+        if (results.length === 0) {
+          searchResults.innerHTML = '<p class="text-[#58728d] p-4">No results found.</p>';
+          return;
+        }
+
+        const resultsHTML = results.map(result => {
+          const doc = result;
+          return `
+            <a href="./${doc.url}" class="block p-4 hover:bg-gray-50 border-b border-[#e9edf1]">
+              <h3 class="font-bold text-[#101419] mb-1">${doc.title}</h3>
+              ${doc.description ? `<p class="text-sm text-[#58728d] mb-2">${doc.description.substring(0, 150)}${doc.description.length > 150 ? '...' : ''}</p>` : ''}
+              <div class="flex gap-2 text-xs">
+                ${doc.category ? `<span class="px-2 py-1 bg-[#e9edf1] text-[#101419] rounded">${doc.category}</span>` : ''}
+                ${doc.date ? `<span class="text-[#58728d]">${doc.date}</span>` : ''}
+              </div>
+            </a>
+          `;
+        }).join('');
+
+        searchResults.innerHTML = resultsHTML;
+      });
     </script>
   </body>
 </html>
