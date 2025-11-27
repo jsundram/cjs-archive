@@ -232,6 +232,8 @@ Registry saved to `data/document-registry.json` during build.
 ## Contributing
 
 For detailed development guidance, see [CLAUDE.md](./CLAUDE.md).
+Analytics viewable on [Google Search Console](https://search.google.com/search-console/index?resource_id=sc-domain%3Aclarencesundram.org)
+Domain managed with namecheap.
 
 ## License
 
