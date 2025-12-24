@@ -56,7 +56,7 @@ def main(data_file, content_file, output_file):
                 source = pdf_files[key]
                 shutil.copyfile(source, os.path.join(assets_destination, key))
                 file_path = f'assets/savp/{key}'
-                url = f'./{file_path}'
+                url = f'/{file_path}'
 
             # Create Document object
             doc = Document(
