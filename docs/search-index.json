@@ -1200,6 +1200,16 @@
     "url": "documents/cqc-reports-in-the-matter-of-david-dix.html"
   },
   {
+    "id": "cqc-reports-adult-homes-serving-residents-with-mental-illness-a-study-of-layering-of-services",
+    "title": "Adult Homes Serving Residents with Mental Illness: A Study of Layering of Services",
+    "description": "This report described a common condition of multiple practitioners and providers – primary care and specialty physicians, medical and mental health clinics, private psychiatrists, nursing services and home health care aides – located on-site in adult homes and acting independently of each other. The open-ended expansion of services, rendered to a captive adult home population, invites in intensity of care which is expensive, uncoordinated and, in some cases unnecessary",
+    "category": "Fiscal Invesigation",
+    "date": "August 2002",
+    "section": "cqc-reports",
+    "source": "",
+    "url": "documents/cqc-reports-adult-homes-serving-residents-with-mental-illness-a-study-of-layering-of-services.html"
+  },
+  {
     "id": "cqc-reports-a-review-of-assisted-living-programs-in-impacted-adult-homes",
     "title": "A Review of Assisted Living Programs in \"Impacted\" Adult Homes",
     "description": "This report describes the Commission's review of the programmatic and financial practices of Assisted Living Programs (ALP) operated in 13 adult homes which serve individuals who had received mental hygiene services (\"impacted\" homes).",
@@ -1208,16 +1218,6 @@
     "section": "cqc-reports",
     "source": "",
     "url": "documents/cqc-reports-a-review-of-assisted-living-programs-in-impacted-adult-homes.html"
-  },
-  {
-    "id": "cqc-reports-adult-homes-serving-residents-with-mental-illness-a-study-of-layering-of-services",
-    "title": "Adult Homes Serving Residents with Mental Illness: A Study of Layering of Services",
-    "description": "This report described a common condition of multiple practitioners and providers – primary care and specialty physicians, medical and mental health clinics, private psychiatrists, nursing services and home health care aides – located on-site in adult homes and acting independently of each other. The open-ended expansion of services, rendered to a captive adult home population, invites in intensity of care which is expensive, uncoordinated and, in some cases unnecessary",
-    "category": "Fiscal Invesigation",
-    "date": "August 2025",
-    "section": "cqc-reports",
-    "source": "",
-    "url": "documents/cqc-reports-adult-homes-serving-residents-with-mental-illness-a-study-of-layering-of-services.html"
   },
   {
     "id": "savp-abused-and-used-at-state-run-homes-abuse-and-impunity",
@@ -1694,7 +1694,7 @@
     "title": "",
     "description": "Americans with Disabilities Act (ADA) signed into law",
     "category": "Timeline Event",
-    "date": "1990-07-27",
+    "date": "1990-07-01",
     "section": "otoole-timeline",
     "source": "",
     "url": "documents/otoole-timeline-.html"
@@ -1734,7 +1734,7 @@
     "title": "Neglect found in residence for the disabled.",
     "description": "NYS Commission on Quality of Care (CQC) Adult Homes Services Residents with Mental Illness: A Study of Conditions, Services, and Regulations",
     "category": "Timeline Event",
-    "date": "1990-10-27",
+    "date": "1990-10-01",
     "section": "otoole-timeline",
     "source": "",
     "url": "documents/otoole-timeline-neglect-found-in-residence-for-the-disabled.html"
@@ -1744,7 +1744,7 @@
     "title": "Report Says Home Operators Misused Funds Meant to Feed Mentally Ill",
     "description": "Exploiting the Vulnerable: The Case of Hi-Li Manor Home for the Aged and Regulation by the NYS Department of Social Services. A two-year-long investigation by the Commission uncovered the diversion of millions of dollars in public funds intended for the care of mentally ill residents of a 125-bed adult home in Queens operated by the Hebrew Academy of the Five Towns and Rockaway (HAFTR) and licensed by the New York State Department of Social Services. The Administrator was fired and later convicted of several crimes. Note: Hi-Li later became Ocean House, and was once again accused by the Commission of fiscal abuse. ",
     "category": "Timeline Event",
-    "date": "1992-07-27",
+    "date": "1992-07-01",
     "section": "otoole-timeline",
     "source": "",
     "url": "documents/otoole-timeline-report-says-home-operators-misused-funds-meant-to-feed-mentally-ill.html"
@@ -1754,7 +1754,7 @@
     "title": "",
     "description": "Falling Through the Safety Net: \"Community Living\" in Adult Homes for Patients Discharged from Psychiatric Hospitals. A report on two deaths involving long-term psychiatric center residents discharged to chronically deficient adult homes prompted a call for psychiatric center staff to comply with laws on discharge planning and follow-up, and for a coordinated \"safety net\" of residential and support services in the community for patients leaving state psychiatric centers.",
     "category": "Timeline Event",
-    "date": "1993-08-27",
+    "date": "1993-08-01",
     "section": "otoole-timeline",
     "source": "",
     "url": "documents/otoole-timeline--2.html"
@@ -1764,7 +1764,7 @@
     "title": "OLMSTEAD V. L. C.",
     "description": "Olmstead v. L.C. Supreme Court decision ",
     "category": "Timeline Event",
-    "date": "1999-06-27",
+    "date": "1999-06-01",
     "section": "otoole-timeline",
     "source": "",
     "url": "documents/otoole-timeline-olmstead-v-l-c.html"
@@ -1774,7 +1774,7 @@
     "title": "Broken Homes",
     "description": "Clifford Levy Broken Homes series published in The New York Times ",
     "category": "Timeline Event",
-    "date": "2002-04-27",
+    "date": "2002-04-01",
     "section": "otoole-timeline",
     "source": "",
     "url": "documents/otoole-timeline-broken-homes.html"
@@ -1784,7 +1784,7 @@
     "title": "",
     "description": "Adult Care Facilities Workgroup convened after Levy articles Report of the Adult Care Facilities Workgroup (10/2002). Proposes that 6,000 of 12,000 individuals with mental illness in adult homes be moved to more integrated settings by March 2009.",
     "category": "Timeline Event",
-    "date": "2002-08-27",
+    "date": "2002-08-01",
     "section": "otoole-timeline",
     "source": "",
     "url": "documents/otoole-timeline--3.html"
@@ -1794,7 +1794,7 @@
     "title": "",
     "description": "NYS CQC issues Adult Homes Serving Residents with Mental Illness: A Study on Layering of Services. This report described a common condition of multiple practitioners and providers – primary care and specialty physicians, medical and mental health clinics, private psychiatrists, nursing services and home health care aides – located on-site in adult homes and acting independently of each other. The open-ended expansion of services, rendered to a captive adult home population, invites in intensity of care which is expensive, uncoordinated and, in some cases unnecessary",
     "category": "Timeline Event",
-    "date": "2002-08-27",
+    "date": "2002-08-01",
     "section": "otoole-timeline",
     "source": "",
     "url": "documents/otoole-timeline--4.html"
@@ -1804,7 +1804,7 @@
     "title": "",
     "description": "Adult Care Facilities Workgroup Report: Report of the Adult Care Facilities Workgroup",
     "category": "Timeline Event",
-    "date": "2002-10-27",
+    "date": "2002-10-01",
     "section": "otoole-timeline",
     "source": "",
     "url": "documents/otoole-timeline--5.html"
@@ -1814,7 +1814,7 @@
     "title": "",
     "description": "NYS Adult Home Assessment Project (by NY Presbyterian Hospital). $1.3M study of 19 adult homes in NYC. Findings show vast majority of adult home residents could be served in supported housing",
     "category": "Timeline Event",
-    "date": "2002-12-27",
+    "date": "2002-12-01",
     "section": "otoole-timeline",
     "source": "",
     "url": "documents/otoole-timeline--6.html"
@@ -1834,7 +1834,7 @@
     "title": "",
     "description": "SCAA publishes Action Plan for Dignity, Respect, Choice and Recovery for People Living in Adult Homes",
     "category": "Timeline Event",
-    "date": "2007-02-27",
+    "date": "2007-02-01",
     "section": "otoole-timeline",
     "source": "",
     "url": "documents/otoole-timeline--8.html"
@@ -1844,7 +1844,7 @@
     "title": "",
     "description": "OMH issues request for proposals (RFP) for 60 supported housing beds for Adult Home referrals (initiative by legislature). Between 2007 and 2009 60 adult home residents move into supported housing through this pilot initiative",
     "category": "Timeline Event",
-    "date": "2007-11-27",
+    "date": "2007-01-01",
     "section": "otoole-timeline",
     "source": "",
     "url": "documents/otoole-timeline--9.html"
@@ -1884,7 +1884,7 @@
     "title": "",
     "description": "State submits proposed remedial plan and DAI responds",
     "category": "Timeline Event",
-    "date": "2009-11-27",
+    "date": "2009-11-01",
     "section": "otoole-timeline",
     "source": "",
     "url": "documents/otoole-timeline--11.html"
@@ -1974,7 +1974,7 @@
     "title": "",
     "description": "HC 2-6 begins in-reach in additional 3 Brooklyn and 11 Queens adult homes",
     "category": "Timeline Event",
-    "date": "2014-08-27",
+    "date": "2014-08-01",
     "section": "otoole-timeline",
     "source": "",
     "url": "documents/otoole-timeline--17.html"
@@ -1994,7 +1994,7 @@
     "title": "",
     "description": "HC 7-9 begin in-reach in 2 Bronx and 3 Staten Island adult homes",
     "category": "Timeline Event",
-    "date": "2015-04-27",
+    "date": "2015-04-01",
     "section": "otoole-timeline",
     "source": "",
     "url": "documents/otoole-timeline--18.html"
