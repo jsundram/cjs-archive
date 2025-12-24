@@ -1,8 +1,9 @@
 import csv
-import dateparser
 import os
 import shutil
+import dateparser
 from document_schema import Document, ensure_unique_slug
+from date_utils import format_date_month_year
 
 """
 Working from csv exports of this google sheet as source of truth:
@@ -10,14 +11,6 @@ https://docs.google.com/spreadsheets/d/1pcJOwIyaASjyX2Zh4pot0DhCWqQpv4GUZTulBY4h
 
 ran :FixDoc over both csvs to fix smart quotes both single and double.
 """
-
-def format_date(date_str):
-    # Converts M/D/YYYY to YYYY-MM-DD
-    try:
-        return dateparser.parse(date_str).strftime("%B %Y")
-    except ValueError:
-        print(f"error parsing: {date_str}")
-        return date_str  # Fallback if date is malformed
 
 
 def main(data_file, match_file, content_file, output_file):
@@ -76,7 +69,7 @@ def main(data_file, match_file, content_file, output_file):
     existing_slugs = set()
 
     for row in csv_rows:
-        date = format_date(row['Date'])
+        date = format_date_month_year(row['Date'])
         media = row['Category']
         title = row['Title'].strip()
         description = row['Description']

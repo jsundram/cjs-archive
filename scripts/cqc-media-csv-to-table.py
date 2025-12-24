@@ -1,17 +1,10 @@
 import csv
-from datetime import datetime
 from document_schema import Document, ensure_unique_slug
+from date_utils import format_date_iso
 
 """
 Generates cqc-media.html from CQC-Coverage.csv
 """
-
-def format_date(date_str):
-    # Converts M/D/YYYY to YYYY-MM-DD
-    try:
-        return datetime.strptime(date_str, "%m/%d/%Y").strftime("%Y-%m-%d")
-    except ValueError:
-        return date_str  # Fallback if date is malformed
 
 
 def main(data_file, content_file, output_file):
@@ -33,7 +26,7 @@ def main(data_file, content_file, output_file):
     with open(data_file, newline='', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            date = format_date(row['Date'])
+            date = format_date_iso(row['Date'])
             media = row['Media']
             title = row['Title']
             description = row['Description']
