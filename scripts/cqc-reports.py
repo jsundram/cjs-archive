@@ -83,7 +83,7 @@ def main(data_file, match_file, content_file, output_file):
             key = title.lower().replace(':', '-') + ".pdf"
             shutil.copyfile(url, os.path.join(assets_destination, key))
             file_path = f'assets/cqc/{key}'
-            url = f'./{file_path}'
+            url = f'/{file_path}'
 
         # Create Document object
         doc = Document(
